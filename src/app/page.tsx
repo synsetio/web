@@ -19,8 +19,17 @@ export default function Home() {
       <main className="flex-grow pt-24">
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-green-500 opacity-80"></div>
-            <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center animate-slow-pan"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-green-500 opacity-60"></div>
+            <video
+              className="absolute inset-0 w-full h-full object-cover"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src="/hero-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div className="relative z-10 text-center text-white">
             <h2 className="text-5xl font-bold mb-6 animate-fade-in-up">Collective Intelligence, Global Impact</h2>
