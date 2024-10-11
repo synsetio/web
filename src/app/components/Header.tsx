@@ -5,11 +5,19 @@ const NAV_ITEMS = [
   { href: "#about", label: "About" },
   { href: "#features", label: "Features" },
   { href: "#vision", label: "Vision" },
-  { href: "#", label: "Get Started", isButton: true },
+  { href: "#contact", label: "Contact us", isButton: true },
 ];
 
 // Add type annotations to the NavItem props
-const NavItem = ({ href, label, isButton = false }: { href: string; label: string; isButton?: boolean }) => (
+const NavItem = ({
+  href,
+  label,
+  isButton = false,
+}: {
+  href: string;
+  label: string;
+  isButton?: boolean;
+}) => (
   <li>
     <a
       href={href}
