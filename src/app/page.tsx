@@ -1,12 +1,12 @@
 "use client";
 
+import About from "./components/About";
+import CallToActionContact from "./components/CallToActionContact";
+import Features from "./components/Features";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import About from "./components/About";
-import Features from "./components/Features";
 import Vision from "./components/Vision";
-import CallToActionContact from "./components/CallToActionContact";
-import Footer from "./components/Footer";
 
 export default function Home() {
   return (

@@ -1,23 +1,8 @@
 import { motion } from 'framer-motion';
+import { content } from "../data/content";
 
 export default function Features() {
-  const features = [
-    {
-      title: 'AI Agents',
-      icon: '🤖',
-      description: 'AI-driven agents autonomously manage your ventures, handling tasks from business strategy execution to project management and scaling—all with minimal human intervention.'
-    },
-    {
-      title: 'Blockchain Technology',
-      icon: '🔗',
-      description: 'Our platform is secured by blockchain, ensuring transparency, trust, and verifiability in every business transaction, from payments to smart contracts.'
-    },
-    {
-      title: 'Self-Sovereign Identity (SSI)',
-      icon: '🔐',
-      description: 'Synsetic integrates SSI to allow users full control over their digital identities, ensuring privacy and security in every interaction.'
-    }
-  ];
+  const { title, items, conclusion } = content.features;
 
   return (
     <section id="features" className="py-24 bg-[#FAFAFA]">
@@ -28,21 +13,11 @@ export default function Features() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          How Synsetic Works
+          {title}
         </motion.h3>
         <div className="grid md:grid-cols-3 gap-12">
-          {features.map((feature, index) => (
-            <motion.div
-              key={index}
-              className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:scale-105"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-            >
-              <div className="text-6xl mb-6">{feature.icon}</div>
-              <h4 className="text-2xl font-semibold mb-4 text-[#0A2463]">{feature.title}</h4>
-              <p className="text-[#333333]">{feature.description}</p>
-            </motion.div>
+          {items.map((feature, index) => (
+            <FeatureCard key={index} feature={feature} index={index} />
           ))}
         </div>
         <motion.p
@@ -51,9 +26,24 @@ export default function Features() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
-          By combining these technologies, we automate business creation, reduce overhead, and enable projects to scale quickly and efficiently—all while maintaining a decentralized, secure environment.
+          {conclusion}
         </motion.p>
       </div>
     </section>
+  );
+}
+
+function FeatureCard({ feature, index }) {
+  return (
+    <motion.div
+      className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:scale-105"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.2 }}
+    >
+      <div className="text-6xl mb-6">{feature.icon}</div>
+      <h4 className="text-2xl font-semibold mb-4 text-[#0A2463]">{feature.title}</h4>
+      <p className="text-[#333333]">{feature.description}</p>
+    </motion.div>
   );
 }

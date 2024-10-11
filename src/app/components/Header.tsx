@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { useState } from "react";
+
 import { SynseticLogo } from "./icons";
 
 const NAV_ITEMS = [
@@ -38,7 +40,10 @@ export default function Header() {
   return (
     <header className="bg-white shadow-md fixed w-full z-10">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="flex items-center">
+        <Link
+          href="/"
+          className="flex items-center cursor-pointer hover:opacity-80 transition-opacity"
+        >
           <SynseticLogo
             width={40}
             height={40}
@@ -57,7 +62,8 @@ export default function Header() {
             </linearGradient>
           </svg>
           <h1 className="text-2xl font-bold text-gray-800">Synsetic</h1>
-        </div>
+        </Link>
+
         <nav className="hidden md:block">
           <ul className="flex space-x-6">
             {NAV_ITEMS.map((item) => (
