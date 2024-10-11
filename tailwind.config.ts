@@ -20,6 +20,7 @@ const config: Config = {
       animation: {
         'fade-in-up': 'fadeInUp 0.5s ease-out',
         'slow-pan': 'slowPan 20s ease-in-out infinite alternate',
+        'blob': 'blob 7s infinite',
       },
       keyframes: {
         fadeInUp: {
@@ -29,6 +30,20 @@ const config: Config = {
         slowPan: {
           '0%': { transform: 'scale(1.1) translate(0, 0)' },
           '100%': { transform: 'scale(1.1) translate(-2%, -2%)' },
+        },
+        blob: {
+          '0%': {
+            transform: 'translate(0px, 0px) scale(1)',
+          },
+          '33%': {
+            transform: 'translate(30px, -50px) scale(1.1)',
+          },
+          '66%': {
+            transform: 'translate(-20px, 20px) scale(0.9)',
+          },
+          '100%': {
+            transform: 'tranlate(0px, 0px) scale(1)',
+          },
         },
       },
     },

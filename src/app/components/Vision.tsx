@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 export default function Vision() {
   const offerings = [
     { title: "AI-Managed Ventures", description: "Create and manage businesses effortlessly with AI agents handling operations around the clock." },
@@ -8,15 +10,28 @@ export default function Vision() {
   ];
 
   return (
-    <section id="vision" className="mb-24 py-16 bg-gray-50">
+    <section id="vision" className="mb-24 py-24 bg-gradient-to-bl from-blue-50 to-green-50">
       <div className="container mx-auto px-4">
-        <h3 className="text-3xl font-bold mb-12 text-blue-600 text-center">What Synsetic Offers</h3>
-        <div className="grid md:grid-cols-2 gap-8">
+        <motion.h3 
+          className="text-4xl font-bold mb-16 text-blue-600 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          What Synsetic Offers
+        </motion.h3>
+        <div className="grid md:grid-cols-2 gap-12">
           {offerings.map((offering, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md p-6">
-              <h4 className="text-xl font-semibold mb-2 text-blue-600">{offering.title}</h4>
-              <p className="text-gray-700">{offering.description}</p>
-            </div>
+            <motion.div 
+              key={index} 
+              className="bg-white rounded-xl shadow-xl p-8"
+              initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <h4 className="text-2xl font-semibold mb-4 text-blue-600">{offering.title}</h4>
+              <p className="text-gray-700 text-lg">{offering.description}</p>
+            </motion.div>
           ))}
         </div>
       </div>
