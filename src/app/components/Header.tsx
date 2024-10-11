@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useState } from "react";
 import { SynseticLogo } from "./icons";
 
@@ -9,7 +8,8 @@ const NAV_ITEMS = [
   { href: "#", label: "Get Started", isButton: true },
 ];
 
-const NavItem = ({ href, label, isButton = false }) => (
+// Add type annotations to the NavItem props
+const NavItem = ({ href, label, isButton = false }: { href: string; label: string; isButton?: boolean }) => (
   <li>
     <a
       href={href}
