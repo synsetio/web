@@ -20,5 +20,5 @@ We use first party and third party cookies for several reasons. Some cookies are
 
 You have the right to decide whether to accept or reject cookies. You can exercise your cookie rights by setting your preferences in the Cookie Consent Manager. The Cookie Consent Manager allows you to select which categories of cookies you accept or reject. Essential cookies cannot be rejected as they are strictly necessary to provide you with services.
 
-If you have any questions about our use of cookies or other technologies, please email us at privacy@synsetic.com.`,
+If you have any questions about our use of cookies or other technologies, please email us at [privacy@synsetic.com](mailto:privacy@synsetic.com).`,
 };

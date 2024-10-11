@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import { content } from "../data/home-page";
 
-export default function About() {
-  const { title, paragraphs } = content.about;
+export default function Mission() {
+  const { title, paragraphs } = content.mission;
 
   return (
     <section id="about" className="py-24 bg-gradient-to-br from-primary-900 to-primary-800 text-white">

@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { content } from "../data/home-page";
 
-export default function Vision() {
-  const { title, offerings } = content.vision;
+export default function Services() {
+  const { title, offerings } = content.services;
 
   return (
     <section id="vision" className="py-24 bg-[#0A2463] text-white">

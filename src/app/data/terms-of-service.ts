@@ -25,5 +25,5 @@ We may revise these Terms from time to time. The most current version will alway
 
 ## Contact Us
 
-If you have any questions about these Terms, please contact us at legal@synsetic.com.`,
+If you have any questions about these Terms, please contact us at [legal@synsetic.com](mailto:legal@synsetic.com).`,
 };

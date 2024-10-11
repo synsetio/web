@@ -58,5 +58,5 @@ We may update our Privacy Policy from time to time. We will notify you of any ch
 
 ## 10. Contact Us
 
-If you have any questions about this Privacy Policy, please contact us at privacy@synsetic.com`,
+If you have any questions about this Privacy Policy, please contact us at [privacy@synsetic.com](mailto:privacy@synsetic.com)`,
 };

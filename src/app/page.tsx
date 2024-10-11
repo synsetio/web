@@ -1,12 +1,12 @@
 "use client";
 
-import About from "./components/About";
 import CallToActionContact from "./components/CallToActionContact";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Vision from "./components/Vision";
+import Services from "./components/Services";
+import Mission from "./components/Mission";
 
 export default function Home() {
   return (
@@ -14,9 +14,9 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
-        <About />
+        <Mission />
         <Features />
-        <Vision />
+        <Services />
         <CallToActionContact />
       </main>
       <Footer />

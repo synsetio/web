@@ -6,12 +6,13 @@ export const content = {
       "Shaping tomorrow's world through AI-powered businesses, seamless blockchain solutions, and user-controlled digital identities.",
     cta: "Contact Us",
   },
-  about: {
+  mission: {
     title: "Why Synsetic Exists",
     paragraphs: [
-      "The future of business lies at the intersection of Artificial Intelligence (AI), Blockchain, and Self-Sovereign Identity (SSI). At Synsetic, we are pioneering this future by building a platform that simplifies business creation, automates processes, and decentralizes control.",
-      "As the world grows more complex, traditional methods of starting and scaling ventures no longer suffice. Synsetic exists to break down these barriers. Our mission is to empower innovators by shifting the operational load from people to AI agents, enabling you to focus on creativity and strategy while we handle the complexities of business management.",
-      "By leveraging collective intelligence, we make it possible for anyone to launch and grow projects autonomously, backed by the security of blockchain and decentralized identity.",
+      "At Synsetic, our mission is to revolutionize the global business landscape by making advanced technologies accessible to all. We envision a world where anyone can launch and scale innovative ventures with unprecedented ease and efficiency.",
+      "Just as innovative companies have transformed e-commerce, revolutionized space travel, and reinvented the automotive industry, we aim to redefine the very essence of business creation and management. Our platform harnesses the power of Artificial Intelligence, Blockchain, and Self-Sovereign Identity to automate complex processes, ensuring that creativity and strategic thinking—not operational burdens—drive success.",
+      "We're committed to democratizing entrepreneurship on a global scale. By providing tools that shift operational responsibilities from humans to AI, we're freeing innovators to focus on what truly matters: bringing groundbreaking ideas to life. Our goal is to empower a new generation of visionaries to shape the future, backed by the security and transparency of blockchain technology and the privacy of decentralized identities.",
+      "At Synsetic, we're not just building a platform; we're catalyzing a new era of innovation, where the only limit is human imagination. Join us in creating a future where every individual has the power to turn their boldest ideas into world-changing realities.",
     ],
   },
   features: {
@@ -26,13 +27,15 @@ export const content = {
       },
       {
         title: "Blockchain Technology",
-        imagePath: "https://pluang-production-financial-content-input.s3.ap-southeast-1.amazonaws.com/production/2024/05/lvw65pynnr4lrn14bdo%3Ashutterstock_2187510541.jpg",
+        imagePath:
+          "https://pluang-production-financial-content-input.s3.ap-southeast-1.amazonaws.com/production/2024/05/lvw65pynnr4lrn14bdo%3Ashutterstock_2187510541.jpg",
         description:
           "Our platform is secured by blockchain, ensuring transparency, trust, and verifiability in every business transaction, from payments to smart contracts.",
       },
       {
         title: "Self-Sovereign Identity (SSI)",
-        imagePath: "https://images.unsplash.com/photo-1633265486064-086b219458ec?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        imagePath:
+          "https://images.unsplash.com/photo-1633265486064-086b219458ec?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description:
           "Synsetic integrates SSI to allow users full control over their digital identities, ensuring privacy and security in every interaction.",
       },
@@ -152,7 +155,8 @@ As we move further into the AI era, businesses that effectively harness this tec
       },
       {
         title: "Blockchain Basics",
-        imagePath: "https://images.unsplash.com/photo-1644361566696-3d442b5b482a?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        imagePath:
+          "https://images.unsplash.com/photo-1644361566696-3d442b5b482a?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description: "Understand the fundamentals of blockchain technology.",
         content: `
 # Blockchain Basics: Understanding the Foundation of Decentralized Systems
@@ -269,7 +273,8 @@ Blockchain technology has the potential to revolutionize how we handle data, con
       },
       {
         title: "SSI Explained",
-        imagePath: "https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3DExplained",
+        imagePath:
+          "https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3DExplained",
         description: "Discover the power of Self-Sovereign Identity.",
         content: `
 # Self-Sovereign Identity (SSI) Explained: Revolutionizing Digital Identity Management
@@ -429,7 +434,8 @@ The journey towards widespread SSI adoption may be complex, but the potential re
       },
       {
         title: "Future of Work",
-        imagePath: "https://images.unsplash.com/photo-1453799527828-cf1bd7b2f682?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        imagePath:
+          "https://images.unsplash.com/photo-1453799527828-cf1bd7b2f682?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description: "Explore how AI and automation are shaping the workplace.",
         content: `
 # The Future of Work: AI, Automation, and Human Collaboration
@@ -580,41 +586,49 @@ As we navigate this transformation, it's crucial that we shape these changes to 
       },
     ],
   },
-  vision: {
+  services: {
     title: "What Synsetic Offers",
     offerings: [
       {
         title: "AI-Managed Ventures",
         description:
-          "Create and manage businesses effortlessly with AI agents handling operations around the clock.",
+          "Focus on your vision while our AI agents handle 24/7 operations, saving you time and resources.",
       },
       {
         title: "Blockchain Integration",
         description:
-          "Enjoy tamper-proof records and decentralized control for all your business transactions.",
+          "Gain unparalleled trust and transparency in your business transactions with our secure blockchain technology.",
       },
       {
         title: "Self-Sovereign Identity (SSI)",
         description:
-          "Maintain full control of your identity in a decentralized network, ensuring privacy and security.",
+          "Protect your digital identity and data with our cutting-edge SSI technology, giving you complete control and peace of mind.",
       },
       {
         title: "Collective Intelligence Framework",
         description:
-          "Benefit from AI agents working in synergy, continuously optimizing your projects.",
+          "Leverage the power of multiple AI agents working together to continuously improve and optimize your projects.",
       },
       {
         title: "Fast and Easy Scaling",
         description:
-          "Remove operational bottlenecks and effortlessly scale your venture as it grows.",
+          "Grow your business without limits, as our platform eliminates traditional scaling challenges and operational bottlenecks.",
+      },
+      {
+        title: "Autonomous Business Ecosystems",
+        description:
+          "Maximize efficiency and innovation with self-sustaining business networks that require minimal oversight, freeing you to focus on strategic growth.",
       },
     ],
   },
   callToAction: {
     title: "The Future Starts Here",
     paragraphs: [
-      "At Synsetic, we believe in a future where AI, blockchain, and SSI drive global impact by creating autonomous business ecosystems. Ready to be part of this revolution?",
-      "Join us today and unlock the power of collective intelligence, automation, and decentralized control.",
+      "Unlock unprecedented growth and efficiency for your business with Synsetic. Our AI, blockchain, and SSI technologies work tirelessly for you, automating operations and securing your data. Ready to focus on strategy while we handle the rest?",
+      "Partner with us today and gain a competitive edge.",
     ],
+  },
+  footer: {
+    description: "Collective Intelligence, Global Impact",
   },
 };

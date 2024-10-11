@@ -1,5 +1,7 @@
 import { SynseticLogo } from "./icons";
 
+import { content } from "../data/home-page";
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -7,8 +9,8 @@ export default function Footer() {
     {
       title: "Company",
       links: [
-        { label: "About Us", href: "/#about" },
-        { label: "Our Vision", href: "/#vision" },
+        { label: "Our Mission", href: "/#mission" },
+        { label: "Services", href: "/#services" },
       ],
     },
     {
@@ -34,9 +36,7 @@ export default function Footer() {
               />
               <span className="text-2xl font-bold">Synsetic</span>
             </div>
-            <p className="text-gray-300 mb-6">
-              Empowering the future with AI and blockchain technology.
-            </p>
+            <p className="text-gray-300 mb-6">{content.footer.description}</p>
           </div>
           <div className="grid grid-cols-2 gap-8">
             {footerSections.map((section) => (
