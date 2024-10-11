@@ -20,10 +20,10 @@ export default function Features() {
   ];
 
   return (
-    <section id="features" className="mb-24 py-24 bg-gradient-to-tr from-blue-50 to-green-50">
+    <section id="features" className="py-24 bg-gradient-to-tr from-primary-800 to-primary-900 text-white">
       <div className="container mx-auto px-4">
         <motion.h3 
-          className="text-4xl font-bold mb-16 text-blue-600 text-center"
+          className="text-4xl font-bold mb-16 text-secondary-300 text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -34,19 +34,19 @@ export default function Features() {
           {features.map((feature, index) => (
             <motion.div 
               key={index} 
-              className="bg-white rounded-xl shadow-xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:scale-105"
+              className="bg-primary-700 rounded-xl shadow-xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:scale-105"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
               <div className="text-6xl mb-6">{feature.icon}</div>
-              <h4 className="text-2xl font-semibold mb-4 text-blue-600">{feature.title}</h4>
-              <p className="text-gray-600">{feature.description}</p>
+              <h4 className="text-2xl font-semibold mb-4 text-secondary-300">{feature.title}</h4>
+              <p className="text-neutral-200">{feature.description}</p>
             </motion.div>
           ))}
         </div>
         <motion.p 
-          className="text-gray-700 leading-relaxed max-w-3xl mx-auto text-center mt-16 text-lg"
+          className="text-neutral-200 leading-relaxed max-w-3xl mx-auto text-center mt-16 text-lg"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}

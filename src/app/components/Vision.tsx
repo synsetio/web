@@ -10,10 +10,10 @@ export default function Vision() {
   ];
 
   return (
-    <section id="vision" className="mb-24 py-24 bg-gradient-to-bl from-blue-50 to-green-50">
+    <section id="vision" className="py-24 bg-gradient-to-bl from-primary-900 to-primary-800 text-white">
       <div className="container mx-auto px-4">
         <motion.h3 
-          className="text-4xl font-bold mb-16 text-blue-600 text-center"
+          className="text-4xl font-bold mb-16 text-secondary-300 text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -24,13 +24,13 @@ export default function Vision() {
           {offerings.map((offering, index) => (
             <motion.div 
               key={index} 
-              className="bg-white rounded-xl shadow-xl p-8"
+              className="bg-primary-700 rounded-xl shadow-xl p-8"
               initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <h4 className="text-2xl font-semibold mb-4 text-blue-600">{offering.title}</h4>
-              <p className="text-gray-700 text-lg">{offering.description}</p>
+              <h4 className="text-2xl font-semibold mb-4 text-secondary-300">{offering.title}</h4>
+              <p className="text-neutral-200 text-lg">{offering.description}</p>
             </motion.div>
           ))}
         </div>
