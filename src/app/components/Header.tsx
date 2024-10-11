@@ -61,7 +61,7 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <header className="bg-white shadow-md fixed w-full z-10">
+    <header className="bg-white shadow-md fixed w-full z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link
           href="/"

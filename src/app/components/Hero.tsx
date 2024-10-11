@@ -1,13 +1,16 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { content } from "../data/home-page";
+import YouTube from "react-youtube";
 
 export default function Hero() {
+  const videoId = "tgc6YH6X9b0";
   const { title1, title2, description, cta } = content.hero;
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      <BackgroundVideo />
+      <BackgroundYouTubeVideo videoId={videoId} />
+      <div className="absolute inset-0 bg-black opacity-10 z-10"></div>
       <HeroContent
         title1={title1}
         title2={title2}
@@ -19,20 +22,37 @@ export default function Hero() {
   );
 }
 
-function BackgroundVideo() {
+function BackgroundYouTubeVideo({ videoId }: { videoId: string }) {
+  const opts = {
+    height: "100%",
+    width: "100%",
+    playerVars: {
+      autoplay: 1,
+      controls: 0,
+      rel: 0,
+      showinfo: 0,
+      mute: 1,
+      loop: 1,
+      playlist: videoId, // Add this line to enable looping
+      modestbranding: 1,
+      playsinline: 1,
+    },
+  };
+
   return (
     <div className="absolute inset-0 z-0">
       <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-green-500 opacity-60"></div>
-      <video
+      <YouTube
+        videoId={videoId}
+        opts={opts}
         className="absolute inset-0 w-full h-full object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src="/hero-video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+        onReady={(event: { target: { playVideo: () => void } }) => {
+          event.target.playVideo();
+        }}
+        onEnd={(event: { target: { playVideo: () => void } }) => {
+          event.target.playVideo(); // Restart the video when it ends
+        }}
+      />
     </div>
   );
 }
@@ -95,7 +115,7 @@ function HeroContent({
   };
 
   return (
-    <div className="relative z-10 text-center">
+    <div className="relative z-20 text-center">
       <motion.h2
         className="text-5xl font-bold mb-6 text-white drop-shadow-lg h-20"
         initial={{ opacity: 0 }}
@@ -106,7 +126,7 @@ function HeroContent({
         <span className="text-white">|</span>
       </motion.h2>
       <motion.p
-        className="text-xl mb-10 max-w-3xl mx-auto text-white drop-shadow-md bg-black bg-opacity-30 p-4 rounded-lg"
+        className="text-xl mb-10 max-w-3xl mx-auto font-semibold text-white drop-shadow-lg bg-black bg-opacity-10 p-4 rounded-lg"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
@@ -137,7 +157,7 @@ function CallToActionButton({ text }: { text: string }) {
 function ScrollIndicator() {
   return (
     <motion.div
-      className="absolute bottom-0 left-0 right-0 flex justify-center pb-8"
+      className="absolute bottom-0 left-0 right-0 flex justify-center pb-8 z-20"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 1, duration: 0.5 }}
