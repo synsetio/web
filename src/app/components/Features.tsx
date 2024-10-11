@@ -57,7 +57,7 @@ function FeatureCard({
 }) {
   return (
     <motion.div
-      className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transform transition-all duration-300 hover:scale-105"
+      className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transform transition-all duration-300 hover:scale-105"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.2 }}
@@ -71,11 +71,11 @@ function FeatureCard({
           className="transition-transform duration-300 transform hover:scale-110"
         />
       </div>
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-grow">
         <h4 className="text-2xl font-semibold mb-4 text-[#0A2463]">
           {feature.title}
         </h4>
-        <p className="text-[#333333]">{feature.description}</p>
+        <p className="text-[#333333] flex-grow">{feature.description}</p>
       </div>
     </motion.div>
   );
@@ -91,7 +91,7 @@ function ResourceThumbnail({
   return (
     <Link href={`/blog/${encodeURIComponent(resource.title.toLowerCase().replace(/ /g, '-'))}`}>
       <motion.div
-        className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer"
+        className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer h-full flex flex-col"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: index * 0.1 }}
@@ -105,11 +105,11 @@ function ResourceThumbnail({
             objectFit="cover"
           />
         </div>
-        <div className="p-4">
+        <div className="p-4 flex flex-col flex-grow">
           <h5 className="text-sm font-semibold mb-2 text-[#0A2463] truncate">
             {resource.title}
           </h5>
-          <p className="text-xs text-[#333333] line-clamp-2">
+          <p className="text-xs text-[#333333] line-clamp-2 flex-grow">
             {resource.description}
           </p>
         </div>
