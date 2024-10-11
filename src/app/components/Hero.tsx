@@ -33,14 +33,14 @@ function BackgroundYouTubeVideo({ videoId }: { videoId: string }) {
       showinfo: 0,
       mute: 1,
       loop: 1,
-      playlist: videoId, // Add this line to enable looping
+      playlist: videoId,
       modestbranding: 1,
       playsinline: 1,
     },
   };
 
   return (
-    <div className="absolute inset-0 z-0">
+    <div className="absolute inset-0 z-0 h-full">
       <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-green-500 opacity-60"></div>
       <YouTube
         videoId={videoId}
@@ -50,7 +50,7 @@ function BackgroundYouTubeVideo({ videoId }: { videoId: string }) {
           event.target.playVideo();
         }}
         onEnd={(event: { target: { playVideo: () => void } }) => {
-          event.target.playVideo(); // Restart the video when it ends
+          event.target.playVideo();
         }}
       />
     </div>
@@ -97,7 +97,7 @@ function HeroContent({
     setText(updatedText);
 
     if (isDeleting) {
-      setDelta((prevDelta) => Math.max(prevDelta * 0.9, 50)); // Gradually decrease delta, but not below 50ms
+      setDelta((prevDelta) => Math.max(prevDelta * 0.9, 50));
     }
 
     if (!isDeleting && updatedText === fullText) {
@@ -105,8 +105,8 @@ function HeroContent({
       setTimeout(() => {
         setIsPaused(false);
         setIsDeleting(true);
-        setDelta(period / fullText.length); // Set initial deleting speed based on text length
-      }, 1000); // 1 second pause before deleting
+        setDelta(period / fullText.length);
+      }, 1000);
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
