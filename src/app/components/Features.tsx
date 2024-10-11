@@ -2,28 +2,28 @@ import { motion } from 'framer-motion';
 
 export default function Features() {
   const features = [
-    { 
-      title: 'AI Agents', 
-      icon: '🤖', 
-      description: 'AI-driven agents autonomously manage your ventures, handling tasks from business strategy execution to project management and scaling—all with minimal human intervention.' 
+    {
+      title: 'AI Agents',
+      icon: '🤖',
+      description: 'AI-driven agents autonomously manage your ventures, handling tasks from business strategy execution to project management and scaling—all with minimal human intervention.'
     },
-    { 
-      title: 'Blockchain Technology', 
-      icon: '🔗', 
-      description: 'Our platform is secured by blockchain, ensuring transparency, trust, and verifiability in every business transaction, from payments to smart contracts.' 
+    {
+      title: 'Blockchain Technology',
+      icon: '🔗',
+      description: 'Our platform is secured by blockchain, ensuring transparency, trust, and verifiability in every business transaction, from payments to smart contracts.'
     },
-    { 
-      title: 'Self-Sovereign Identity (SSI)', 
-      icon: '🔐', 
-      description: 'Synsetic integrates SSI to allow users full control over their digital identities, ensuring privacy and security in every interaction.' 
+    {
+      title: 'Self-Sovereign Identity (SSI)',
+      icon: '🔐',
+      description: 'Synsetic integrates SSI to allow users full control over their digital identities, ensuring privacy and security in every interaction.'
     }
   ];
 
   return (
-    <section id="features" className="py-24 bg-gradient-to-tr from-primary-800 to-primary-900 text-white">
+    <section id="features" className="py-24 bg-[#FAFAFA]">
       <div className="container mx-auto px-4">
-        <motion.h3 
-          className="text-4xl font-bold mb-16 text-secondary-300 text-center"
+        <motion.h3
+          className="text-4xl font-bold mb-16 text-[#0A2463] text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -32,21 +32,21 @@ export default function Features() {
         </motion.h3>
         <div className="grid md:grid-cols-3 gap-12">
           {features.map((feature, index) => (
-            <motion.div 
-              key={index} 
-              className="bg-primary-700 rounded-xl shadow-xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:scale-105"
+            <motion.div
+              key={index}
+              className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:scale-105"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
               <div className="text-6xl mb-6">{feature.icon}</div>
-              <h4 className="text-2xl font-semibold mb-4 text-secondary-300">{feature.title}</h4>
-              <p className="text-neutral-200">{feature.description}</p>
+              <h4 className="text-2xl font-semibold mb-4 text-[#0A2463]">{feature.title}</h4>
+              <p className="text-[#333333]">{feature.description}</p>
             </motion.div>
           ))}
         </div>
-        <motion.p 
-          className="text-neutral-200 leading-relaxed max-w-3xl mx-auto text-center mt-16 text-lg"
+        <motion.p
+          className="text-[#333333] leading-relaxed max-w-3xl mx-auto text-center mt-16 text-lg"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
