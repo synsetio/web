@@ -29,3 +29,13 @@ h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
   }
 }
+
+/* Add this new utility class */
+.clickable {
+  cursor: pointer;
+}
+
+/* Ensure all anchor tags have a pointer cursor */
+a {
+  cursor: pointer;
+}

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { content } from "../data/content";
+import { content } from "../data/home-page";
 
 export default function Hero() {
   const { title1, title2, description, cta } = content.hero;
@@ -8,7 +8,12 @@ export default function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <BackgroundVideo />
-      <HeroContent title1={title1} title2={title2} description={description} cta={cta} />
+      <HeroContent
+        title1={title1}
+        title2={title2}
+        description={description}
+        cta={cta}
+      />
       <ScrollIndicator />
     </section>
   );
@@ -32,13 +37,23 @@ function BackgroundVideo() {
   );
 }
 
-function HeroContent({ title1, title2, description, cta }) {
-  const [text, setText] = useState("");
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [loopNum, setLoopNum] = useState(0);
-  const period = 2000;
-  const [delta, setDelta] = useState(100);
-  const [isPaused, setIsPaused] = useState(false);
+function HeroContent({
+  title1,
+  title2,
+  description,
+  cta,
+}: {
+  title1: string;
+  title2: string;
+  description: string;
+  cta: string;
+}) {
+  const [text, setText] = useState<string>("");
+  const [isDeleting, setIsDeleting] = useState<boolean>(false);
+  const [loopNum, setLoopNum] = useState<number>(0);
+  const period: number = 2000;
+  const [delta, setDelta] = useState<number>(100);
+  const [isPaused, setIsPaused] = useState<boolean>(false);
 
   useEffect(() => {
     const ticker = setInterval(() => {
@@ -53,9 +68,9 @@ function HeroContent({ title1, title2, description, cta }) {
   const tick = () => {
     if (isPaused) return;
 
-    const i = loopNum % 2;
-    const fullText = i === 0 ? title1 : title2;
-    const updatedText = isDeleting
+    const i: number = loopNum % 2;
+    const fullText: string = i === 0 ? title1 : title2;
+    const updatedText: string = isDeleting
       ? fullText.substring(0, text.length - 1)
       : fullText.substring(0, text.length + 1);
 
@@ -103,7 +118,7 @@ function HeroContent({ title1, title2, description, cta }) {
   );
 }
 
-function CallToActionButton({ text }) {
+function CallToActionButton({ text }: { text: string }) {
   return (
     <motion.a
       href="#contact"

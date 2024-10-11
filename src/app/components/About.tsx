@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { content } from "../data/content";
+import { content } from "../data/home-page";
 
 export default function About() {
   const { title, paragraphs } = content.about;

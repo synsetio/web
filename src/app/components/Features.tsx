@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { content } from "../data/content";
+import Link from "next/link";
+import { content } from "../data/home-page";
 
 export default function Features() {
   const { title, items, conclusion, resources } = content.features;
@@ -29,10 +30,18 @@ export default function Features() {
         >
           {conclusion}
         </motion.p>
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {resources.map((resource, index) => (
-            <ResourceThumbnail key={index} resource={resource} index={index} />
-          ))}
+        <div className="mt-16">
+          <h4 className="text-2xl font-bold mb-8 text-[#0A2463] text-center">Resources</h4>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {resources.map((resource, index) => (
+              <ResourceThumbnail key={index} resource={resource} index={index} />
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <Link href="/blog" className="inline-block bg-[#21CE99] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#1AB589] transition-colors">
+              View All Articles
+            </Link>
+          </div>
         </div>
       </div>
     </section>
@@ -80,29 +89,31 @@ function ResourceThumbnail({
   index: number;
 }) {
   return (
-    <motion.div
-      className="bg-white rounded-lg shadow-md overflow-hidden"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3, delay: index * 0.1 }}
-    >
-      <div className="relative w-full h-32">
-        <Image
-          src={resource.imagePath}
-          alt={resource.title}
-          layout="fill"
-          objectFit="cover"
-          className="transition-transform duration-300 transform hover:scale-105"
-        />
-      </div>
-      <div className="p-4">
-        <h5 className="text-sm font-semibold mb-2 text-[#0A2463] truncate">
-          {resource.title}
-        </h5>
-        <p className="text-xs text-[#333333] line-clamp-2">
-          {resource.description}
-        </p>
-      </div>
-    </motion.div>
+    <Link href={`/blog/${encodeURIComponent(resource.title.toLowerCase().replace(/ /g, '-'))}`}>
+      <motion.div
+        className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, delay: index * 0.1 }}
+        whileHover={{ scale: 1.05 }}
+      >
+        <div className="relative w-full h-32">
+          <Image
+            src={resource.imagePath}
+            alt={resource.title}
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
+        <div className="p-4">
+          <h5 className="text-sm font-semibold mb-2 text-[#0A2463] truncate">
+            {resource.title}
+          </h5>
+          <p className="text-xs text-[#333333] line-clamp-2">
+            {resource.description}
+          </p>
+        </div>
+      </motion.div>
+    </Link>
   );
 }

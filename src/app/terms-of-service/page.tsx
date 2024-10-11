@@ -1,16 +1,15 @@
 "use client";
 
-import React from 'react';
-import Layout from "../components/Layout";
+import React from "react";
+import ReactMarkdown from "react-markdown";
+import { content as termsOfService } from "../data/terms-of-service";
+import LegalLayout from "../components/LegalLayout";
 
 const TermsOfService = () => {
   return (
-    <Layout>
-      <div className="container mx-auto px-4 py-8 text-white">
-        <h1 className="text-3xl font-bold mb-4 text-[#21CE99]">Terms of Service</h1>
-        {/* Rest of the content */}
-      </div>
-    </Layout>
+    <LegalLayout title="Terms of Service">
+      <ReactMarkdown>{termsOfService.content}</ReactMarkdown>
+    </LegalLayout>
   );
 };
 

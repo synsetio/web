@@ -1,12 +1,20 @@
 import Link from "next/link";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
 
 import { SynseticLogo } from "./icons";
 
-const NAV_ITEMS = [
+const HOME_NAV_ITEMS = [
   { href: "#about", label: "About" },
   { href: "#features", label: "Features" },
   { href: "#vision", label: "Vision" },
+  { href: "/blog", label: "Blog" },
+  { href: "#contact", label: "Contact us", isButton: true },
+];
+
+const NAV_ITEMS = [
+  { href: "/", label: "Home" },
+  { href: "/blog", label: "Blog" },
   { href: "#contact", label: "Contact us", isButton: true },
 ];
 
@@ -21,21 +29,36 @@ const NavItem = ({
   isButton?: boolean;
 }) => (
   <li>
-    <a
+    <Link
       href={href}
-      className={
+      className={`${
         isButton
           ? "bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors"
           : "text-gray-600 hover:text-blue-600 transition-colors"
-      }
+      } clickable`}
     >
       {label}
-    </a>
+    </Link>
   </li>
 );
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [navItems, setNavItems] = useState(HOME_NAV_ITEMS);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (
+      pathname.startsWith("/blog") ||
+      ["/privacy-policy", "/terms-of-service", "/cookie-policy"].includes(
+        pathname as string
+      )
+    ) {
+      setNavItems(NAV_ITEMS);
+    } else {
+      setNavItems(HOME_NAV_ITEMS);
+    }
+  }, [pathname]);
 
   return (
     <header className="bg-white shadow-md fixed w-full z-10">
@@ -66,7 +89,7 @@ export default function Header() {
 
         <nav className="hidden md:block">
           <ul className="flex space-x-6">
-            {NAV_ITEMS.map((item) => (
+            {navItems.map((item) => (
               <NavItem key={item.label} {...item} />
             ))}
           </ul>
@@ -94,9 +117,9 @@ export default function Header() {
       {isMenuOpen && (
         <nav className="md:hidden bg-white shadow-md">
           <ul className="py-2">
-            {NAV_ITEMS.map((item) => (
+            {navItems.map((item) => (
               <li key={item.label}>
-                <a
+                <Link
                   href={item.href}
                   className={
                     item.isButton
@@ -105,7 +128,7 @@ export default function Header() {
                   }
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
