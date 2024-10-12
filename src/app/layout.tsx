@@ -69,6 +69,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+        <link rel="robots" type="text/plain" href="/robots.txt" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
