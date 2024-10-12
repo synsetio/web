@@ -51,6 +51,11 @@ export const metadata: Metadata = {
     icon: "/logo.png",
     apple: "/apple-touch-icon.png",
   },
+  alternates: {
+    types: {
+      "application/xml": [{ url: "/sitemap.xml", title: "Sitemap" }],
+    },
+  },
 };
 
 export default function RootLayout({
@@ -63,6 +68,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
