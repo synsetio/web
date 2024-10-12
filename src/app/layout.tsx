@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Synsetic",
     images: [
       {
-        url: "https://synsetic.com/og-image.jpg",
+        url: "https://synsetic.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Synsetic - Collective Intelligence, Global Impact",
