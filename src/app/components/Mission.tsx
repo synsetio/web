@@ -5,7 +5,7 @@ export default function Mission() {
   const { title, paragraphs } = content.mission;
 
   return (
-    <section id="about" className="py-24 bg-gradient-to-br from-primary-900 to-primary-800 text-white">
+    <section id="mission" className="py-24 bg-gradient-to-br from-primary-900 to-primary-800 text-white">
       <div className="container mx-auto px-4 relative">
         <motion.h3
           className="text-4xl font-bold mb-12 text-secondary-300 text-center"

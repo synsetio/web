@@ -5,7 +5,7 @@ export default function Services() {
   const { title, offerings } = content.services;
 
   return (
-    <section id="vision" className="py-24 bg-[#0A2463] text-white">
+    <section id="services" className="py-24 bg-[#0A2463] text-white">
       <div className="container mx-auto px-4">
         <motion.h3
           className="text-4xl font-bold mb-16 text-[#21CE99] text-center"
