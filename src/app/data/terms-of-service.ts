@@ -5,7 +5,7 @@ export const content = {
 
 Last Updated: 2024-10-11 14:51:09
 
-Welcome to Synsetic. By accessing or using our website and services, you agree to be bound by these Terms of Service ("Terms"). Please read these Terms carefully before using our services.
+Welcome to Synsetio. By accessing or using our website and services, you agree to be bound by these Terms of Service ("Terms"). Please read these Terms carefully before using our services.
 
 ## Use of Services
 
@@ -17,7 +17,7 @@ The content, organization, graphics, design, and other matters related to our we
 
 ## Limitation of Liability
 
-To the fullest extent permitted by applicable law, Synsetic shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses.
+To the fullest extent permitted by applicable law, Synsetio shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses.
 
 ## Changes to These Terms
 
@@ -25,5 +25,5 @@ We may revise these Terms from time to time. The most current version will alway
 
 ## Contact Us
 
-If you have any questions about these Terms, please contact us at [legal@synsetic.com](mailto:legal@synsetic.com).`,
+If you have any questions about these Terms, please contact us at [legal@synsetio.com](mailto:legal@synsetio.com).`,
 };

@@ -7,7 +7,7 @@ Last updated: 2024-10-11 14:49:58
 
 ## 1. Introduction
 
-Synsetic ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our services.
+Synsetio ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our services.
 
 ## 2. Information We Collect
 
@@ -58,5 +58,5 @@ We may update our Privacy Policy from time to time. We will notify you of any ch
 
 ## 10. Contact Us
 
-If you have any questions about this Privacy Policy, please contact us at [privacy@synsetic.com](mailto:privacy@synsetic.com)`,
+If you have any questions about this Privacy Policy, please contact us at [privacy@synsetio.com](mailto:privacy@synsetio.com)`,
 };

@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://synsetic.com/sitemap.xml
+Sitemap: https://synsetio.com/sitemap.xml

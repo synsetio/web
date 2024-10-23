@@ -2,7 +2,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 
-import { SynseticLogo } from "./icons";
+import { SynsetioLogo } from "./icons";
 
 const HOME_NAV_ITEMS = [
   { href: "#about", label: "About" },
@@ -67,7 +67,7 @@ export default function Header() {
           href="/"
           className="flex items-center cursor-pointer hover:opacity-80 transition-opacity"
         >
-          <SynseticLogo
+          <SynsetioLogo
             width={40}
             height={40}
             className="mr-2 fill-[url(#blue-green-gradient)]"
@@ -84,7 +84,7 @@ export default function Header() {
               <stop offset="100%" stopColor="#10B981" />
             </linearGradient>
           </svg>
-          <h1 className="text-2xl font-bold text-gray-800">Synsetic</h1>
+          <h1 className="text-2xl font-bold text-gray-800">Synsetio</h1>
         </Link>
 
         <nav className="hidden md:block">

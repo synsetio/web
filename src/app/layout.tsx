@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Synsetic - Collective Intelligence, Global Impact",
+  title: "Synsetio - Collective Intelligence, Global Impact",
   description:
     "Shaping tomorrow's world through AI-powered businesses, seamless blockchain solutions, and user-controlled digital identities.",
   keywords: [
@@ -24,28 +24,28 @@ export const metadata: Metadata = {
     "Business Automation",
     "Innovation",
   ],
-  authors: [{ name: "Synsetic Team" }],
+  authors: [{ name: "Synsetio Team" }],
   openGraph: {
     type: "website",
-    url: "https://synsetic.com",
-    title: "Synsetic - Revolutionizing Business with AI and Blockchain",
+    url: "https://synsetio.com",
+    title: "Synsetio - Revolutionizing Business with AI and Blockchain",
     description:
       "Empowering innovators to create world-changing ventures with AI, blockchain, and SSI technologies.",
-    siteName: "Synsetic",
+    siteName: "Synsetio",
     images: [
       {
-        url: "https://synsetic.com/og-image.png",
+        url: "https://synsetio.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Synsetic - Collective Intelligence, Global Impact",
+        alt: "Synsetio - Collective Intelligence, Global Impact",
       },
     ],
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@synseticHQ",
-    creator: "@synseticHQ",
+    site: "@synsetio",
+    creator: "@synsetio",
   },
   icons: {
     icon: "/logo.png",

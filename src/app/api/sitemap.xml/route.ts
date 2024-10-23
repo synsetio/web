@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { content } from '../../data/home-page';
 
-const BASE_URL = 'https://synsetic.com'; // Replace with your actual domain
+const BASE_URL = 'https://synsetio.com'; // Replace with your actual domain
 
 function generateSiteMap() {
   const { resources } = content.features;

@@ -9,7 +9,7 @@ const CookieConsentBanner: React.FC = () => {
       location="bottom"
       buttonText="Accept"
       declineButtonText="Decline"
-      cookieName="synsetic-cookie-consent"
+      cookieName="synsetio-cookie-consent"
       style={{ background: "#0A2463" }}
       buttonStyle={{ background: "#21CE99", color: "#fff", fontSize: "13px" }}
       declineButtonStyle={{ background: "#718096", color: "#fff", fontSize: "13px" }}

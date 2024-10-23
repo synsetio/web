@@ -7,16 +7,16 @@ export const content = {
     cta: "Contact Us",
   },
   mission: {
-    title: "Why Synsetic Exists",
+    title: "Why Synsetio Exists",
     paragraphs: [
-      "At Synsetic, our mission is to revolutionize the global business landscape by making advanced technologies accessible to all. We envision a world where anyone can launch and scale innovative ventures with unprecedented ease and efficiency.",
+      "At Synsetio, our mission is to revolutionize the global business landscape by making advanced technologies accessible to all. We envision a world where anyone can launch and scale innovative ventures with unprecedented ease and efficiency.",
       "Just as innovative companies have transformed e-commerce, revolutionized space travel, and reinvented the automotive industry, we aim to redefine the very essence of business creation and management. Our platform harnesses the power of Artificial Intelligence, Blockchain, and Self-Sovereign Identity to automate complex processes, ensuring that creativity and strategic thinking—not operational burdens—drive success.",
       "We're committed to democratizing entrepreneurship on a global scale. By providing tools that shift operational responsibilities from humans to AI, we're freeing innovators to focus on what truly matters: bringing groundbreaking ideas to life. Our goal is to empower a new generation of visionaries to shape the future, backed by the security and transparency of blockchain technology and the privacy of decentralized identities.",
-      "At Synsetic, we're not just building a platform; we're catalyzing a new era of innovation, where the only limit is human imagination. Join us in creating a future where every individual has the power to turn their boldest ideas into world-changing realities.",
+      "At Synsetio, we're not just building a platform; we're catalyzing a new era of innovation, where the only limit is human imagination. Join us in creating a future where every individual has the power to turn their boldest ideas into world-changing realities.",
     ],
   },
   features: {
-    title: "How Synsetic Works",
+    title: "How Synsetio Works",
     items: [
       {
         title: "AI Agents",
@@ -37,7 +37,7 @@ export const content = {
         imagePath:
           "https://images.unsplash.com/photo-1633265486064-086b219458ec?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description:
-          "Synsetic integrates SSI to allow users full control over their digital identities, ensuring privacy and security in every interaction.",
+          "Synsetio integrates SSI to allow users full control over their digital identities, ensuring privacy and security in every interaction.",
       },
     ],
     conclusion:
@@ -587,7 +587,7 @@ As we navigate this transformation, it's crucial that we shape these changes to 
     ],
   },
   services: {
-    title: "What Synsetic Offers",
+    title: "What Synsetio Offers",
     offerings: [
       {
         title: "AI-Managed Ventures",
@@ -624,7 +624,7 @@ As we navigate this transformation, it's crucial that we shape these changes to 
   callToAction: {
     title: "The Future Starts Here",
     paragraphs: [
-      "Unlock unprecedented growth and efficiency for your business with Synsetic. Our AI, blockchain, and SSI technologies work tirelessly for you, automating operations and securing your data. Ready to focus on strategy while we handle the rest?",
+      "Unlock unprecedented growth and efficiency for your business with Synsetio. Our AI, blockchain, and SSI technologies work tirelessly for you, automating operations and securing your data. Ready to focus on strategy while we handle the rest?",
       "Partner with us today and gain a competitive edge.",
     ],
   },

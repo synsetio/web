@@ -6,7 +6,7 @@ content: `
 
 Last Updated: 2024-10-11 14:38:00
 
-This Cookie Policy explains how Synsetic ("we", "us", or "our") uses cookies and similar technologies to recognize you when you visit our website at synsetic.com ("Website"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
+This Cookie Policy explains how Synsetio ("we", "us", or "our") uses cookies and similar technologies to recognize you when you visit our website at synsetio.com ("Website"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
 
 ## What are cookies?
 
@@ -20,5 +20,5 @@ We use first party and third party cookies for several reasons. Some cookies are
 
 You have the right to decide whether to accept or reject cookies. You can exercise your cookie rights by setting your preferences in the Cookie Consent Manager. The Cookie Consent Manager allows you to select which categories of cookies you accept or reject. Essential cookies cannot be rejected as they are strictly necessary to provide you with services.
 
-If you have any questions about our use of cookies or other technologies, please email us at [privacy@synsetic.com](mailto:privacy@synsetic.com).`,
+If you have any questions about our use of cookies or other technologies, please email us at [privacy@synsetio.com](mailto:privacy@synsetio.com).`,
 };

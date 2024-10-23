@@ -14,7 +14,7 @@ export async function POST(request: Request) {
     // Prepare the message
     const msg = {
       message: {
-        from_email: "no-reply@synsetic.com",
+        from_email: "no-reply@synsetio.com",
         subject: "New Contact Form Submission",
         text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
         to: [

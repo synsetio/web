@@ -1,4 +1,4 @@
-import { SynseticLogo } from "./icons";
+import { SynsetioLogo } from "./icons";
 
 import { content } from "../data/home-page";
 
@@ -29,12 +29,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <SynseticLogo
+              <SynsetioLogo
                 width={48}
                 height={48}
                 className="mr-3 fill-white"
               />
-              <span className="text-2xl font-bold">Synsetic</span>
+              <span className="text-2xl font-bold">Synsetio</span>
             </div>
             <p className="text-gray-300 mb-6">{content.footer.description}</p>
           </div>
@@ -62,7 +62,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
           <p className="text-sm text-gray-400">
-            &copy; {currentYear} Synsetic. All rights reserved.
+            &copy; {currentYear} Synsetio. All rights reserved.
           </p>
         </div>
       </div>

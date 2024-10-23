@@ -1,10 +1,10 @@
-# Synsetic Website
+# Synsetio Website
 
-This is the official website for Synsetic, built with [Next.js](https://nextjs.org).
+This is the official website for Synsetio, built with [Next.js](https://nextjs.org).
 
-## About Synsetic
+## About Synsetio
 
-Synsetic is a cutting-edge startup that's disrupting the global business landscape. We're on a mission to democratize advanced technologies, making them accessible to innovators and entrepreneurs everywhere. Our game-changing platform leverages the trifecta of Artificial Intelligence, Blockchain, and Self-Sovereign Identity to empower the next generation of world-changing ideas. Join us as we redefine what's possible in the startup ecosystem!
+Synsetio is a cutting-edge startup that's disrupting the global business landscape. We're on a mission to democratize advanced technologies, making them accessible to innovators and entrepreneurs everywhere. Our game-changing platform leverages the trifecta of Artificial Intelligence, Blockchain, and Self-Sovereign Identity to empower the next generation of world-changing ideas. Join us as we redefine what's possible in the startup ecosystem!
 
 ## Getting Started
 
@@ -13,8 +13,8 @@ To run the development server:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/synsetic/web.git synsetic-website
-   cd synsetic-website
+   git clone https://github.com/synsetio/web.git synsetio-website
+   cd synsetio-website
    ```
 
 2. Install dependencies:
