@@ -37,14 +37,14 @@ export default function CallToActionContact() {
       });
 
       if (response.ok) {
-        setSubmitMessage("Message sent successfully!");
+        setSubmitMessage(t("form.success"));
         setFormState({ name: "", email: "", message: "" });
       } else {
-        setSubmitMessage("Failed to send message. Please try again.");
+        setSubmitMessage(t("form.error"));
       }
     } catch (error: unknown) {
       console.error("Error submitting form:", error);
-      setSubmitMessage("An error occurred. Please try again later.");
+      setSubmitMessage(t("form.error"));
     } finally {
       setIsSubmitting(false);
     }
@@ -92,7 +92,7 @@ export default function CallToActionContact() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl font-bold mb-10 text-center text-black tracking-tight">
-            Start a Conversation
+            {t("form.title")}
           </h2>
 
           <form className="space-y-6" onSubmit={handleSubmit}>
@@ -102,7 +102,7 @@ export default function CallToActionContact() {
                   htmlFor="name"
                   className="block text-sm font-semibold text-neutral-900 mb-2 uppercase tracking-wider"
                 >
-                  Name
+                  {t("form.name")}
                 </label>
                 <input
                   type="text"
@@ -119,7 +119,7 @@ export default function CallToActionContact() {
                   htmlFor="email"
                   className="block text-sm font-semibold text-neutral-900 mb-2 uppercase tracking-wider"
                 >
-                  Email
+                  {t("form.email")}
                 </label>
                 <input
                   type="email"
@@ -138,7 +138,7 @@ export default function CallToActionContact() {
                 htmlFor="message"
                 className="block text-sm font-semibold text-neutral-900 mb-2 uppercase tracking-wider"
               >
-                Message
+                {t("form.message")}
               </label>
               <textarea
                 id="message"
@@ -157,7 +157,7 @@ export default function CallToActionContact() {
                 disabled={isSubmitting}
                 className="bg-black text-white px-10 py-4 rounded-full text-lg font-medium shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? t("form.submitting") : t("form.submit")}
               </MagneticButton>
             </div>
 
@@ -166,7 +166,7 @@ export default function CallToActionContact() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 className={`mt-6 text-center text-sm font-medium ${
-                  submitMessage.includes("successfully")
+                  submitMessage === t("form.success")
                     ? "text-emerald-600"
                     : "text-red-600"
                 }`}

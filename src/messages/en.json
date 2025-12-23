@@ -54,7 +54,17 @@
     "callToAction": {
       "title": "Ready to Grow?",
       "p1": "The gap between AI-native businesses and traditional ones is widening.",
-      "p2": "Partner with Synsetio to build your autonomous workforce today."
+      "p2": "Partner with Synsetio to build your autonomous workforce today.",
+      "form": {
+        "title": "Start a Conversation",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "submit": "Send Message",
+        "submitting": "Sending...",
+        "success": "Message sent successfully!",
+        "error": "Failed to send message. Please try again."
+      }
     },
     "blog": {
       "posts": {
@@ -102,5 +112,11 @@
     "blog": "Insights",
     "contact": "Contact Us",
     "home": "Home"
+  },
+  "CookieConsent": {
+    "message": "We use cookies to improve your experience. See our",
+    "linkText": "Cookie Policy",
+    "accept": "Accept",
+    "decline": "Decline"
   }
 }

@@ -54,7 +54,17 @@
     "callToAction": {
       "title": "Prêt à Grandir ?",
       "p1": "L'écart entre les entreprises natives de l'IA et les firmes traditionnelles se creuse.",
-      "p2": "Associez-vous à Synsetio pour construire votre force de travail autonome dès aujourd'hui."
+      "p2": "Associez-vous à Synsetio pour construire votre force de travail autonome dès aujourd'hui.",
+      "form": {
+        "title": "Démarrer une Conversation",
+        "name": "Nom",
+        "email": "Email",
+        "message": "Message",
+        "submit": "Envoyer le Message",
+        "submitting": "Envoi...",
+        "success": "Message envoyé avec succès !",
+        "error": "Échec de l'envoi du message. Veuillez réessayer."
+      }
     },
     "blog": {
       "posts": {
@@ -102,5 +112,11 @@
     "blog": "Perspectives",
     "contact": "Contact",
     "home": "Accueil"
+  },
+  "CookieConsent": {
+    "message": "Nous utilisons des cookies pour améliorer votre expérience. Voir notre",
+    "linkText": "Politique de Cookies",
+    "accept": "Accepter",
+    "decline": "Refuser"
   }
 }

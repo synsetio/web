@@ -1,17 +1,20 @@
 import React from "react";
 import CookieConsent from "react-cookie-consent";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import {
   setCookiePreference,
   setAnalyticsCookie,
 } from "../utils/cookieManager";
 
 const CookieConsentBanner: React.FC = () => {
+  const t = useTranslations("CookieConsent");
+
   return (
     <CookieConsent
       location="bottom"
-      buttonText="Accept"
-      declineButtonText="Decline"
+      buttonText={t("accept")}
+      declineButtonText={t("decline")}
       cookieName="synsetio-cookie-consent"
       style={{
         background: "rgba(255, 255, 255, 0.95)",
@@ -49,12 +52,12 @@ const CookieConsentBanner: React.FC = () => {
       }}
     >
       <span className="text-sm font-medium">
-        We use cookies to improve your experience. See our{" "}
+        {t("message")}{" "}
         <Link
           href="/cookie-policy"
           className="text-black underline underline-offset-4 hover:text-neutral-600"
         >
-          Cookie Policy
+          {t("linkText")}
         </Link>
         .
       </span>
