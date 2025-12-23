@@ -90,7 +90,7 @@ export default function Features() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {resources.map((resource, index) => (
               <ResourceThumbnail
-                key={index}
+                key={resource.id}
                 resource={resource}
                 index={index}
                 locale={locale}
@@ -128,14 +128,14 @@ function ResourceThumbnail({
   index,
   locale,
 }: {
-  resource: { imagePath: string; title: string; description: string };
+  resource: { imagePath: string; id: string };
   index: number;
   locale: string;
 }) {
+  const t = useTranslations(`HomePage.blog.posts.${resource.id}`);
+
   return (
-    <Link
-      href={`/${locale}/blog/${encodeURIComponent(resource.title.toLowerCase().replace(/ /g, "-"))}`}
-    >
+    <Link href={`/${locale}/blog/${resource.id}`}>
       <motion.div
         className="group cursor-pointer"
         initial={{ opacity: 0, y: 20 }}
@@ -146,17 +146,17 @@ function ResourceThumbnail({
         <div className="relative w-full aspect-[4/3] mb-4 overflow-hidden rounded-lg bg-neutral-100">
           <Image
             src={resource.imagePath}
-            alt={resource.title}
+            alt={t("title")}
             layout="fill"
             objectFit="cover"
             className="group-hover:scale-105 transition-transform duration-500"
           />
         </div>
         <h5 className="text-lg font-bold mb-2 text-black leading-tight group-hover:underline decoration-1 underline-offset-4">
-          {resource.title}
+          {t("title")}
         </h5>
         <p className="text-sm text-neutral-500 line-clamp-2">
-          {resource.description}
+          {t("description")}
         </p>
       </motion.div>
     </Link>

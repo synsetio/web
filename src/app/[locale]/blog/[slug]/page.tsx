@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { content } from "../../../data/home-page";
 import ArticleClient from "./ArticleClient";
+import { getTranslations } from "next-intl/server";
 
 const BASE_URL = "https://synsetio.com";
 
@@ -10,9 +11,11 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { resources } = content.features;
-  const article = resources.find(
-    (r) => r.title.toLowerCase().replace(/ /g, "-") === params.slug,
-  );
+  const article = resources.find((r) => r.id === params.slug);
+  const t = await getTranslations({
+    locale: params.locale,
+    namespace: "HomePage.blog.posts",
+  });
 
   if (!article) {
     return {
@@ -25,21 +28,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? article.imagePath
     : `${BASE_URL}${article.imagePath}`;
 
+  const title = t(`${article.id}.title`);
+  const description = t(`${article.id}.description`);
+
   return {
-    title: article.title,
-    description: article.description,
+    title: title,
+    description: description,
     openGraph: {
       type: "article",
       url: articleUrl,
-      title: article.title,
-      description: article.description,
+      title: title,
+      description: description,
       siteName: "Synsetio",
       images: [
         {
           url: imageUrl,
           width: 1200,
           height: 630,
-          alt: article.title,
+          alt: title,
         },
       ],
       locale: params.locale === "fr" ? "fr_FR" : "en_US",
@@ -50,8 +56,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       site: "@synsetio",
       creator: "@synsetio",
-      title: article.title,
-      description: article.description,
+      title: title,
+      description: description,
       images: [imageUrl],
     },
     alternates: {
@@ -63,7 +69,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export async function generateStaticParams() {
   const { resources } = content.features;
   return resources.map((resource) => ({
-    slug: resource.title.toLowerCase().replace(/ /g, "-"),
+    slug: resource.id,
   }));
 }
 

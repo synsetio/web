@@ -8,9 +8,11 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import SpotlightCard from "../../components/react-bits/SpotlightCard";
 import Squares from "../../components/react-bits/Squares";
+import { useTranslations, useLocale } from "next-intl";
 
 const Blog = () => {
   const { resources } = content.features;
+  const locale = useLocale();
 
   return (
     <Layout>
@@ -37,55 +39,12 @@ const Blog = () => {
 
           <div className="grid md:grid-cols-2 gap-12">
             {resources.map((resource, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <Link
-                  href={`/blog/${encodeURIComponent(
-                    resource.title.toLowerCase().replace(/ /g, "-"),
-                  )}`}
-                  className="block h-full"
-                >
-                  <SpotlightCard className="h-full flex flex-col border-neutral-200 bg-white hover:shadow-xl transition-all duration-500 p-0">
-                    <div className="relative w-full aspect-video overflow-hidden">
-                      <Image
-                        src={resource.imagePath}
-                        alt={resource.title}
-                        layout="fill"
-                        objectFit="cover"
-                        className="transition-transform duration-700 transform hover:scale-105"
-                      />
-                    </div>
-                    <div className="p-8 flex flex-col flex-grow">
-                      <h2 className="text-2xl font-bold text-black mb-4 leading-tight">
-                        {resource.title}
-                      </h2>
-                      <p className="text-neutral-600 leading-relaxed mb-6 flex-grow">
-                        {resource.description}
-                      </p>
-                      <span className="inline-flex items-center text-black font-semibold hover:opacity-70 transition-opacity">
-                        Read Article
-                        <svg
-                          className="w-4 h-4 ml-2"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M17 8l4 4m0 0l-4 4m4-4H3"
-                          />
-                        </svg>
-                      </span>
-                    </div>
-                  </SpotlightCard>
-                </Link>
-              </motion.div>
+              <BlogPostCard
+                key={resource.id}
+                resource={resource}
+                index={index}
+                locale={locale}
+              />
             ))}
           </div>
         </div>
@@ -93,5 +52,63 @@ const Blog = () => {
     </Layout>
   );
 };
+
+function BlogPostCard({
+  resource,
+  index,
+  locale,
+}: {
+  resource: { id: string; imagePath: string };
+  index: number;
+  locale: string;
+}) {
+  const t = useTranslations(`HomePage.blog.posts.${resource.id}`);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+    >
+      <Link href={`/${locale}/blog/${resource.id}`} className="block h-full">
+        <SpotlightCard className="h-full flex flex-col border-neutral-200 bg-white hover:shadow-xl transition-all duration-500 p-0">
+          <div className="relative w-full aspect-video overflow-hidden">
+            <Image
+              src={resource.imagePath}
+              alt={t("title")}
+              layout="fill"
+              objectFit="cover"
+              className="transition-transform duration-700 transform hover:scale-105"
+            />
+          </div>
+          <div className="p-8 flex flex-col flex-grow">
+            <h2 className="text-2xl font-bold text-black mb-4 leading-tight">
+              {t("title")}
+            </h2>
+            <p className="text-neutral-600 leading-relaxed mb-6 flex-grow">
+              {t("description")}
+            </p>
+            <span className="inline-flex items-center text-black font-semibold hover:opacity-70 transition-opacity">
+              Read Article
+              <svg
+                className="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </span>
+          </div>
+        </SpotlightCard>
+      </Link>
+    </motion.div>
+  );
+}
 
 export default Blog;

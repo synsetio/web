@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function ArticleClient({
   slug,
@@ -18,9 +19,8 @@ export default function ArticleClient({
 }) {
   const router = useRouter();
   const { resources } = content.features;
-  const article = resources.find(
-    (r) => r.title.toLowerCase().replace(/ /g, "-") === slug,
-  );
+  const article = resources.find((r) => r.id === slug);
+  const t = useTranslations("HomePage.blog.posts");
 
   if (!article) {
     return (
@@ -40,8 +40,20 @@ export default function ArticleClient({
     );
   }
 
+  // Helper to safely get translation with fallback
+  const getArticleContent = (
+    id: string,
+    field: "title" | "description" | "content",
+  ) => {
+    return t(`${id}.${field}`);
+  };
+
+  const title = getArticleContent(article.id, "title");
+  const description = getArticleContent(article.id, "description");
+  const markdownContent = getArticleContent(article.id, "content");
+
   const recommendedArticles = resources
-    .filter((r) => r.title !== article.title)
+    .filter((r) => r.id !== article.id)
     .slice(0, 3);
 
   return (
@@ -75,13 +87,13 @@ export default function ArticleClient({
             </Link>
 
             <h1 className="text-4xl md:text-6xl font-bold mb-10 text-black tracking-tight leading-tight">
-              {article.title}
+              {title}
             </h1>
 
             <div className="relative w-full aspect-video mb-16 rounded-2xl overflow-hidden bg-neutral-100">
               <Image
                 src={article.imagePath}
-                alt={article.title}
+                alt={title}
                 fill
                 style={{ objectFit: "cover" }}
                 priority
@@ -91,9 +103,9 @@ export default function ArticleClient({
 
           <div className="prose prose-neutral prose-lg max-w-none mx-auto prose-headings:font-bold prose-headings:tracking-tight prose-p:text-neutral-700 prose-p:leading-relaxed prose-a:text-black prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl">
             <p className="lead text-xl md:text-2xl font-medium text-black mb-12">
-              {article.description}
+              {description}
             </p>
-            <ReactMarkdown>{article.content}</ReactMarkdown>
+            <ReactMarkdown>{markdownContent}</ReactMarkdown>
           </div>
 
           <aside className="mt-32 border-t border-neutral-100 pt-16">
@@ -101,31 +113,39 @@ export default function ArticleClient({
               More Insights
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-              {recommendedArticles.map((recommendedArticle, index) => (
-                <Link
-                  href={`/${locale}/blog/${encodeURIComponent(
-                    recommendedArticle.title.toLowerCase().replace(/ /g, "-"),
-                  )}`}
-                  key={index}
-                  className="group block"
-                >
-                  <div className="relative w-full aspect-[4/3] mb-6 rounded-lg overflow-hidden bg-neutral-100">
-                    <Image
-                      src={recommendedArticle.imagePath}
-                      alt={recommendedArticle.title}
-                      fill
-                      style={{ objectFit: "cover" }}
-                      className="group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <h3 className="text-lg font-bold text-black mb-3 group-hover:underline decoration-1 underline-offset-4 leading-tight">
-                    {recommendedArticle.title}
-                  </h3>
-                  <p className="text-sm text-neutral-500 line-clamp-2">
-                    {recommendedArticle.description}
-                  </p>
-                </Link>
-              ))}
+              {recommendedArticles.map((recommendedArticle, index) => {
+                const recTitle = getArticleContent(
+                  recommendedArticle.id,
+                  "title",
+                );
+                const recDesc = getArticleContent(
+                  recommendedArticle.id,
+                  "description",
+                );
+                return (
+                  <Link
+                    href={`/${locale}/blog/${recommendedArticle.id}`}
+                    key={index}
+                    className="group block"
+                  >
+                    <div className="relative w-full aspect-[4/3] mb-6 rounded-lg overflow-hidden bg-neutral-100">
+                      <Image
+                        src={recommendedArticle.imagePath}
+                        alt={recTitle}
+                        fill
+                        style={{ objectFit: "cover" }}
+                        className="group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <h3 className="text-lg font-bold text-black mb-3 group-hover:underline decoration-1 underline-offset-4 leading-tight">
+                      {recTitle}
+                    </h3>
+                    <p className="text-sm text-neutral-500 line-clamp-2">
+                      {recDesc}
+                    </p>
+                  </Link>
+                );
+              })}
             </div>
           </aside>
         </motion.div>

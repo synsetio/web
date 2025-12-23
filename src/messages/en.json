@@ -56,6 +56,30 @@
       "p1": "The gap between agent-native companies and traditional firms is widening every day.",
       "p2": "Partner with Synsetio to secure your position in the new economic order."
     },
+    "blog": {
+      "posts": {
+        "agentic-revolution": {
+          "title": "The Agentic Revolution",
+          "description": "Why the next Fortune 500 companies will be measured by their agent count, not their headcount.",
+          "content": "# The Agentic Revolution: Scaling Beyond Human Limits\n\nThe industrial revolution multiplied muscle. The information revolution multiplied connectivity. The Agentic Revolution is multiplying *execution*.\n\n## The New Metric of Scale\nTraditionally, scaling a company meant hiring more people. This linear model brings linear friction: management overhead, communication latency, and cultural dilution. \n\nIn the Agentic Economy, scale is decoupled from headcount. A team of five can orchestrate a digital workforce of five thousand.\n\n## Synsetio's Approach\nWe help companies transition from \"using tools\" to \"deploying agents\".\n1.  **Autonomy:** Agents that plan and execute, rather than just waiting for prompts.\n2.  **Interoperability:** Agents that talk to other agents, creating value chains.\n3.  **Sovereignty:** Intelligence that you own, running on infrastructure you control.\n\nThe question is no longer \"How can AI help me write this email?\" but \"How can an agent manage this entire department?\""
+        },
+        "sovereign-ai": {
+          "title": "Sovereign AI for Enterprise",
+          "description": "Why owning your intelligence infrastructure is the only viable long-term strategy.",
+          "content": "# Sovereign AI: The Strategic Imperative\n\nIn a world where intelligence is the primary commodity, renting your brain is a liability.\n\n## The Risks of Dependency\nRelying solely on closed-source, public models for core business logic introduces existential risks:\n*   **Data Leakage:** Your proprietary data training someone else's model.\n*   **Model Drift:** Your operations breaking because an API changed overnight.\n*   **Regulatory Exposure:** Lack of explainability and control.\n\n## The Sovereign Alternative\nSynsetio architects systems where you own the weights, the data, and the execution environment. This is \"French Sovereignty\" applied to digital intelligence—ensuring that your competitive advantage remains strictly yours."
+        },
+        "maikers-protocol": {
+          "title": "The Maikers Protocol",
+          "description": "Understanding the backbone of verifiable, on-chain agent identity.",
+          "content": "# The Maikers Protocol: Identity for Machines\n\nIf an AI agent signs a contract or executes a payment, who is responsible?\n\n## Verifiable Identity\nThe Maikers Protocol assigns unique, on-chain identities (NFTs) to AI agents. This allows them to:\n*   Build reputation over time.\n*   Own assets and wallets.\n*   Execute legally binding transactions.\n\n## Bridging Web2 and Web3\nWe use this protocol to give enterprise agents a \"legal personality\" on the blockchain, enabling a new class of automated B2B commerce."
+        },
+        "human-capital": {
+          "title": "Redefining Human Capital",
+          "description": "When agents handle execution, humans return to pure strategy and creation.",
+          "content": "# Redefining Human Capital\n\nWhen the marginal cost of intelligence approaches zero, the value of *intent* approaches infinity.\n\n## The Role of the Architect\nIn a Synsetio-equipped enterprise, employees shift from \"operators\" to \"architects\". Their role is to design the systems, set the parameters, and define the outcomes. The agents handle the rest.\n\nThis is not the end of work; it is the elevation of work to its highest form: pure creation and strategy."
+        }
+      }
+    },
     "footer": {
       "description": "Synsetio: Architecting the Sovereign Agentic Economy. Paris • Global."
     }

@@ -56,6 +56,30 @@
       "p1": "L'écart entre les entreprises natives de l'IA et les firmes traditionnelles se creuse chaque jour.",
       "p2": "Associez-vous à Synsetio pour sécuriser votre position dans le nouvel ordre économique."
     },
+    "blog": {
+      "posts": {
+        "agentic-revolution": {
+          "title": "La Révolution Agentique",
+          "description": "Pourquoi les prochaines entreprises Fortune 500 seront mesurées par leur nombre d'agents, et non d'employés.",
+          "content": "# La Révolution Agentique : Au-delà des Limites Humaines\n\nLa révolution industrielle a multiplié la force musculaire. La révolution de l'information a multiplié la connectivité. La Révolution Agentique multiplie l'*exécution*.\n\n## La Nouvelle Métrique d'Échelle\nTraditionnellement, faire grandir une entreprise signifiait embaucher plus de gens. Ce modèle linéaire apporte une friction linéaire : surcharge de gestion, latence de communication et dilution culturelle.\n\nDans l'Économie Agentique, l'échelle est découplée des effectifs. Une équipe de cinq personnes peut orchestrer une force de travail numérique de cinq mille agents.\n\n## L'Approche Synsetio\nNous aidons les entreprises à passer de \"l'utilisation d'outils\" au \"déploiement d'agents\".\n1. **Autonomie :** Des agents qui planifient et exécutent, plutôt que d'attendre des instructions.\n2. **Interopérabilité :** Des agents qui parlent à d'autres agents, créant des chaînes de valeur.\n3. **Souveraineté :** Une intelligence que vous possédez, fonctionnant sur une infrastructure que vous contrôlez.\n\nLa question n'est plus \"Comment l'IA peut-elle m'aider à écrire cet e-mail ?\" mais \"Comment un agent peut-il gérer tout ce département ?\""
+        },
+        "sovereign-ai": {
+          "title": "IA Souveraine pour l'Entreprise",
+          "description": "Pourquoi posséder votre infrastructure d'intelligence est la seule stratégie viable à long terme.",
+          "content": "# IA Souveraine : L'Impératif Stratégique\n\nDans un monde où l'intelligence est la commodité principale, louer votre cerveau est un passif.\n\n## Les Risques de la Dépendance\nS'appuyer uniquement sur des modèles publics à source fermée pour la logique métier centrale introduit des risques existentiels :\n* **Fuite de Données :** Vos données propriétaires entraînant le modèle de quelqu'un d'autre.\n* **Dérive du Modèle :** Vos opérations brisées parce qu'une API a changé du jour au lendemain.\n* **Exposition Réglementaire :** Manque d'explicabilité et de contrôle.\n\n## L'Alternative Souveraine\nSynsetio architecte des systèmes où vous possédez les poids, les données et l'environnement d'exécution. C'est la \"Souveraineté Française\" appliquée à l'intelligence numérique—garantissant que votre avantage concurrentiel reste strictement le vôtre."
+        },
+        "maikers-protocol": {
+          "title": "Le Protocole Maikers",
+          "description": "Comprendre l'épine dorsale de l'identité agentique vérifiable et on-chain.",
+          "content": "# Le Protocole Maikers : Identité pour Machines\n\nSi un agent IA signe un contrat ou exécute un paiement, qui est responsable ?\n\n## Identité Vérifiable\nLe Protocole Maikers attribue des identités uniques et on-chain (NFTs) aux agents IA. Cela leur permet de :\n* Construire une réputation au fil du temps.\n* Posséder des actifs et des portefeuilles.\n* Exécuter des transactions juridiquement contraignantes.\n\n## Combler le Fossé Web2 et Web3\nNous utilisons ce protocole pour donner aux agents d'entreprise une \"personnalité juridique\" sur la blockchain, permettant une nouvelle classe de commerce B2B automatisé."
+        },
+        "human-capital": {
+          "title": "Redéfinir le Capital Humain",
+          "description": "Quand les agents gèrent l'exécution, les humains retournent à la pure stratégie et création.",
+          "content": "# Redéfinir le Capital Humain\n\nQuand le coût marginal de l'intelligence approche de zéro, la valeur de l'*intention* approche l'infini.\n\n## Le Rôle de l'Architecte\nDans une entreprise équipée par Synsetio, les employés passent d'\"opérateurs\" à \"architectes\". Leur rôle est de concevoir les systèmes, définir les paramètres et les résultats. Les agents gèrent le reste.\n\nCe n'est pas la fin du travail ; c'est l'élévation du travail à sa forme la plus haute : pure création et stratégie."
+        }
+      }
+    },
     "footer": {
       "description": "Synsetio : Architecte de l'Économie Agentique Souveraine. Paris • Monde."
     }
