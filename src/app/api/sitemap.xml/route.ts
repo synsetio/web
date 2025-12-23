@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { content } from "../../data/home-page";
+import { positions } from "../../data/positions";
 import { locales } from "../../../i18n/request";
 
 const BASE_URL = "https://synsetio.com";
@@ -38,7 +39,7 @@ function generateSiteMap() {
           .join("")}
         <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/en/blog"/>
       </url>
-      ${["privacy-policy", "terms-of-service", "cookie-policy"]
+      ${["privacy-policy", "terms-of-service", "cookie-policy", "careers"]
         .map(
           (path) => `
         <url>
@@ -72,6 +73,25 @@ function generateSiteMap() {
               )
               .join("")}
             <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/en/blog/${resource.id}"/>
+        </url>
+      `;
+        })
+        .join("")}
+      ${positions
+        .map((position) => {
+          return `
+        <url>
+            <loc>${BASE_URL}/${locale}/careers/${position.id}</loc>
+            <lastmod>${new Date().toISOString()}</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.7</priority>
+            ${locales
+              .map(
+                (lang) =>
+                  `<xhtml:link rel="alternate" hreflang="${lang}" href="${BASE_URL}/${lang}/careers/${position.id}"/>`,
+              )
+              .join("")}
+            <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/en/careers/${position.id}"/>
         </url>
       `;
         })
