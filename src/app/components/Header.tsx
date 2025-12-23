@@ -20,7 +20,10 @@ const NavItem = ({
   <li>
     {isButton ? (
       <Link href={href}>
-        <MagneticButton className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium">
+        <MagneticButton
+          as="div"
+          className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium"
+        >
           {label}
         </MagneticButton>
       </Link>
@@ -90,9 +93,9 @@ export default function Header() {
           className="flex items-center cursor-pointer hover:opacity-80 transition-opacity"
         >
           <SynsetioLogo width={32} height={32} className="mr-3 fill-black" />
-          <h1 className="text-xl font-bold text-black tracking-tight">
+          <div className="text-xl font-bold text-black tracking-tight">
             Synsetio
-          </h1>
+          </div>
         </Link>
 
         <nav className="hidden md:block">
