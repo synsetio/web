@@ -46,8 +46,11 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1, ease: [0.16, 1, 0.3, 1] }}
         >
-          <a href="#contact">
-            <MagneticButton className="bg-black text-white px-8 py-4 rounded-full text-lg font-medium shadow-xl">
+          <a href="#contact" className="inline-block">
+            <MagneticButton
+              as="div"
+              className="inline-flex bg-black text-white px-8 py-4 rounded-full text-lg font-medium shadow-xl"
+            >
               {t("cta")}
             </MagneticButton>
           </a>
