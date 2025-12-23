@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 interface ApplicationModalProps {
   isOpen: boolean;
@@ -14,6 +15,7 @@ export default function ApplicationModal({
   onClose,
   positionTitle,
 }: ApplicationModalProps) {
+  const t = useTranslations("Careers.modal");
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -122,7 +124,7 @@ export default function ApplicationModal({
           >
             <div className="sticky top-0 bg-white border-b border-neutral-100 px-6 py-4 flex items-center justify-between">
               <h2 className="text-xl font-bold text-black">
-                Apply for {positionTitle}
+                {t("applyFor")} {positionTitle}
               </h2>
               <button
                 onClick={resetAndClose}
@@ -151,7 +153,7 @@ export default function ApplicationModal({
                   htmlFor="apply-name"
                   className="block text-sm font-semibold text-neutral-900 mb-2 uppercase tracking-wider"
                 >
-                  Full Name
+                  {t("fullName")}
                 </label>
                 <input
                   type="text"
@@ -169,7 +171,7 @@ export default function ApplicationModal({
                   htmlFor="apply-email"
                   className="block text-sm font-semibold text-neutral-900 mb-2 uppercase tracking-wider"
                 >
-                  Email
+                  {t("email")}
                 </label>
                 <input
                   type="email"
@@ -187,7 +189,7 @@ export default function ApplicationModal({
                   htmlFor="apply-resume"
                   className="block text-sm font-semibold text-neutral-900 mb-2 uppercase tracking-wider"
                 >
-                  Resume
+                  {t("resume")}
                 </label>
                 <input
                   type="file"
@@ -206,7 +208,7 @@ export default function ApplicationModal({
                     <span className="text-black">{resume.name}</span>
                   ) : (
                     <span className="text-neutral-500">
-                      Click to upload PDF, DOC, or DOCX
+                      {t("uploadPrompt")}
                     </span>
                   )}
                 </button>
@@ -217,7 +219,7 @@ export default function ApplicationModal({
                   htmlFor="apply-message"
                   className="block text-sm font-semibold text-neutral-900 mb-2 uppercase tracking-wider"
                 >
-                  Cover Letter
+                  {t("coverLetter")}
                 </label>
                 <textarea
                   id="apply-message"
@@ -225,7 +227,7 @@ export default function ApplicationModal({
                   value={formState.message}
                   onChange={handleInputChange}
                   rows={4}
-                  placeholder="Tell us why you're excited about this role..."
+                  placeholder={t("coverPlaceholder")}
                   className="w-full p-3 bg-neutral-50 border border-neutral-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all resize-none"
                   required
                 />
@@ -236,7 +238,7 @@ export default function ApplicationModal({
                 disabled={isSubmitting}
                 className="w-full bg-black text-white py-3 rounded-lg font-medium hover:bg-neutral-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? "Submitting..." : "Submit Application"}
+                {isSubmitting ? t("submitting") : t("submit")}
               </button>
 
               {submitStatus && (
@@ -249,9 +251,7 @@ export default function ApplicationModal({
                       : "text-red-600"
                   }`}
                 >
-                  {submitStatus === "success"
-                    ? "Application sent successfully!"
-                    : "Failed to send. Please try again."}
+                  {submitStatus === "success" ? t("success") : t("error")}
                 </motion.p>
               )}
             </form>

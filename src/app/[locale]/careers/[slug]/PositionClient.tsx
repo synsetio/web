@@ -7,6 +7,7 @@ import Link from "next/link";
 import { getPositionById } from "../../../data/positions";
 import { notFound } from "next/navigation";
 import ApplicationModal from "../../../components/ApplicationModal";
+import { useTranslations } from "next-intl";
 
 interface Props {
   slug: string;
@@ -16,6 +17,7 @@ interface Props {
 export default function PositionClient({ slug, locale }: Props) {
   const position = getPositionById(slug);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const t = useTranslations("Careers.position");
 
   if (!position) {
     notFound();
@@ -47,7 +49,7 @@ export default function PositionClient({ slug, locale }: Props) {
                   d="M15 19l-7-7 7-7"
                 />
               </svg>
-              All positions
+              {t("allPositions")}
             </Link>
 
             <div className="flex flex-wrap gap-3 mb-4">
@@ -74,7 +76,7 @@ export default function PositionClient({ slug, locale }: Props) {
               onClick={() => setIsModalOpen(true)}
               className="bg-black text-white px-8 py-3 rounded-lg font-medium hover:bg-neutral-800 transition-colors mb-16"
             >
-              Apply for this position
+              {t("applyFor")}
             </button>
           </motion.div>
 
@@ -84,7 +86,7 @@ export default function PositionClient({ slug, locale }: Props) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <Section title="Responsibilities">
+            <Section title={t("sections.responsibilities")}>
               <ul className="space-y-3">
                 {position.responsibilities.map((item, i) => (
                   <ListItem key={i}>{item}</ListItem>
@@ -92,7 +94,7 @@ export default function PositionClient({ slug, locale }: Props) {
               </ul>
             </Section>
 
-            <Section title="Requirements">
+            <Section title={t("sections.requirements")}>
               <ul className="space-y-3">
                 {position.requirements.map((item, i) => (
                   <ListItem key={i}>{item}</ListItem>
@@ -100,7 +102,7 @@ export default function PositionClient({ slug, locale }: Props) {
               </ul>
             </Section>
 
-            <Section title="Nice to Have">
+            <Section title={t("sections.niceToHave")}>
               <ul className="space-y-3">
                 {position.niceToHave.map((item, i) => (
                   <ListItem key={i}>{item}</ListItem>
@@ -108,7 +110,7 @@ export default function PositionClient({ slug, locale }: Props) {
               </ul>
             </Section>
 
-            <Section title="Benefits">
+            <Section title={t("sections.benefits")}>
               <ul className="space-y-3">
                 {position.benefits.map((item, i) => (
                   <ListItem key={i}>{item}</ListItem>
@@ -124,17 +126,14 @@ export default function PositionClient({ slug, locale }: Props) {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h2 className="text-2xl font-bold text-black mb-4">
-              Ready to apply?
+              {t("readyToApply")}
             </h2>
-            <p className="text-neutral-600 mb-6">
-              Send us your resume and a brief note about why you&apos;re excited
-              about this role.
-            </p>
+            <p className="text-neutral-600 mb-6">{t("readyDescription")}</p>
             <button
               onClick={() => setIsModalOpen(true)}
               className="bg-black text-white px-8 py-3 rounded-lg font-medium hover:bg-neutral-800 transition-colors"
             >
-              Apply Now
+              {t("applyNow")}
             </button>
           </motion.div>
         </div>

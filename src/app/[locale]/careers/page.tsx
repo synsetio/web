@@ -4,27 +4,27 @@ import React from "react";
 import Layout from "../../components/Layout";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { positions } from "../../data/positions";
-
-const VALUES = [
-  {
-    title: "Sovereignty First",
-    description:
-      "We believe enterprises should own their intelligence infrastructure.",
-  },
-  {
-    title: "Execution Over Theory",
-    description: "We ship production systems, not proof-of-concepts.",
-  },
-  {
-    title: "Radical Transparency",
-    description: "Open communication internally and externally.",
-  },
-];
 
 export default function CareersPage() {
   const locale = useLocale();
+  const t = useTranslations("Careers");
+
+  const values = [
+    {
+      title: t("values.sovereignty.title"),
+      description: t("values.sovereignty.description"),
+    },
+    {
+      title: t("values.execution.title"),
+      description: t("values.execution.description"),
+    },
+    {
+      title: t("values.transparency.title"),
+      description: t("values.transparency.description"),
+    },
+  ];
 
   return (
     <Layout>
@@ -36,11 +36,10 @@ export default function CareersPage() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-black tracking-tight">
-              Join Synsetio
+              {t("title")}
             </h1>
             <p className="text-xl text-neutral-600 max-w-2xl mb-16 leading-relaxed">
-              Help build the autonomous infrastructure powering the next
-              generation of enterprises.
+              {t("subtitle")}
             </p>
           </motion.div>
 
@@ -51,10 +50,10 @@ export default function CareersPage() {
             transition={{ duration: 0.6, delay: 0.1 }}
           >
             <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-8">
-              What We Value
+              {t("valuesTitle")}
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {VALUES.map((value, i) => (
+              {values.map((value, i) => (
                 <div key={i} className="border-l-2 border-black pl-6">
                   <h3 className="text-lg font-bold text-black mb-2">
                     {value.title}
@@ -71,7 +70,7 @@ export default function CareersPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-8">
-              Open Positions
+              {t("positionsTitle")}
             </h2>
             <div className="space-y-4">
               {positions.map((position) => (
@@ -98,7 +97,7 @@ export default function CareersPage() {
                       </div>
                     </div>
                     <span className="shrink-0 bg-black text-white px-6 py-2 rounded-lg text-sm font-medium group-hover:bg-neutral-800 transition-colors text-center">
-                      View Details
+                      {t("viewDetails")}
                     </span>
                   </div>
                 </Link>
@@ -113,17 +112,16 @@ export default function CareersPage() {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <h2 className="text-2xl font-bold text-black mb-4">
-              Don&apos;t see your role?
+              {t("noRole.title")}
             </h2>
             <p className="text-neutral-600 mb-6 max-w-lg mx-auto">
-              We&apos;re always looking for exceptional talent. Send us your
-              profile and tell us how you&apos;d contribute.
+              {t("noRole.description")}
             </p>
             <Link
               href={`/${locale}#contact`}
               className="inline-block bg-black text-white px-8 py-3 rounded-lg font-medium hover:bg-neutral-800 transition-colors"
             >
-              Get in Touch
+              {t("noRole.cta")}
             </Link>
           </motion.section>
         </div>
