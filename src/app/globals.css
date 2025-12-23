@@ -7,10 +7,11 @@
   --foreground: #171717;
 }
 
+/* Enforce light mode preference for this design */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #171717;
   }
 }
 
@@ -18,10 +19,23 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scroll from animations */
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  letter-spacing: -0.02em; /* Tighter tracking for modern feel */
+}
+
+/* Selection color for that "designed" feel */
+::selection {
+  background-color: #000;
+  color: #fff;
 }
 
 @layer utilities {
@@ -30,12 +44,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Add this new utility class */
 .clickable {
   cursor: pointer;
 }
 
-/* Ensure all anchor tags have a pointer cursor */
 a {
   cursor: pointer;
+}
+
+/* GSAP SplitText Classes */
+.split-line {
+  overflow: hidden;
 }

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import MagneticButton from "./react-bits/MagneticButton";
 
 import { content } from "../data/home-page";
 
@@ -13,7 +14,7 @@ export default function CallToActionContact() {
   const [submitMessage, setSubmitMessage] = useState("");
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormState((prev) => ({ ...prev, [name]: value }));
@@ -40,7 +41,7 @@ export default function CallToActionContact() {
         setSubmitMessage("Failed to send message. Please try again.");
       }
     } catch (error: unknown) {
-      console.error('Error submitting form:', error);
+      console.error("Error submitting form:", error);
       setSubmitMessage("An error occurred. Please try again later.");
     } finally {
       setIsSubmitting(false);
@@ -48,133 +49,125 @@ export default function CallToActionContact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-[#F5F5F5] overflow-hidden">
-      <div className="container mx-auto px-4 relative">
-        <motion.div
-          className="absolute top-0 left-0 w-64 h-64 bg-[#21CE99] rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"
-          animate={{
-            x: [0, 100, 0],
-            y: [0, 50, 0],
-            scale: [1, 1.1, 1],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-        />
-        <motion.div
-          className="absolute bottom-0 right-0 w-64 h-64 bg-[#0A2463] rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"
-          animate={{
-            x: [0, -100, 0],
-            y: [0, -50, 0],
-            scale: [1, 1.1, 1],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-        />
-        <div className="text-center mb-16">
+    <section id="contact" className="py-32 bg-white">
+      <div className="container mx-auto px-6 max-w-4xl">
+        <div className="text-center mb-24">
           <motion.h3
-            className="text-4xl font-bold mb-8 text-[#0A2463]"
+            className="text-5xl md:text-6xl font-bold mb-8 text-black tracking-tighter"
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
           >
             {content.callToAction.title}
           </motion.h3>
+
           {content.callToAction.paragraphs.map((paragraph, index) => (
             <motion.p
               key={index}
-              className="mb-8 max-w-2xl mx-auto text-xl text-[#333333]"
+              className="mb-6 max-w-2xl mx-auto text-xl text-neutral-600 leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 * (index + 1) }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
             >
               {paragraph}
             </motion.p>
           ))}
         </div>
-        <motion.h2
-          className="text-4xl font-bold mb-8 text-center text-[#0A2463]"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+
+        <motion.div
+          className="bg-neutral-50 p-8 md:p-12 rounded-3xl border border-neutral-100"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
         >
-          Contact Us
-        </motion.h2>
-        <motion.form
-          className="max-w-lg mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          onSubmit={handleSubmit}
-        >
-          <div className="mb-4">
-            <label htmlFor="name" className="block text-[#333333] mb-2">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formState.name}
-              onChange={handleInputChange}
-              className="w-full p-2 border border-gray-300 rounded"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="email" className="block text-[#333333] mb-2">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formState.email}
-              onChange={handleInputChange}
-              className="w-full p-2 border border-gray-300 rounded"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="message" className="block text-[#333333] mb-2">
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              value={formState.message}
-              onChange={handleInputChange}
-              rows={4}
-              className="w-full p-2 border border-gray-300 rounded"
-              required
-            ></textarea>
-          </div>
-          <motion.button
-            type="submit"
-            className="bg-[#21CE99] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#1AB589] transition-colors"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            disabled={isSubmitting}
-          >
-            {isSubmitting ? "Sending..." : "Send Message"}
-          </motion.button>
-          {submitMessage && (
-            <p
-              className={`mt-4 text-center ${
-                submitMessage.includes("successfully")
-                  ? "text-green-600"
-                  : "text-red-600"
-              }`}
-            >
-              {submitMessage}
-            </p>
-          )}
-        </motion.form>
+          <h2 className="text-3xl font-bold mb-10 text-center text-black tracking-tight">
+            Start a Conversation
+          </h2>
+
+          <form className="space-y-6" onSubmit={handleSubmit}>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-semibold text-neutral-900 mb-2 uppercase tracking-wider"
+                >
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formState.name}
+                  onChange={handleInputChange}
+                  className="w-full p-4 bg-white border border-neutral-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-semibold text-neutral-900 mb-2 uppercase tracking-wider"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formState.email}
+                  onChange={handleInputChange}
+                  className="w-full p-4 bg-white border border-neutral-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all"
+                  required
+                />
+              </div>
+            </div>
+
+            <div>
+              <label
+                htmlFor="message"
+                className="block text-sm font-semibold text-neutral-900 mb-2 uppercase tracking-wider"
+              >
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                value={formState.message}
+                onChange={handleInputChange}
+                rows={4}
+                className="w-full p-4 bg-white border border-neutral-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all resize-none"
+                required
+              ></textarea>
+            </div>
+
+            <div className="pt-4 text-center">
+              <MagneticButton
+                type="submit"
+                disabled={isSubmitting}
+                className="bg-black text-white px-10 py-4 rounded-full text-lg font-medium shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
+              </MagneticButton>
+            </div>
+
+            {submitMessage && (
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className={`mt-6 text-center text-sm font-medium ${
+                  submitMessage.includes("successfully")
+                    ? "text-emerald-600"
+                    : "text-red-600"
+                }`}
+              >
+                {submitMessage}
+              </motion.p>
+            )}
+          </form>
+        </motion.div>
       </div>
     </section>
   );

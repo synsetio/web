@@ -10,7 +10,7 @@ import Mission from "./components/Mission";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-primary-900">
+    <div className="min-h-screen flex flex-col bg-white text-black">
       <Header />
       <main className="flex-grow">
         <Hero />

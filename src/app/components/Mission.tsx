@@ -1,33 +1,42 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import { content } from "../data/home-page";
 
 export default function Mission() {
   const { title, paragraphs } = content.mission;
 
   return (
-    <section id="mission" className="py-24 bg-gradient-to-br from-primary-900 to-primary-800 text-white">
-      <div className="container mx-auto px-4 relative">
-        <motion.h3
-          className="text-4xl font-bold mb-12 text-secondary-300 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          {title}
-        </motion.h3>
-        <div className="max-w-4xl mx-auto relative">
-          {/* ... (animated background elements remain the same) */}
-          {paragraphs.map((paragraph, index) => (
-            <motion.p
-              key={index}
-              className="text-neutral-200 leading-relaxed mb-6 text-lg"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 * (index + 1) }}
-            >
-              {paragraph}
-            </motion.p>
-          ))}
+    <section
+      id="mission"
+      className="py-32 bg-white border-b border-neutral-100"
+    >
+      <div className="container mx-auto px-6 max-w-5xl">
+        <div className="flex flex-col md:flex-row gap-16 items-start">
+          <motion.div
+            className="md:w-1/3"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h3 className="text-4xl font-bold text-black sticky top-32 tracking-tight leading-tight">
+              {title}
+            </h3>
+          </motion.div>
+
+          <div className="md:w-2/3">
+            {paragraphs.map((paragraph, index) => (
+              <motion.p
+                key={index}
+                className="text-xl md:text-2xl text-neutral-800 leading-relaxed mb-10 font-medium"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+              >
+                {paragraph}
+              </motion.p>
+            ))}
+          </div>
         </div>
       </div>
     </section>

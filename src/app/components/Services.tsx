@@ -1,51 +1,46 @@
 import { motion } from "framer-motion";
 import { content } from "../data/home-page";
+import SpotlightCard from "./react-bits/SpotlightCard";
 
 export default function Services() {
   const { title, offerings } = content.services;
 
   return (
-    <section id="services" className="py-24 bg-[#0A2463] text-white">
-      <div className="container mx-auto px-4">
+    <section id="services" className="py-24 bg-white">
+      <div className="container mx-auto px-6">
         <motion.h3
-          className="text-4xl font-bold mb-16 text-[#21CE99] text-center"
+          className="text-4xl md:text-5xl font-bold mb-20 text-black text-center tracking-tight"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
         >
           {title}
         </motion.h3>
-        <div className="grid md:grid-cols-2 gap-12">
+
+        <div className="grid md:grid-cols-2 gap-8">
           {offerings.map((offering, index) => (
-            <OfferingCard key={index} offering={offering} index={index} />
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <SpotlightCard className="h-full p-10 bg-white border-neutral-200">
+                <div className="flex flex-col h-full justify-center">
+                  <h4 className="text-3xl font-bold mb-6 text-black tracking-tight">
+                    {offering.title}
+                  </h4>
+                  <p className="text-lg text-neutral-600 leading-relaxed">
+                    {offering.description}
+                  </p>
+                </div>
+              </SpotlightCard>
+            </motion.div>
           ))}
         </div>
       </div>
     </section>
-  );
-}
-
-function OfferingCard({
-  offering,
-  index,
-}: {
-  offering: {
-    title: string;
-    description: string;
-  };
-  index: number;
-}) {
-  return (
-    <motion.div
-      className="bg-[#0D2E7D] rounded-xl shadow-xl p-8"
-      initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-    >
-      <h4 className="text-2xl font-semibold mb-4 text-[#21CE99]">
-        {offering.title}
-      </h4>
-      <p className="text-[#F5F5F5] text-lg">{offering.description}</p>
-    </motion.div>
   );
 }
