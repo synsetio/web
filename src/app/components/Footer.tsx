@@ -55,22 +55,17 @@ export default function Footer() {
       links: [
         { label: "Features", href: `/${locale}#features` },
         { label: "Services", href: `/${locale}#services` },
-        { label: "Pricing", href: "#" }, // Placeholder
       ],
     },
     {
       title: t("sections.resources"),
-      links: [
-        { label: "Blog", href: `/${locale}/blog` },
-        { label: "Documentation", href: "#" }, // Placeholder
-        { label: "Community", href: "#" }, // Placeholder
-      ],
+      links: [{ label: "Blog", href: `/${locale}/blog` }],
     },
     {
       title: t("sections.company"),
       links: [
         { label: "About Us", href: `/${locale}#mission` },
-        { label: "Careers", href: "#" }, // Placeholder
+        { label: "Careers", href: `/${locale}/careers` },
         { label: "Contact", href: `/${locale}#contact` },
       ],
     },
@@ -111,6 +106,7 @@ export default function Footer() {
               <div className="flex gap-2 max-w-sm">
                 <input
                   type="email"
+                  aria-label="Email address"
                   placeholder={t("newsletter.placeholder")}
                   className="flex-1 bg-neutral-50 border border-neutral-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-black transition-colors"
                 />
