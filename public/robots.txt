@@ -1,6 +1,37 @@
-# Allow all crawlers
+# Synsetio Robots.txt
+# https://synsetio.com
+
+# Allow all search engines
 User-agent: *
 Allow: /
 
-# Sitemap location
+# Sitemap
 Sitemap: https://synsetio.com/sitemap.xml
+
+# AI Crawlers - Allow for AEO (Answer Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Cohere-AI
+Allow: /
+
+# Disallow non-content paths
+User-agent: *
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
