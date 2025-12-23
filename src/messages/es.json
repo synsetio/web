@@ -118,5 +118,57 @@
     "linkText": "Política de Cookies",
     "accept": "Aceptar",
     "decline": "Rechazar"
+  },
+  "Careers": {
+    "title": "Defina el Futuro",
+    "subtitle": "Arquitecte la infraestructura autónoma que redefine las operaciones empresariales a nivel global.",
+    "valuesTitle": "Nuestros Principios",
+    "values": {
+      "sovereignty": {
+        "title": "Soberanía Digital",
+        "description": "La infraestructura de inteligencia debe permanecer bajo control empresarial."
+      },
+      "execution": {
+        "title": "Producción Primero",
+        "description": "Desplegamos sistemas que operan a escala, no demostraciones."
+      },
+      "transparency": {
+        "title": "Transparencia Operacional",
+        "description": "Comunicación clara a través de todas las fronteras organizacionales."
+      }
+    },
+    "positionsTitle": "Oportunidades Actuales",
+    "viewDetails": "Ver Posición",
+    "noRole": {
+      "title": "¿Posición no listada?",
+      "description": "Buscamos continuamente especialistas excepcionales. Envíe sus credenciales y describa su contribución potencial.",
+      "cta": "Enviar Consulta"
+    },
+    "position": {
+      "allPositions": "Todas las Posiciones",
+      "applyFor": "Enviar Solicitud",
+      "sections": {
+        "responsibilities": "Responsabilidades Clave",
+        "requirements": "Requisitos Obligatorios",
+        "niceToHave": "Requisitos Preferidos",
+        "benefits": "Compensación y Beneficios"
+      },
+      "readyToApply": "¿Preparado para contribuir?",
+      "readyDescription": "Envíe sus credenciales junto con una declaración de interés para esta posición.",
+      "applyNow": "Enviar Solicitud"
+    },
+    "modal": {
+      "applyFor": "Solicitud:",
+      "fullName": "Nombre Completo",
+      "email": "Correo Profesional",
+      "resume": "Curriculum Vitae",
+      "uploadPrompt": "Adjuntar PDF, DOC o DOCX",
+      "coverLetter": "Declaración de Interés",
+      "coverPlaceholder": "Describa su experiencia relevante e interés en esta posición...",
+      "submitting": "Procesando...",
+      "submit": "Enviar Solicitud",
+      "success": "Solicitud recibida. Nuestro equipo responderá en 48 horas.",
+      "error": "Envío fallido. Por favor reintente o contáctenos directamente."
+    }
   }
 }

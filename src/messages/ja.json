@@ -118,5 +118,57 @@
     "linkText": "Cookieポリシー",
     "accept": "同意する",
     "decline": "拒否する"
+  },
+  "Careers": {
+    "title": "未来を形作る",
+    "subtitle": "グローバルなエンタープライズオペレーションを再定義する自律型インフラストラクチャを設計する。",
+    "valuesTitle": "基本原則",
+    "values": {
+      "sovereignty": {
+        "title": "デジタル主権",
+        "description": "インテリジェンスインフラストラクチャは企業の管理下に置かれるべきです。"
+      },
+      "execution": {
+        "title": "本番環境優先",
+        "description": "デモンストレーションではなく、スケールで稼働するシステムを展開します。"
+      },
+      "transparency": {
+        "title": "オペレーショナル透明性",
+        "description": "すべての組織境界を越えた明確なコミュニケーション。"
+      }
+    },
+    "positionsTitle": "募集ポジション",
+    "viewDetails": "ポジション詳細",
+    "noRole": {
+      "title": "該当ポジションがない場合",
+      "description": "当社は継続的に優秀なスペシャリストを探しています。経歴を提出し、貢献可能性をお知らせください。",
+      "cta": "お問い合わせ"
+    },
+    "position": {
+      "allPositions": "全ポジション",
+      "applyFor": "応募を提出",
+      "sections": {
+        "responsibilities": "主要責務",
+        "requirements": "必須資格",
+        "niceToHave": "歓迎資格",
+        "benefits": "報酬・福利厚生"
+      },
+      "readyToApply": "貢献の準備はできていますか？",
+      "readyDescription": "このポジションへの関心表明とともに経歴をご提出ください。",
+      "applyNow": "応募を提出"
+    },
+    "modal": {
+      "applyFor": "応募：",
+      "fullName": "氏名",
+      "email": "ビジネスメール",
+      "resume": "職務経歴書",
+      "uploadPrompt": "PDF、DOC、DOCXを添付",
+      "coverLetter": "関心表明",
+      "coverPlaceholder": "関連する経験とこのポジションへの関心をお聞かせください...",
+      "submitting": "処理中...",
+      "submit": "応募を提出",
+      "success": "応募を受理しました。48時間以内にご連絡いたします。",
+      "error": "送信に失敗しました。再試行するか、直接お問い合わせください。"
+    }
   }
 }

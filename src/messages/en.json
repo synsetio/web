@@ -118,5 +118,57 @@
     "linkText": "Cookie Policy",
     "accept": "Accept",
     "decline": "Decline"
+  },
+  "Careers": {
+    "title": "Shape the Future",
+    "subtitle": "Architect the autonomous infrastructure redefining enterprise operations globally.",
+    "valuesTitle": "Our Principles",
+    "values": {
+      "sovereignty": {
+        "title": "Digital Sovereignty",
+        "description": "Intelligence infrastructure must remain under enterprise control."
+      },
+      "execution": {
+        "title": "Production-First",
+        "description": "We deploy systems that operate at scale, not demonstrations."
+      },
+      "transparency": {
+        "title": "Operational Transparency",
+        "description": "Clear communication across all organizational boundaries."
+      }
+    },
+    "positionsTitle": "Current Opportunities",
+    "viewDetails": "View Position",
+    "noRole": {
+      "title": "Position not listed?",
+      "description": "We continuously seek exceptional specialists. Submit your credentials and outline your potential contribution.",
+      "cta": "Submit Inquiry"
+    },
+    "position": {
+      "allPositions": "All Positions",
+      "applyFor": "Submit Application",
+      "sections": {
+        "responsibilities": "Key Responsibilities",
+        "requirements": "Required Qualifications",
+        "niceToHave": "Preferred Qualifications",
+        "benefits": "Compensation & Benefits"
+      },
+      "readyToApply": "Prepared to contribute?",
+      "readyDescription": "Submit your credentials along with a statement of interest for this position.",
+      "applyNow": "Submit Application"
+    },
+    "modal": {
+      "applyFor": "Application:",
+      "fullName": "Full Name",
+      "email": "Professional Email",
+      "resume": "Curriculum Vitae",
+      "uploadPrompt": "Attach PDF, DOC, or DOCX",
+      "coverLetter": "Statement of Interest",
+      "coverPlaceholder": "Describe your relevant experience and interest in this position...",
+      "submitting": "Processing...",
+      "submit": "Submit Application",
+      "success": "Application received. Our team will respond within 48 hours.",
+      "error": "Submission failed. Please retry or contact us directly."
+    }
   }
 }

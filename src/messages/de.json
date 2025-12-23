@@ -118,5 +118,57 @@
     "linkText": "Cookie-Richtlinie",
     "accept": "Akzeptieren",
     "decline": "Ablehnen"
+  },
+  "Careers": {
+    "title": "Gestalten Sie die Zukunft",
+    "subtitle": "Entwickeln Sie die autonome Infrastruktur, die Unternehmensoperationen weltweit neu definiert.",
+    "valuesTitle": "Unsere Prinzipien",
+    "values": {
+      "sovereignty": {
+        "title": "Digitale Souveränität",
+        "description": "Intelligenzinfrastruktur muss unter Unternehmenskontrolle bleiben."
+      },
+      "execution": {
+        "title": "Produktion Zuerst",
+        "description": "Wir implementieren skalierbare Systeme, keine Demonstrationen."
+      },
+      "transparency": {
+        "title": "Operative Transparenz",
+        "description": "Klare Kommunikation über alle Organisationsgrenzen hinweg."
+      }
+    },
+    "positionsTitle": "Aktuelle Positionen",
+    "viewDetails": "Position Ansehen",
+    "noRole": {
+      "title": "Position nicht gelistet?",
+      "description": "Wir suchen kontinuierlich nach außergewöhnlichen Spezialisten. Reichen Sie Ihre Referenzen ein und beschreiben Sie Ihren potenziellen Beitrag.",
+      "cta": "Anfrage Einreichen"
+    },
+    "position": {
+      "allPositions": "Alle Positionen",
+      "applyFor": "Bewerbung Einreichen",
+      "sections": {
+        "responsibilities": "Kernaufgaben",
+        "requirements": "Erforderliche Qualifikationen",
+        "niceToHave": "Bevorzugte Qualifikationen",
+        "benefits": "Vergütung & Zusatzleistungen"
+      },
+      "readyToApply": "Bereit einen Beitrag zu leisten?",
+      "readyDescription": "Reichen Sie Ihre Referenzen zusammen mit einer Interessenbekundung für diese Position ein.",
+      "applyNow": "Bewerbung Einreichen"
+    },
+    "modal": {
+      "applyFor": "Bewerbung:",
+      "fullName": "Vollständiger Name",
+      "email": "Geschäftliche E-Mail",
+      "resume": "Lebenslauf",
+      "uploadPrompt": "PDF, DOC oder DOCX anhängen",
+      "coverLetter": "Interessenbekundung",
+      "coverPlaceholder": "Beschreiben Sie Ihre relevante Erfahrung und Ihr Interesse an dieser Position...",
+      "submitting": "Wird verarbeitet...",
+      "submit": "Bewerbung Einreichen",
+      "success": "Bewerbung eingegangen. Unser Team antwortet innerhalb von 48 Stunden.",
+      "error": "Übermittlung fehlgeschlagen. Bitte erneut versuchen oder uns direkt kontaktieren."
+    }
   }
 }

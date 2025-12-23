@@ -118,5 +118,57 @@
     "linkText": "Politique de Cookies",
     "accept": "Accepter",
     "decline": "Refuser"
+  },
+  "Careers": {
+    "title": "Façonnez l'Avenir",
+    "subtitle": "Architecturez l'infrastructure autonome qui redéfinit les opérations d'entreprise à l'échelle mondiale.",
+    "valuesTitle": "Nos Principes",
+    "values": {
+      "sovereignty": {
+        "title": "Souveraineté Numérique",
+        "description": "L'infrastructure d'intelligence doit rester sous contrôle de l'entreprise."
+      },
+      "execution": {
+        "title": "Production d'Abord",
+        "description": "Nous déployons des systèmes qui opèrent à grande échelle, pas des démonstrations."
+      },
+      "transparency": {
+        "title": "Transparence Opérationnelle",
+        "description": "Communication claire au-delà de toutes les frontières organisationnelles."
+      }
+    },
+    "positionsTitle": "Opportunités Actuelles",
+    "viewDetails": "Voir le Poste",
+    "noRole": {
+      "title": "Poste non listé ?",
+      "description": "Nous recherchons continuellement des spécialistes d'exception. Soumettez vos références et décrivez votre contribution potentielle.",
+      "cta": "Soumettre une Demande"
+    },
+    "position": {
+      "allPositions": "Tous les Postes",
+      "applyFor": "Soumettre une Candidature",
+      "sections": {
+        "responsibilities": "Responsabilités Clés",
+        "requirements": "Qualifications Requises",
+        "niceToHave": "Qualifications Préférées",
+        "benefits": "Rémunération & Avantages"
+      },
+      "readyToApply": "Prêt à contribuer ?",
+      "readyDescription": "Soumettez vos références accompagnées d'une déclaration d'intérêt pour ce poste.",
+      "applyNow": "Soumettre une Candidature"
+    },
+    "modal": {
+      "applyFor": "Candidature :",
+      "fullName": "Nom Complet",
+      "email": "Email Professionnel",
+      "resume": "Curriculum Vitae",
+      "uploadPrompt": "Joindre PDF, DOC ou DOCX",
+      "coverLetter": "Déclaration d'Intérêt",
+      "coverPlaceholder": "Décrivez votre expérience pertinente et votre intérêt pour ce poste...",
+      "submitting": "Traitement...",
+      "submit": "Soumettre la Candidature",
+      "success": "Candidature reçue. Notre équipe répondra sous 48 heures.",
+      "error": "Échec de l'envoi. Veuillez réessayer ou nous contacter directement."
+    }
   }
 }

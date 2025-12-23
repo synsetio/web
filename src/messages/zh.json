@@ -118,5 +118,57 @@
     "linkText": "Cookie政策",
     "accept": "接受",
     "decline": "拒绝"
+  },
+  "Careers": {
+    "title": "塑造未来",
+    "subtitle": "架构正在重新定义全球企业运营的自主基础设施。",
+    "valuesTitle": "核心原则",
+    "values": {
+      "sovereignty": {
+        "title": "数字主权",
+        "description": "智能基础设施必须保持在企业控制之下。"
+      },
+      "execution": {
+        "title": "生产优先",
+        "description": "我们部署大规模运行的系统，而非演示。"
+      },
+      "transparency": {
+        "title": "运营透明",
+        "description": "跨越所有组织边界的清晰沟通。"
+      }
+    },
+    "positionsTitle": "当前机会",
+    "viewDetails": "查看职位",
+    "noRole": {
+      "title": "未列出的职位？",
+      "description": "我们持续寻找杰出专家。提交您的资历并描述您的潜在贡献。",
+      "cta": "提交咨询"
+    },
+    "position": {
+      "allPositions": "所有职位",
+      "applyFor": "提交申请",
+      "sections": {
+        "responsibilities": "核心职责",
+        "requirements": "必备资质",
+        "niceToHave": "优先资质",
+        "benefits": "薪酬与福利"
+      },
+      "readyToApply": "准备好贡献了吗？",
+      "readyDescription": "提交您的资历以及对此职位的意向声明。",
+      "applyNow": "提交申请"
+    },
+    "modal": {
+      "applyFor": "申请：",
+      "fullName": "姓名",
+      "email": "职业邮箱",
+      "resume": "履历",
+      "uploadPrompt": "附加 PDF、DOC 或 DOCX",
+      "coverLetter": "意向声明",
+      "coverPlaceholder": "描述您的相关经验和对此职位的兴趣...",
+      "submitting": "处理中...",
+      "submit": "提交申请",
+      "success": "申请已收到。我们的团队将在48小时内回复。",
+      "error": "提交失败。请重试或直接联系我们。"
+    }
   }
 }

@@ -118,5 +118,57 @@
     "linkText": "Política de Cookies",
     "accept": "Aceitar",
     "decline": "Recusar"
+  },
+  "Careers": {
+    "title": "Defina o Futuro",
+    "subtitle": "Arquitete a infraestrutura autônoma que redefine as operações empresariais globalmente.",
+    "valuesTitle": "Nossos Princípios",
+    "values": {
+      "sovereignty": {
+        "title": "Soberania Digital",
+        "description": "A infraestrutura de inteligência deve permanecer sob controle empresarial."
+      },
+      "execution": {
+        "title": "Produção Primeiro",
+        "description": "Implantamos sistemas que operam em escala, não demonstrações."
+      },
+      "transparency": {
+        "title": "Transparência Operacional",
+        "description": "Comunicação clara através de todas as fronteiras organizacionais."
+      }
+    },
+    "positionsTitle": "Oportunidades Atuais",
+    "viewDetails": "Ver Posição",
+    "noRole": {
+      "title": "Posição não listada?",
+      "description": "Buscamos continuamente especialistas excepcionais. Envie suas credenciais e descreva sua contribuição potencial.",
+      "cta": "Enviar Consulta"
+    },
+    "position": {
+      "allPositions": "Todas as Posições",
+      "applyFor": "Enviar Candidatura",
+      "sections": {
+        "responsibilities": "Responsabilidades Principais",
+        "requirements": "Qualificações Obrigatórias",
+        "niceToHave": "Qualificações Preferenciais",
+        "benefits": "Remuneração e Benefícios"
+      },
+      "readyToApply": "Preparado para contribuir?",
+      "readyDescription": "Envie suas credenciais juntamente com uma declaração de interesse para esta posição.",
+      "applyNow": "Enviar Candidatura"
+    },
+    "modal": {
+      "applyFor": "Candidatura:",
+      "fullName": "Nome Completo",
+      "email": "E-mail Profissional",
+      "resume": "Curriculum Vitae",
+      "uploadPrompt": "Anexar PDF, DOC ou DOCX",
+      "coverLetter": "Declaração de Interesse",
+      "coverPlaceholder": "Descreva sua experiência relevante e interesse nesta posição...",
+      "submitting": "Processando...",
+      "submit": "Enviar Candidatura",
+      "success": "Candidatura recebida. Nossa equipe responderá em 48 horas.",
+      "error": "Falha no envio. Por favor, tente novamente ou entre em contato diretamente."
+    }
   }
 }
