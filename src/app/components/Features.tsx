@@ -149,6 +149,7 @@ function ResourceThumbnail({
             alt={t("title")}
             layout="fill"
             objectFit="cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
             className="group-hover:scale-105 transition-transform duration-500"
           />
         </div>
