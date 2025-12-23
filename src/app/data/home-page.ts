@@ -18,19 +18,19 @@ export const content = {
     title: "The Agentic Stack",
     items: [
       {
-        imagePath: "/images/agentic-economy.jpg", // Placeholder - ensure image exists or use generic
+        imagePath: "/images/agentic-economy.svg",
         title: "Sovereign Agents",
         description:
           "Deploy autonomous agents that operate within your parameters, owning their outputs and driving value 24/7 without constant oversight.",
       },
       {
-        imagePath: "/images/blockchain-identity.jpg",
+        imagePath: "/images/blockchain-identity.svg",
         title: "Verified Intelligence",
         description:
           "Leveraging blockchain to ensure every agent action is verifiable, secure, and attributable—essential for trust in an automated world.",
       },
       {
-        imagePath: "/images/collective-intelligence.jpg",
+        imagePath: "/images/collective-intelligence.svg",
         title: "Collective Orchestration",
         description:
           "Connect isolated AI instances into a cohesive hive-mind that solves complex, multi-dimensional business challenges faster than any siloed team.",
@@ -40,7 +40,7 @@ export const content = {
       "We build the infrastructure where human intent meets machine execution.",
     resources: [
       {
-        imagePath: "/images/blog/agentic-revolution.jpg",
+        imagePath: "/images/blog/agentic-revolution.svg",
         title: "The Agentic Revolution",
         description:
           "Why the next Fortune 500 companies will be measured by their agent count, not their headcount.",
@@ -64,7 +64,7 @@ The question is no longer "How can AI help me write this email?" but "How can an
         `,
       },
       {
-        imagePath: "/images/blog/sovereign-ai.jpg",
+        imagePath: "/images/blog/sovereign-ai.svg",
         title: "Sovereign AI for Enterprise",
         description:
           "Why owning your intelligence infrastructure is the only viable long-term strategy.",
@@ -84,7 +84,7 @@ Synsetio architects systems where you own the weights, the data, and the executi
         `,
       },
       {
-        imagePath: "/images/blog/maikers-protocol.jpg",
+        imagePath: "/images/blog/maikers-protocol.svg",
         title: "The Maikers Protocol",
         description:
           "Understanding the backbone of verifiable, on-chain agent identity.",
@@ -104,7 +104,7 @@ We use this protocol to give enterprise agents a "legal personality" on the bloc
         `,
       },
       {
-        imagePath: "/images/blog/future-of-work.jpg",
+        imagePath: "/images/blog/future-of-work.svg",
         title: "Redefining Human Capital",
         description:
           "When agents handle execution, humans return to pure strategy and creation.",

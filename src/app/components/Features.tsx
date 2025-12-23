@@ -15,17 +15,17 @@ export default function Features() {
 
   const items = [
     {
-      imagePath: "/images/agentic-economy.jpg",
+      imagePath: "/images/agentic-economy.svg",
       title: t("items.item1.title"),
       description: t("items.item1.description"),
     },
     {
-      imagePath: "/images/blockchain-identity.jpg",
+      imagePath: "/images/blockchain-identity.svg",
       title: t("items.item2.title"),
       description: t("items.item2.description"),
     },
     {
-      imagePath: "/images/collective-intelligence.jpg",
+      imagePath: "/images/collective-intelligence.svg",
       title: t("items.item3.title"),
       description: t("items.item3.description"),
     },
