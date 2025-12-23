@@ -1,10 +1,10 @@
 export const content = {
   hero: {
-    title1: "Engineered for the",
-    title2: "Agentic Economy",
+    title1: "Sovereign AI",
+    title2: "Infrastructure",
     description:
-      "Synsetio equips forward-thinking enterprises with sovereign AI infrastructure. We turn organizations into autonomous powerhouses capable of competing in the next era of global commerce.",
-    cta: "Equip Your Business",
+      "We equip enterprises with autonomous AI systems that compete in the agentic economy.",
+    cta: "Get Started",
   },
   mission: {
     title: "Strategic Autonomy",
