@@ -7,6 +7,11 @@ import { useTranslations, useLocale } from "next-intl";
 import { content } from "../data/home-page";
 import SpotlightCard from "./react-bits/SpotlightCard";
 import MagneticButton from "./react-bits/MagneticButton";
+import {
+  SovereignAgentIllustration,
+  VerifiedIntelligenceIllustration,
+  CollectiveOrchestrationIllustration,
+} from "./FeatureIllustrations";
 
 export default function Features() {
   const t = useTranslations("HomePage.features");
@@ -15,17 +20,17 @@ export default function Features() {
 
   const items = [
     {
-      imagePath: "/images/agentic-economy.svg",
+      Illustration: SovereignAgentIllustration,
       title: t("items.item1.title"),
       description: t("items.item1.description"),
     },
     {
-      imagePath: "/images/blockchain-identity.svg",
+      Illustration: VerifiedIntelligenceIllustration,
       title: t("items.item2.title"),
       description: t("items.item2.description"),
     },
     {
-      imagePath: "/images/collective-intelligence.svg",
+      Illustration: CollectiveOrchestrationIllustration,
       title: t("items.item3.title"),
       description: t("items.item3.description"),
     },
@@ -54,13 +59,8 @@ export default function Features() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <SpotlightCard className="h-full flex flex-col items-start border-neutral-200 bg-white hover:shadow-lg transition-shadow duration-300">
-                <div className="relative w-full h-48 mb-6 rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
-                  <Image
-                    src={feature.imagePath}
-                    alt={feature.title}
-                    layout="fill"
-                    objectFit="cover"
-                  />
+                <div className="relative w-full h-48 mb-6 rounded-lg overflow-hidden border border-neutral-100">
+                  <feature.Illustration />
                 </div>
                 <h4 className="text-2xl font-bold mb-4 text-black tracking-tight">
                   {feature.title}
