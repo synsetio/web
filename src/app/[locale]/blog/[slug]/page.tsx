@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import Layout from "../../components/Layout";
-import { content } from "../../data/home-page";
+import Layout from "../../../components/Layout";
+import { content } from "../../../data/home-page";
 import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
 import ReactMarkdown from "react-markdown";

@@ -1,13 +1,13 @@
 "use client";
 
 import React from "react";
-import Layout from "../components/Layout";
-import { content } from "../data/home-page";
+import Layout from "../../components/Layout";
+import { content } from "../../data/home-page";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import SpotlightCard from "../components/react-bits/SpotlightCard";
-import Squares from "../components/react-bits/Squares";
+import SpotlightCard from "../../components/react-bits/SpotlightCard";
+import Squares from "../../components/react-bits/Squares";
 
 const Blog = () => {
   const { resources } = content.features;

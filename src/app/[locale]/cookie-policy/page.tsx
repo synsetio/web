@@ -2,8 +2,8 @@
 
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import { content as cookiePolicy } from "../data/cookie-policy";
-import LegalLayout from "../components/LegalLayout";
+import { content as cookiePolicy } from "../../data/cookie-policy";
+import LegalLayout from "../../components/LegalLayout";
 
 const CookiePolicy = () => {
   return (

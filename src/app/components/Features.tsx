@@ -1,12 +1,35 @@
+"use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations, useLocale } from "next-intl";
 import { content } from "../data/home-page";
 import SpotlightCard from "./react-bits/SpotlightCard";
 import MagneticButton from "./react-bits/MagneticButton";
 
 export default function Features() {
-  const { title, items, conclusion, resources } = content.features;
+  const t = useTranslations("HomePage.features");
+  const locale = useLocale();
+  const { resources } = content.features;
+
+  const items = [
+    {
+      imagePath: "/images/agentic-economy.jpg",
+      title: t("items.item1.title"),
+      description: t("items.item1.description"),
+    },
+    {
+      imagePath: "/images/blockchain-identity.jpg",
+      title: t("items.item2.title"),
+      description: t("items.item2.description"),
+    },
+    {
+      imagePath: "/images/collective-intelligence.jpg",
+      title: t("items.item3.title"),
+      description: t("items.item3.description"),
+    },
+  ];
 
   return (
     <section id="features" className="py-24 bg-white">
@@ -18,7 +41,7 @@ export default function Features() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          {title}
+          {t("title")}
         </motion.h3>
 
         <div className="grid md:grid-cols-3 gap-8 mb-24">
@@ -57,7 +80,7 @@ export default function Features() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          {conclusion}
+          {t("conclusion")}
         </motion.p>
 
         <div className="border-t border-neutral-100 pt-24">
@@ -70,11 +93,12 @@ export default function Features() {
                 key={index}
                 resource={resource}
                 index={index}
+                locale={locale}
               />
             ))}
           </div>
           <div className="text-center mt-16">
-            <Link href="/blog">
+            <Link href={`/${locale}/blog`}>
               <MagneticButton className="inline-flex items-center text-black font-semibold hover:text-neutral-600 transition-colors group">
                 View All Articles
                 <svg
@@ -102,13 +126,15 @@ export default function Features() {
 function ResourceThumbnail({
   resource,
   index,
+  locale,
 }: {
   resource: { imagePath: string; title: string; description: string };
   index: number;
+  locale: string;
 }) {
   return (
     <Link
-      href={`/blog/${encodeURIComponent(resource.title.toLowerCase().replace(/ /g, "-"))}`}
+      href={`/${locale}/blog/${encodeURIComponent(resource.title.toLowerCase().replace(/ /g, "-"))}`}
     >
       <motion.div
         className="group cursor-pointer"

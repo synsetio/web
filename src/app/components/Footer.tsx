@@ -1,24 +1,28 @@
+"use client";
+
 import { SynsetioLogo } from "./icons";
 import Link from "next/link";
-import { content } from "../data/home-page";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const t = useTranslations("HomePage.footer");
+  const locale = useLocale();
 
   const footerSections = [
     {
       title: "Company",
       links: [
-        { label: "Our Mission", href: "/#mission" },
-        { label: "Services", href: "/#services" },
+        { label: "Our Mission", href: `/${locale}#mission` },
+        { label: "Services", href: `/${locale}#services` },
       ],
     },
     {
       title: "Legal",
       links: [
-        { label: "Privacy Policy", href: "/privacy-policy" },
-        { label: "Terms of Service", href: "/terms-of-service" },
-        { label: "Cookie Policy", href: "/cookie-policy" },
+        { label: "Privacy Policy", href: `/${locale}/privacy-policy` },
+        { label: "Terms of Service", href: `/${locale}/terms-of-service` },
+        { label: "Cookie Policy", href: `/${locale}/cookie-policy` },
       ],
     },
   ];
@@ -28,7 +32,7 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
-            <Link href="/" className="flex items-center mb-6 group">
+            <Link href={`/${locale}`} className="flex items-center mb-6 group">
               <SynsetioLogo
                 width={40}
                 height={40}
@@ -39,7 +43,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-neutral-500 text-lg leading-relaxed max-w-sm">
-              {content.footer.description}
+              {t("description")}
             </p>
           </div>
 

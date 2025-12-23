@@ -1,0 +1,71 @@
+{
+  "HomePage": {
+    "hero": {
+      "title1": "Engineered for the",
+      "title2": "Agentic Economy",
+      "description": "Synsetio equips forward-thinking enterprises with sovereign AI infrastructure. We turn organizations into autonomous powerhouses capable of competing in the next era of global commerce.",
+      "cta": "Equip Your Business"
+    },
+    "mission": {
+      "title": "Strategic Autonomy",
+      "p1": "The global economy is shifting from human-centric to agent-driven. In this new reality, competitive advantage belongs to those who can orchestrate synthetic intelligence at scale.",
+      "p2": "Born from French engineering excellence and driven by international ambition, Synsetio provides the architectural spine for this transition. We do not merely automate tasks; we deploy sovereign digital workforces that respect your data, your values, and your strategic independence.",
+      "p3": "We believe that the future of business is not just about adopting AI, but about integrating it into the very DNA of your operations—creating systems that learn, adapt, and execute with precision."
+    },
+    "features": {
+      "title": "The Agentic Stack",
+      "items": {
+        "item1": {
+          "title": "Sovereign Agents",
+          "description": "Deploy autonomous agents that operate within your parameters, owning their outputs and driving value 24/7 without constant oversight."
+        },
+        "item2": {
+          "title": "Verified Intelligence",
+          "description": "Leveraging blockchain to ensure every agent action is verifiable, secure, and attributable—essential for trust in an automated world."
+        },
+        "item3": {
+          "title": "Collective Orchestration",
+          "description": "Connect isolated AI instances into a cohesive hive-mind that solves complex, multi-dimensional business challenges faster than any siloed team."
+        }
+      },
+      "conclusion": "We build the infrastructure where human intent meets machine execution."
+    },
+    "services": {
+      "title": "Deployment Capabilities",
+      "offerings": {
+        "offering1": {
+          "title": "Enterprise Agent Architecture",
+          "description": "Design and deployment of custom agentic swarms tailored to specific high-value business workflows."
+        },
+        "offering2": {
+          "title": "Sovereign LLM Hosting",
+          "description": "Secure, private infrastructure for running fine-tuned models that never leak data to public providers."
+        },
+        "offering3": {
+          "title": "Automated Revenue Ops",
+          "description": "Self-driving systems for lead generation, qualification, and initial outreach that operate 24/7."
+        },
+        "offering4": {
+          "title": "Blockchain Integration",
+          "description": "Connecting AI agents to on-chain liquidity, identity, and settlement layers for autonomous commerce."
+        }
+      }
+    },
+    "callToAction": {
+      "title": "Ready to Compete?",
+      "p1": "The gap between agent-native companies and traditional firms is widening every day.",
+      "p2": "Partner with Synsetio to secure your position in the new economic order."
+    },
+    "footer": {
+      "description": "Synsetio: Architecting the Sovereign Agentic Economy. Paris • Global."
+    }
+  },
+  "Navigation": {
+    "about": "About",
+    "features": "Features",
+    "vision": "Vision",
+    "blog": "Insights",
+    "contact": "Contact Us",
+    "home": "Home"
+  }
+}

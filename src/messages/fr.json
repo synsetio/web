@@ -1,0 +1,71 @@
+{
+  "HomePage": {
+    "hero": {
+      "title1": "Conçu pour l'",
+      "title2": "Économie Agentique",
+      "description": "Synsetio équipe les entreprises visionnaires d'infrastructures IA souveraines. Nous transformons les organisations en puissances autonomes capables de rivaliser dans la prochaine ère du commerce mondial.",
+      "cta": "Équipez Votre Entreprise"
+    },
+    "mission": {
+      "title": "Autonomie Stratégique",
+      "p1": "L'économie mondiale passe d'un modèle centré sur l'humain à un modèle piloté par des agents. Dans cette nouvelle réalité, l'avantage concurrentiel appartient à ceux qui savent orchestrer l'intelligence synthétique à grande échelle.",
+      "p2": "Née de l'excellence de l'ingénierie française et portée par une ambition internationale, Synsetio fournit la colonne vertébrale architecturale de cette transition. Nous ne nous contentons pas d'automatiser des tâches ; nous déployons des forces de travail numériques souveraines qui respectent vos données, vos valeurs et votre indépendance stratégique.",
+      "p3": "Nous croyons que l'avenir des affaires ne réside pas seulement dans l'adoption de l'IA, mais dans son intégration au cœur même de vos opérations—créant des systèmes qui apprennent, s'adaptent et exécutent avec précision."
+    },
+    "features": {
+      "title": "La Stack Agentique",
+      "items": {
+        "item1": {
+          "title": "Agents Souverains",
+          "description": "Déployez des agents autonomes qui opèrent selon vos paramètres, possédant leurs résultats et créant de la valeur 24/7 sans supervision constante."
+        },
+        "item2": {
+          "title": "Intelligence Vérifiée",
+          "description": "Exploitation de la blockchain pour garantir que chaque action d'agent est vérifiable, sécurisée et attribuable—essentiel pour la confiance dans un monde automatisé."
+        },
+        "item3": {
+          "title": "Orchestration Collective",
+          "description": "Connectez des instances d'IA isolées en une conscience collective cohérente qui résout des défis commerciaux complexes et multidimensionnels plus rapidement qu'aucune équipe cloisonnée."
+        }
+      },
+      "conclusion": "Nous construisons l'infrastructure où l'intention humaine rencontre l'exécution machine."
+    },
+    "services": {
+      "title": "Capacités de Déploiement",
+      "offerings": {
+        "offering1": {
+          "title": "Architecture d'Agents d'Entreprise",
+          "description": "Conception et déploiement d'essaims agentiques personnalisés adaptés à des flux de travail commerciaux à haute valeur ajoutée."
+        },
+        "offering2": {
+          "title": "Hébergement LLM Souverain",
+          "description": "Infrastructure sécurisée et privée pour exécuter des modèles affinés qui ne divulguent jamais de données aux fournisseurs publics."
+        },
+        "offering3": {
+          "title": "Opérations de Revenus Automatisées",
+          "description": "Systèmes autonomes pour la génération de leads, la qualification et la prise de contact initiale qui fonctionnent 24/7."
+        },
+        "offering4": {
+          "title": "Intégration Blockchain",
+          "description": "Connexion des agents IA aux couches de liquidité, d'identité et de règlement on-chain pour le commerce autonome."
+        }
+      }
+    },
+    "callToAction": {
+      "title": "Prêt à Rivaliser ?",
+      "p1": "L'écart entre les entreprises natives de l'IA et les firmes traditionnelles se creuse chaque jour.",
+      "p2": "Associez-vous à Synsetio pour sécuriser votre position dans le nouvel ordre économique."
+    },
+    "footer": {
+      "description": "Synsetio : Architecte de l'Économie Agentique Souveraine. Paris • Monde."
+    }
+  },
+  "Navigation": {
+    "about": "À Propos",
+    "features": "Fonctionnalités",
+    "vision": "Vision",
+    "blog": "Perspectives",
+    "contact": "Contact",
+    "home": "Accueil"
+  }
+}

@@ -1,9 +1,30 @@
+"use client";
+
 import { motion } from "framer-motion";
-import { content } from "../data/home-page";
+import { useTranslations } from "next-intl";
 import SpotlightCard from "./react-bits/SpotlightCard";
 
 export default function Services() {
-  const { title, offerings } = content.services;
+  const t = useTranslations("HomePage.services");
+
+  const offerings = [
+    {
+      title: t("offerings.offering1.title"),
+      description: t("offerings.offering1.description"),
+    },
+    {
+      title: t("offerings.offering2.title"),
+      description: t("offerings.offering2.description"),
+    },
+    {
+      title: t("offerings.offering3.title"),
+      description: t("offerings.offering3.description"),
+    },
+    {
+      title: t("offerings.offering4.title"),
+      description: t("offerings.offering4.description"),
+    },
+  ];
 
   return (
     <section id="services" className="py-24 bg-white">
@@ -15,7 +36,7 @@ export default function Services() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          {title}
+          {t("title")}
         </motion.h3>
 
         <div className="grid md:grid-cols-2 gap-8">

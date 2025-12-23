@@ -1,8 +1,12 @@
+"use client";
+
 import { motion } from "framer-motion";
-import { content } from "../data/home-page";
+import { useTranslations } from "next-intl";
 
 export default function Mission() {
-  const { title, paragraphs } = content.mission;
+  const t = useTranslations("HomePage.mission");
+
+  const paragraphs = [t("p1"), t("p2"), t("p3")];
 
   return (
     <section
@@ -19,7 +23,7 @@ export default function Mission() {
             transition={{ duration: 0.6 }}
           >
             <h3 className="text-4xl font-bold text-black sticky top-32 tracking-tight leading-tight">
-              {title}
+              {t("title")}
             </h3>
           </motion.div>
 

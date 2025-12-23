@@ -2,8 +2,8 @@
 
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import { content as privacyPolicy } from "../data/privacy-policy";
-import LegalLayout from "../components/LegalLayout";
+import { content as privacyPolicy } from "../../data/privacy-policy";
+import LegalLayout from "../../components/LegalLayout";
 
 const PrivacyPolicy = () => {
   return (

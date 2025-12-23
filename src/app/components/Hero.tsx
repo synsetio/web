@@ -1,15 +1,16 @@
+"use client";
+
 import { motion } from "framer-motion";
-import { content } from "../data/home-page";
+import { useTranslations } from "next-intl";
 import Squares from "./react-bits/Squares";
 import SplitText from "./react-bits/SplitText";
 import MagneticButton from "./react-bits/MagneticButton";
 
 export default function Hero() {
-  const { title1, description, cta } = content.hero;
+  const t = useTranslations("HomePage.hero");
 
   return (
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-white">
-      {/* Background Grid */}
       <div className="absolute inset-0 z-0">
         <Squares
           direction="diagonal"
@@ -20,11 +21,10 @@ export default function Hero() {
         />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="mb-6">
           <SplitText
-            text={title1}
+            text={`${t("title1")} ${t("title2")}`}
             className="text-6xl md:text-8xl font-bold text-black tracking-tighter"
             delay={50}
             duration={1}
@@ -38,7 +38,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
-          {description}
+          {t("description")}
         </motion.p>
 
         <motion.div
@@ -48,7 +48,7 @@ export default function Hero() {
         >
           <a href="#contact">
             <MagneticButton className="bg-black text-white px-8 py-4 rounded-full text-lg font-medium shadow-xl">
-              {cta}
+              {t("cta")}
             </MagneticButton>
           </a>
         </motion.div>

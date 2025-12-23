@@ -1,24 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { useTranslations, useLocale } from "next-intl";
 import MagneticButton from "./react-bits/MagneticButton";
-
 import { SynsetioLogo } from "./icons";
-
-const HOME_NAV_ITEMS = [
-  { href: "#about", label: "About" },
-  { href: "#features", label: "Features" },
-  { href: "#vision", label: "Vision" },
-  { href: "/blog", label: "Blog" },
-  { href: "#contact", label: "Contact us", isButton: true },
-];
-
-const NAV_ITEMS = [
-  { href: "/", label: "Home" },
-  { href: "/blog", label: "Blog" },
-  { href: "#contact", label: "Contact us", isButton: true },
-];
 
 const NavItem = ({
   href,
@@ -49,10 +37,33 @@ const NavItem = ({
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [navItems, setNavItems] = useState(HOME_NAV_ITEMS);
   const [hidden, setHidden] = useState(false);
   const { scrollY } = useScroll();
   const pathname = usePathname();
+  const t = useTranslations("Navigation");
+  const locale = useLocale();
+
+  const isSubPage =
+    pathname.includes("/blog") ||
+    pathname.includes("/privacy-policy") ||
+    pathname.includes("/terms-of-service") ||
+    pathname.includes("/cookie-policy");
+
+  const homeNavItems = [
+    { href: "#about", label: t("about") },
+    { href: "#features", label: t("features") },
+    { href: "#vision", label: t("vision") },
+    { href: `/${locale}/blog`, label: t("blog") },
+    { href: "#contact", label: t("contact"), isButton: true },
+  ];
+
+  const subNavItems = [
+    { href: `/${locale}`, label: t("home") },
+    { href: `/${locale}/blog`, label: t("blog") },
+    { href: "#contact", label: t("contact"), isButton: true },
+  ];
+
+  const navItems = isSubPage ? subNavItems : homeNavItems;
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious() ?? 0;
@@ -62,19 +73,6 @@ export default function Header() {
       setHidden(false);
     }
   });
-
-  useEffect(() => {
-    if (
-      pathname.startsWith("/blog") ||
-      ["/privacy-policy", "/terms-of-service", "/cookie-policy"].includes(
-        pathname as string,
-      )
-    ) {
-      setNavItems(NAV_ITEMS);
-    } else {
-      setNavItems(HOME_NAV_ITEMS);
-    }
-  }, [pathname]);
 
   return (
     <motion.header
@@ -88,7 +86,7 @@ export default function Header() {
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <Link
-          href="/"
+          href={`/${locale}`}
           className="flex items-center cursor-pointer hover:opacity-80 transition-opacity"
         >
           <SynsetioLogo width={32} height={32} className="mr-3 fill-black" />
@@ -97,13 +95,16 @@ export default function Header() {
           </h1>
         </Link>
 
-        <nav className="hidden md:block">
-          <ul className="flex items-center space-x-8">
-            {navItems.map((item) => (
-              <NavItem key={item.label} {...item} />
-            ))}
-          </ul>
-        </nav>
+        <div className="flex items-center gap-4">
+          <LocaleSwitcher />
+          <nav className="hidden md:block">
+            <ul className="flex items-center space-x-8">
+              {navItems.map((item) => (
+                <NavItem key={item.label} {...item} />
+              ))}
+            </ul>
+          </nav>
+        </div>
 
         <button
           className="md:hidden text-black focus:outline-none"
@@ -114,7 +115,6 @@ export default function Header() {
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
           >
             {isMenuOpen ? (
               <path
@@ -162,5 +162,33 @@ export default function Header() {
         </motion.nav>
       )}
     </motion.header>
+  );
+}
+
+function LocaleSwitcher() {
+  const locale = useLocale();
+  const pathname = usePathname();
+
+  const switchLocale = (newLocale: string) => {
+    const segments = pathname.split("/");
+    segments[1] = newLocale;
+    return segments.join("/");
+  };
+
+  return (
+    <div className="flex items-center gap-1 text-sm">
+      <Link
+        href={switchLocale("en")}
+        className={`px-2 py-1 rounded ${locale === "en" ? "bg-black text-white" : "text-neutral-500 hover:text-black"}`}
+      >
+        EN
+      </Link>
+      <Link
+        href={switchLocale("fr")}
+        className={`px-2 py-1 rounded ${locale === "fr" ? "bg-black text-white" : "text-neutral-500 hover:text-black"}`}
+      >
+        FR
+      </Link>
+    </div>
   );
 }

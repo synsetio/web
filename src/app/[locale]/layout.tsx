@@ -1,45 +1,48 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
-import SmoothScroll from "./components/SmoothScroll";
-import NoiseOverlay from "./components/NoiseOverlay";
+import "../globals.css";
+import SmoothScroll from "../components/SmoothScroll";
+import NoiseOverlay from "../components/NoiseOverlay";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "../fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
 
 export const metadata: Metadata = {
-  title: "Synsetio - Collective Intelligence, Global Impact",
+  title: "Synsetio - Engineered for the Agentic Economy",
   description:
-    "Shaping tomorrow's world through AI-powered businesses, seamless blockchain solutions, and user-controlled digital identities.",
+    "Synsetio equips forward-thinking enterprises with sovereign AI infrastructure. Paris • Global.",
   keywords: [
     "AI",
+    "Agentic Economy",
+    "Sovereign AI",
+    "Enterprise AI",
     "Blockchain",
-    "Self-Sovereign Identity",
-    "Business Automation",
-    "Innovation",
+    "Autonomous Agents",
   ],
-  authors: [{ name: "Synsetio Team" }],
+  authors: [{ name: "Synsetio" }],
   openGraph: {
     type: "website",
     url: "https://synsetio.com",
-    title: "Synsetio - Revolutionizing Business with AI and Blockchain",
+    title: "Synsetio - Engineered for the Agentic Economy",
     description:
-      "Empowering innovators to create world-changing ventures with AI, blockchain, and SSI technologies.",
+      "We equip enterprises with sovereign AI infrastructure to compete in the next era of global commerce.",
     siteName: "Synsetio",
     images: [
       {
         url: "https://synsetio.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Synsetio - Collective Intelligence, Global Impact",
+        alt: "Synsetio - Engineered for the Agentic Economy",
       },
     ],
     locale: "en_US",
@@ -60,13 +63,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function LocaleLayout({
   children,
-}: Readonly<{
+  params: { locale },
+}: {
   children: React.ReactNode;
-}>) {
+  params: { locale: string };
+}) {
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -76,10 +83,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <SmoothScroll>
-          <NoiseOverlay />
-          {children}
-        </SmoothScroll>
+        <NextIntlClientProvider messages={messages}>
+          <SmoothScroll>
+            <NoiseOverlay />
+            {children}
+          </SmoothScroll>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

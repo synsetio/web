@@ -1,10 +1,12 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import MagneticButton from "./react-bits/MagneticButton";
 
-import { content } from "../data/home-page";
-
 export default function CallToActionContact() {
+  const t = useTranslations("HomePage.callToAction");
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -59,21 +61,27 @@ export default function CallToActionContact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            {content.callToAction.title}
+            {t("title")}
           </motion.h3>
 
-          {content.callToAction.paragraphs.map((paragraph, index) => (
-            <motion.p
-              key={index}
-              className="mb-6 max-w-2xl mx-auto text-xl text-neutral-600 leading-relaxed"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              {paragraph}
-            </motion.p>
-          ))}
+          <motion.p
+            className="mb-6 max-w-2xl mx-auto text-xl text-neutral-600 leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            {t("p1")}
+          </motion.p>
+          <motion.p
+            className="mb-6 max-w-2xl mx-auto text-xl text-neutral-600 leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            {t("p2")}
+          </motion.p>
         </div>
 
         <motion.div
