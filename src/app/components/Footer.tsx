@@ -2,7 +2,19 @@
 
 import { SynsetioLogo } from "./icons";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
+
+const LOCALES = [
+  { code: "en", label: "English", flag: "🇬🇧" },
+  { code: "fr", label: "Français", flag: "🇫🇷" },
+  { code: "es", label: "Español", flag: "🇪🇸" },
+  { code: "de", label: "Deutsch", flag: "🇩🇪" },
+  { code: "pt", label: "Português", flag: "🇧🇷" },
+  { code: "zh", label: "中文", flag: "🇨🇳" },
+  { code: "ja", label: "日本語", flag: "🇯🇵" },
+  { code: "ar", label: "العربية", flag: "🇸🇦" },
+] as const;
 
 const SOCIAL_LINKS = [
   {
@@ -29,6 +41,13 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   const t = useTranslations("HomePage.footer");
   const locale = useLocale();
+  const pathname = usePathname();
+
+  const switchLocale = (newLocale: string) => {
+    const segments = pathname.split("/");
+    segments[1] = newLocale;
+    return segments.join("/");
+  };
 
   const footerSections = [
     {
@@ -63,9 +82,24 @@ export default function Footer() {
                 Synsetio
               </span>
             </Link>
-            <p className="text-neutral-500 text-lg leading-relaxed max-w-sm">
+            <p className="text-neutral-500 text-lg leading-relaxed max-w-sm mb-8">
               {t("description")}
             </p>
+            <div className="flex flex-wrap gap-2">
+              {LOCALES.map((l) => (
+                <Link
+                  key={l.code}
+                  href={switchLocale(l.code)}
+                  className={`px-3 py-1.5 text-sm rounded-full transition-colors ${
+                    locale === l.code
+                      ? "bg-black text-white"
+                      : "bg-neutral-100 text-neutral-600 hover:bg-neutral-200"
+                  }`}
+                >
+                  {l.flag} {l.code.toUpperCase()}
+                </Link>
+              ))}
+            </div>
           </div>
 
           {footerSections.map((section) => (
