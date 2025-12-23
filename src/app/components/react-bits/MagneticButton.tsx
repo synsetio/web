@@ -1,5 +1,5 @@
 import React, { useRef, useState, ElementType } from "react";
-import { motion, MotionProps } from "framer-motion";
+import { motion } from "framer-motion";
 
 interface MagneticButtonProps extends Omit<
   React.HTMLAttributes<HTMLElement>,
@@ -41,6 +41,7 @@ const MagneticButton: React.FC<MagneticButtonProps> = ({
     setPosition({ x: 0, y: 0 });
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const MotionComponent = motion(Component as any);
 
   return (
