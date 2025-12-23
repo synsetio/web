@@ -1,120 +1,120 @@
 {
   "HomePage": {
     "hero": {
-      "title1": "Cresça Mais Rápido",
-      "title2": "Com Agentes Autônomos",
-      "description": "Desvincule o crescimento do número de funcionários. Equipe sua empresa com uma força de trabalho de IA soberana que executa tarefas, gera receita e escala suas operações 24/7.",
-      "cta": "Começar"
+      "title1": "Escale Operações Com",
+      "title2": "Agentes Autônomos",
+      "description": "Desvincule o crescimento do número de funcionários. Implante uma força de trabalho de IA soberana que executa fluxos de trabalho críticos, acelera receitas e escala suas operações continuamente.",
+      "cta": "Solicitar Demo"
     },
     "mission": {
-      "title": "Aceleração de Negócios",
-      "p1": "A economia global está mudando. A vantagem competitiva agora pertence àqueles que podem fazer mais com menos orquestrando inteligência digital.",
-      "p2": "A Synsetio fornece a força de trabalho para essa transição. Nós não apenas automatizamos tarefas; implantamos agentes digitais soberanos que trabalham ao lado da sua equipe — respeitando seus dados e seu modo de fazer negócios.",
-      "p3": "Acreditamos que o futuro dos negócios não é apenas adotar ferramentas de IA, mas integrar agentes inteligentes em suas operações para criar sistemas que aprendem, se adaptam e ajudam você a crescer sem esforço."
+      "title": "Excelência Operacional",
+      "p1": "O cenário empresarial está se transformando. A vantagem competitiva agora pertence às organizações que orquestram inteligência digital em escala mantendo soberania total sobre seus dados.",
+      "p2": "A Synsetio entrega a infraestrutura para essa transformação. Implantamos agentes de IA soberanos que se integram perfeitamente aos seus sistemas existentes—respeitando seus requisitos de conformidade, suas políticas de dados e seus padrões operacionais.",
+      "p3": "Arquitetamos soluções que vão além da automação: sistemas inteligentes que aprendem com seus processos, se adaptam aos seus fluxos de trabalho e geram resultados de negócio mensuráveis."
     },
     "features": {
-      "title": "Sua Infraestrutura de Crescimento",
+      "title": "Infraestrutura de IA Empresarial",
       "items": {
         "item1": {
-          "title": "Força de Trabalho Autônoma",
-          "description": "Implante agentes que trabalham para você 24/7. Eles lidam com a execução, para que você possa focar na estratégia e no crescimento."
+          "title": "Operações Autônomas",
+          "description": "Implante agentes inteligentes que executam fluxos de trabalho complexos continuamente. Eles gerenciam a carga operacional enquanto sua equipe foca em iniciativas estratégicas."
         },
         "item2": {
-          "title": "Seguro e Verificado",
-          "description": "Construído em tecnologia blockchain para garantir que cada ação seja segura, verificável e confiável — essencial para automatizar funções críticas de negócios."
+          "title": "Verificado e Auditável",
+          "description": "Construído em tecnologia blockchain garantindo rastreabilidade completa. Cada ação é criptograficamente verificada, auditável e em conformidade com requisitos de governança empresarial."
         },
         "item3": {
-          "title": "Operações Unificadas",
-          "description": "Conecte suas ferramentas e dados em um sistema coeso onde os agentes colaboram para resolver problemas complexos mais rápido do que qualquer equipe humana."
+          "title": "Inteligência Unificada",
+          "description": "Integre sistemas díspares em uma camada de inteligência coesa onde agentes colaboram para resolver desafios de negócio multidimensionais com eficiência sem precedentes."
         }
       },
-      "conclusion": "Construímos os sistemas onde sua visão encontra a execução."
+      "conclusion": "Projetamos os sistemas onde a visão estratégica encontra a execução operacional."
     },
     "services": {
-      "title": "Como Ajudamos Você a Crescer",
+      "title": "Soluções Empresariais",
       "offerings": {
         "offering1": {
-          "title": "Equipes de Agentes Personalizadas",
-          "description": "Design e implantação de equipes de agentes especializadas adaptadas aos seus fluxos de trabalho de negócios específicos."
+          "title": "Arquitetura de Agentes Personalizada",
+          "description": "Design e implantação de nível empresarial de sistemas de agentes especializados adaptados aos seus fluxos de trabalho de missão crítica."
         },
         "offering2": {
-          "title": "Hospedagem de IA Privada",
-          "description": "Infraestrutura segura e privada para seus modelos de IA. Seus dados permanecem seus, sempre."
+          "title": "Infraestrutura de IA Soberana",
+          "description": "Infraestrutura segura e privada para seus modelos de IA com controle total de residência de dados. Sua propriedade intelectual permanece exclusivamente sua."
         },
         "offering3": {
-          "title": "Receita Automatizada",
-          "description": "Sistemas de direção autônoma para geração de leads e divulgação que preenchem seu pipeline enquanto você dorme."
+          "title": "Automação de Operações de Receita",
+          "description": "Sistemas autônomos para geração de pipeline, qualificação de leads e sequências de engajamento operando continuamente sem intervenção manual."
         },
         "offering4": {
-          "title": "Contratos Inteligentes",
-          "description": "Integração perfeita com blockchain para transações e acordos seguros e automatizados."
+          "title": "Integração Blockchain",
+          "description": "Integração perfeita com tecnologia de ledger distribuído para transações, liquidações e execução contratual seguras e automatizadas."
         }
       }
     },
     "callToAction": {
-      "title": "Pronto para Crescer?",
-      "p1": "A lacuna entre empresas nativas de IA e as tradicionais está aumentando.",
-      "p2": "Seja parceiro da Synsetio para construir sua força de trabalho autônoma hoje.",
+      "title": "Pronto para Transformar?",
+      "p1": "A lacuna competitiva entre empresas nativas de IA e organizações tradicionais está se acelerando.",
+      "p2": "Seja parceiro da Synsetio para arquitetar sua infraestrutura operacional autônoma.",
       "form": {
-        "title": "Iniciar uma Conversa",
-        "name": "Nome",
-        "email": "E-mail",
-        "message": "Mensagem",
-        "submit": "Enviar Mensagem",
+        "title": "Agendar uma Consultoria",
+        "name": "Nome Completo",
+        "email": "E-mail Corporativo",
+        "message": "Como podemos ajudar?",
+        "submit": "Enviar Consulta",
         "submitting": "Enviando...",
-        "success": "Mensagem enviada com sucesso!",
-        "error": "Falha ao enviar mensagem. Por favor, tente novamente."
+        "success": "Obrigado. Nossa equipe responderá em 24 horas.",
+        "error": "Falha no envio. Por favor, tente novamente ou entre em contato diretamente."
       }
     },
     "blog": {
       "posts": {
         "agentic-revolution": {
           "title": "A Revolução Agêntica",
-          "description": "Por que as próximas empresas Fortune 500 serão medidas pela contagem de agentes, não pela contagem de funcionários.",
-          "content": "# A Revolução Agêntica: Escalando Além dos Limites Humanos\n\nA revolução industrial multiplicou o músculo. A revolução da informação multiplicou a conectividade. A Revolução Agêntica está multiplicando a *execução*.\n\n## A Nova Métrica de Escala\nTradicionalmente, escalar uma empresa significava contratar mais pessoas. Esse modelo linear traz atrito linear: sobrecarga de gestão, latência de comunicação e diluição cultural. \n\nNa Economia Agêntica, a escala é dissociada da contagem de funcionários. Uma equipe de cinco pode orquestrar uma força de trabalho digital de cinco mil.\n\n## A Abordagem da Synsetio\nAjudamos as empresas a transitar de \"usar ferramentas\" para \"implantar agentes\".\n1.  **Autonomia:** Agentes que planejam e executam, em vez de apenas esperar por instruções.\n2.  **Interoperabilidade:** Agentes que falam com outros agentes, criando cadeias de valor.\n3.  **Soberania:** Inteligência que você possui, rodando em infraestrutura que você controla.\n\nA pergunta não é mais \"Como a IA pode me ajudar a escrever este e-mail?\", mas \"Como um agente pode gerenciar todo este departamento?\""
+          "description": "Por que as empresas líderes serão medidas pela capacidade de agentes, não pelo número de funcionários.",
+          "content": "# A Revolução Agêntica: Escalando Além dos Limites Humanos\n\nA revolução industrial multiplicou a capacidade física. A revolução da informação multiplicou a conectividade. A Revolução Agêntica está multiplicando a *capacidade de execução*.\n\n## A Nova Métrica de Escala Empresarial\nTradicionalmente, escalar uma organização significava crescimento proporcional de pessoal. Esse modelo linear introduz fricção linear: sobrecarga de gestão, latência de comunicação e complexidade operacional.\n\nNa Economia Agêntica, a escala é desvinculada do pessoal. Uma equipe central de especialistas pode orquestrar uma força de trabalho digital de milhares.\n\n## A Metodologia Synsetio\nPermitimos que empresas façam a transição da utilização de ferramentas para a implantação de agentes:\n1.  **Autonomia:** Agentes que planejam e executam de forma independente, não apenas respondendo a prompts.\n2.  **Interoperabilidade:** Agentes que coordenam com outros agentes, criando cadeias de valor automatizadas.\n3.  **Soberania:** Inteligência que você possui, operando em infraestrutura que você controla.\n\nA questão estratégica não é mais \"Como a IA pode auxiliar nessa tarefa?\" mas \"Como agentes podem gerenciar toda essa função?\""
         },
         "sovereign-ai": {
           "title": "IA Soberana para Empresas",
           "description": "Por que possuir sua infraestrutura de inteligência é a única estratégia viável a longo prazo.",
-          "content": "# IA Soberana: O Imperativo Estratégico\n\nEm um mundo onde a inteligência é a principal mercadoria, alugar seu cérebro é um passivo.\n\n## Os Riscos da Dependência\nConfiar apenas em modelos públicos de código fechado para a lógica de negócios central introduz riscos existenciais:\n*   **Vazamento de Dados:** Seus dados proprietários treinando o modelo de outra pessoa.\n*   **Desvio de Modelo:** Suas operações quebrando porque uma API mudou da noite para o dia.\n*   **Exposição Regulatória:** Falta de explicabilidade e controle.\n\n## A Alternativa Soberana\nA Synsetio arquiteta sistemas onde você possui os pesos, os dados e o ambiente de execução. Isso é \"Soberania Francesa\" aplicada à inteligência digital — garantindo que sua vantagem competitiva permaneça estritamente sua."
+          "content": "# IA Soberana: O Imperativo Estratégico\n\nEm uma economia onde a inteligência é o principal ativo, a dependência de provedores externos de IA é um passivo estratégico.\n\n## Os Riscos da Dependência\nConfiar exclusivamente em modelos públicos de código fechado para a lógica de negócios central introduz riscos existenciais:\n*   **Exposição de Dados:** Dados proprietários treinando modelos externos.\n*   **Desvio de Modelo:** Operações interrompidas por mudanças de API não anunciadas.\n*   **Exposição Regulatória:** Explicabilidade e controle insuficientes para requisitos de conformidade.\n\n## A Alternativa Soberana\nA Synsetio arquiteta sistemas onde você possui os pesos, os dados e o ambiente de execução. Isso é soberania digital aplicada à inteligência empresarial—garantindo que sua vantagem competitiva permaneça exclusivamente sua."
         },
         "maikers-protocol": {
           "title": "O Protocolo Maikers",
-          "description": "Entendendo a espinha dorsal da identidade de agente verificável e on-chain.",
-          "content": "# O Protocolo Maikers: Identidade para Máquinas\n\nSe um agente de IA assina um contrato ou executa um pagamento, quem é responsável?\n\n## Identidade Verificável\nO Protocolo Maikers atribui identidades únicas e on-chain (NFTs) a agentes de IA. Isso permite que eles:\n*   Construam reputação ao longo do tempo.\n*   Possuam ativos e carteiras.\n*   Executem transações legalmente vinculativas.\n\n## Unindo Web2 e Web3\nUsamos esse protocolo para dar aos agentes empresariais uma \"personalidade jurídica\" na blockchain, permitindo uma nova classe de comércio B2B automatizado."
+          "description": "Entendendo os fundamentos da identidade de agente verificável e on-chain.",
+          "content": "# O Protocolo Maikers: Identidade para Sistemas Autônomos\n\nQuando um agente de IA executa um contrato ou processa uma transação, quem assume a responsabilidade?\n\n## Identidade Verificável\nO Protocolo Maikers atribui identidades únicas e on-chain a agentes de IA. Isso permite:\n*   Acumulação de reputação ao longo do tempo.\n*   Propriedade de ativos e carteiras.\n*   Execução de transações legalmente vinculativas.\n\n## Conectando Empresa e Web3\nAproveitamos esse protocolo para fornecer aos agentes empresariais identidade legal verificável em blockchain, habilitando uma nova categoria de comércio B2B automatizado."
         },
         "human-capital": {
           "title": "Redefinindo o Capital Humano",
-          "description": "Quando os agentes lidam com a execução, os humanos retornam à estratégia e criação puras.",
-          "content": "# Redefinindo o Capital Humano\n\nQuando o custo marginal da inteligência se aproxima de zero, o valor da *intenção* se aproxima do infinito.\n\n## O Papel do Arquiteto\nEm uma empresa equipada pela Synsetio, os funcionários mudam de \"operadores\" para \"arquitetos\". Seu papel é projetar os sistemas, definir os parâmetros e definir os resultados. Os agentes cuidam do resto.\n\nIsso não é o fim do trabalho; é a elevação do trabalho à sua forma mais alta: pura criação e estratégia."
+          "description": "Quando agentes lidam com a execução, o pessoal retorna à estratégia e inovação puras.",
+          "content": "# Redefinindo o Capital Humano\n\nQuando o custo marginal da inteligência se aproxima de zero, o valor da *intenção* estratégica se aproxima do infinito.\n\n## O Papel do Arquiteto\nEm uma empresa equipada com Synsetio, os funcionários fazem a transição de operadores para arquitetos. Seu papel se torna projetar sistemas, definir parâmetros e estabelecer resultados. Agentes executam o resto.\n\nIsso não é o deslocamento do trabalho; é a elevação do trabalho à sua forma mais alta: estratégia e inovação puras."
         }
       }
     },
     "footer": {
-      "description": "Synsetio: Seu Motor de Crescimento Autônomo. Paris • Global.",
+      "description": "Synsetio: Infraestrutura Autônoma Empresarial. Paris • Global.",
       "sections": {
-        "product": "Produto",
+        "product": "Soluções",
         "resources": "Recursos",
         "company": "Empresa",
         "legal": "Legal"
       },
       "newsletter": {
-        "title": "Mantenha-se atualizado",
-        "placeholder": "Seu e-mail",
+        "title": "Mantenha-se informado",
+        "placeholder": "E-mail corporativo",
         "button": "Inscrever-se"
       }
     }
   },
   "Navigation": {
     "about": "Sobre",
-    "features": "Recursos",
+    "features": "Soluções",
     "vision": "Visão",
     "blog": "Insights",
     "contact": "Contato",
     "home": "Início"
   },
   "CookieConsent": {
-    "message": "Usamos cookies para melhorar sua experiência. Veja nossa",
+    "message": "Usamos cookies para aprimorar sua experiência. Veja nossa",
     "linkText": "Política de Cookies",
     "accept": "Aceitar",
     "decline": "Recusar"

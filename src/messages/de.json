@@ -1,113 +1,113 @@
 {
   "HomePage": {
     "hero": {
-      "title1": "Schneller Skalieren Mit",
+      "title1": "Skalieren Sie Operationen Mit",
       "title2": "Autonomen Agenten",
-      "description": "Entkoppeln Sie Wachstum von der Mitarbeiterzahl. Rüsten Sie Ihr Unternehmen mit einer souveränen KI-Belegschaft aus, die Aufgaben ausführt, Umsatz generiert und Ihren Betrieb rund um die Uhr skaliert.",
-      "cta": "Loslegen"
+      "description": "Entkoppeln Sie Wachstum von Personalzahlen. Setzen Sie eine souveräne KI-Belegschaft ein, die kritische Workflows ausführt, Umsätze beschleunigt und Ihren Betrieb rund um die Uhr skaliert.",
+      "cta": "Demo Anfordern"
     },
     "mission": {
-      "title": "Geschäftsbeschleunigung",
-      "p1": "Die Weltwirtschaft wandelt sich. Wettbewerbsvorteile gehören nun denen, die durch die Orchestrierung digitaler Intelligenz mehr mit weniger erreichen können.",
-      "p2": "Synsetio liefert die Arbeitskraft für diesen Übergang. Wir automatisieren nicht nur Aufgaben; wir setzen souveräne digitale Agenten ein, die an der Seite Ihres Teams arbeiten – unter Wahrung Ihrer Daten und Ihrer Arbeitsweise.",
-      "p3": "Wir glauben, dass die Zukunft des Geschäfts nicht nur in der Einführung von KI-Tools liegt, sondern in der Integration intelligenter Agenten in Ihre Abläufe, um Systeme zu schaffen, die lernen, sich anpassen und Ihnen mühelos beim Wachsen helfen."
+      "title": "Operative Exzellenz",
+      "p1": "Die Unternehmenslandschaft transformiert sich. Wettbewerbsvorteile gehören nun Organisationen, die digitale Intelligenz im großen Maßstab orchestrieren und dabei volle Datensouveränität bewahren.",
+      "p2": "Synsetio liefert die Infrastruktur für diese Transformation. Wir setzen souveräne KI-Agenten ein, die sich nahtlos in Ihre bestehenden Systeme integrieren—unter Beachtung Ihrer Compliance-Anforderungen, Ihrer Datenrichtlinien und Ihrer Betriebsstandards.",
+      "p3": "Wir entwickeln Lösungen, die über Automatisierung hinausgehen: intelligente Systeme, die von Ihren Prozessen lernen, sich an Ihre Workflows anpassen und messbare Geschäftsergebnisse liefern."
     },
     "features": {
-      "title": "Ihre Wachstumsinfrastruktur",
+      "title": "Enterprise-KI-Infrastruktur",
       "items": {
         "item1": {
-          "title": "Autonome Belegschaft",
-          "description": "Setzen Sie Agenten ein, die rund um die Uhr für Sie arbeiten. Sie übernehmen die Ausführung, damit Sie sich auf Strategie und Wachstum konzentrieren können."
+          "title": "Autonome Operationen",
+          "description": "Setzen Sie intelligente Agenten ein, die komplexe Workflows kontinuierlich ausführen. Sie übernehmen die operative Arbeitslast, während Ihr Team sich auf strategische Initiativen konzentriert."
         },
         "item2": {
-          "title": "Sicher & Verifiziert",
-          "description": "Auf Blockchain-Technologie aufgebaut, um sicherzustellen, dass jede Aktion sicher, überprüfbar und vertrauenswürdig ist – unverzichtbar für die Automatisierung kritischer Geschäftsfunktionen."
+          "title": "Verifiziert & Auditierbar",
+          "description": "Auf Blockchain-Technologie aufgebaut mit vollständiger Rückverfolgbarkeit. Jede Aktion ist kryptografisch verifiziert, auditierbar und konform mit Enterprise-Governance-Anforderungen."
         },
         "item3": {
-          "title": "Vereinheitlichte Abläufe",
-          "description": "Verbinden Sie Ihre Tools und Daten zu einem kohärenten System, in dem Agenten zusammenarbeiten, um komplexe Probleme schneller zu lösen als jedes menschliche Team."
+          "title": "Vereinte Intelligenz",
+          "description": "Integrieren Sie disparate Systeme in eine kohärente Intelligenzschicht, in der Agenten zusammenarbeiten, um mehrdimensionale Geschäftsherausforderungen mit beispielloser Effizienz zu lösen."
         }
       },
-      "conclusion": "Wir bauen die Systeme, in denen Ihre Vision auf Ausführung trifft."
+      "conclusion": "Wir entwickeln die Systeme, in denen strategische Vision auf operative Umsetzung trifft."
     },
     "services": {
-      "title": "Wie Wir Ihnen Beim Wachsen Helfen",
+      "title": "Enterprise-Lösungen",
       "offerings": {
         "offering1": {
-          "title": "Maßgeschneiderte Agententeams",
-          "description": "Design und Einsatz spezialisierter Agententeams, die auf Ihre spezifischen Geschäftsabläufe zugeschnitten sind."
+          "title": "Maßgeschneiderte Agenten-Architektur",
+          "description": "Enterprise-Grade-Design und -Einsatz spezialisierter Agentensysteme, zugeschnitten auf Ihre geschäftskritischen Workflows."
         },
         "offering2": {
-          "title": "Privates KI-Hosting",
-          "description": "Sichere, private Infrastruktur für Ihre KI-Modelle. Ihre Daten bleiben immer Ihre."
+          "title": "Souveräne KI-Infrastruktur",
+          "description": "Sichere, private Infrastruktur für Ihre KI-Modelle mit vollständiger Kontrolle über die Datenresidenz. Ihr geistiges Eigentum bleibt ausschließlich Ihres."
         },
         "offering3": {
-          "title": "Automatisierter Umsatz",
-          "description": "Selbstfahrende Systeme für Lead-Generierung und Kontaktaufnahme, die Ihre Pipeline füllen, während Sie schlafen."
+          "title": "Automatisierung der Umsatzoperationen",
+          "description": "Autonome Systeme für Pipeline-Generierung, Lead-Qualifizierung und Engagement-Sequenzen, die kontinuierlich ohne manuelle Eingriffe arbeiten."
         },
         "offering4": {
-          "title": "Smart Contracts",
-          "description": "Nahtlose Integration mit Blockchain für sichere, automatisierte Transaktionen und Vereinbarungen."
+          "title": "Blockchain-Integration",
+          "description": "Nahtlose Integration mit Distributed-Ledger-Technologie für sichere, automatisierte Transaktionen, Abrechnungen und Vertragsausführung."
         }
       }
     },
     "callToAction": {
-      "title": "Bereit zum Wachsen?",
-      "p1": "Die Kluft zwischen KI-nativen Unternehmen und traditionellen Firmen wird größer.",
-      "p2": "Arbeiten Sie mit Synsetio zusammen, um noch heute Ihre autonome Belegschaft aufzubauen.",
+      "title": "Bereit zur Transformation?",
+      "p1": "Der Wettbewerbsabstand zwischen KI-nativen Unternehmen und traditionellen Organisationen beschleunigt sich.",
+      "p2": "Arbeiten Sie mit Synsetio zusammen, um Ihre autonome operative Infrastruktur zu entwickeln.",
       "form": {
-        "title": "Gespräch Starten",
-        "name": "Name",
-        "email": "E-Mail",
-        "message": "Nachricht",
-        "submit": "Nachricht Senden",
-        "submitting": "Senden...",
-        "success": "Nachricht erfolgreich gesendet!",
-        "error": "Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut."
+        "title": "Beratung Vereinbaren",
+        "name": "Vollständiger Name",
+        "email": "Geschäftliche E-Mail",
+        "message": "Wie können wir Ihnen helfen?",
+        "submit": "Anfrage Senden",
+        "submitting": "Wird gesendet...",
+        "success": "Vielen Dank. Unser Team wird innerhalb von 24 Stunden antworten.",
+        "error": "Übermittlung fehlgeschlagen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt."
       }
     },
     "blog": {
       "posts": {
         "agentic-revolution": {
           "title": "Die Agentische Revolution",
-          "description": "Warum die nächsten Fortune-500-Unternehmen nach ihrer Agentenzahl gemessen werden, nicht nach ihrer Mitarbeiterzahl.",
-          "content": "# Die Agentische Revolution: Skalierung Jenseits Menschlicher Grenzen\n\nDie industrielle Revolution vervielfachte Muskelkraft. Die Informationsrevolution vervielfachte Konnektivität. Die Agentische Revolution vervielfacht *Ausführung*.\n\n## Die Neue Metrik der Skalierung\nTraditionell bedeutete Skalierung eines Unternehmens die Einstellung von mehr Personal. Dieses lineare Modell bringt lineare Reibung mit sich: Management-Overhead, Kommunikationslatenz und kulturelle Verwässerung. \n\nIn der Agentischen Wirtschaft ist Skalierung von der Mitarbeiterzahl entkoppelt. Ein Team von fünf kann eine digitale Belegschaft von fünftausend orchestrieren.\n\n## Synsetios Ansatz\nWir helfen Unternehmen beim Übergang von der \"Nutzung von Tools\" zum \"Einsatz von Agenten\".\n1.  **Autonomie:** Agenten, die planen und ausführen, anstatt nur auf Anweisungen zu warten.\n2.  **Interoperabilität:** Agenten, die mit anderen Agenten sprechen und Wertschöpfungsketten schaffen.\n3.  **Souveränität:** Intelligenz, die Sie besitzen und auf Infrastruktur läuft, die Sie kontrollieren.\n\nDie Frage ist nicht mehr \"Wie kann KI mir helfen, diese E-Mail zu schreiben?\", sondern \"Wie kann ein Agent diese gesamte Abteilung leiten?\""
+          "description": "Warum führende Unternehmen nach ihrer Agentenkapazität gemessen werden, nicht nach ihrer Mitarbeiterzahl.",
+          "content": "# Die Agentische Revolution: Skalierung Jenseits Menschlicher Grenzen\n\nDie industrielle Revolution vervielfachte physische Kapazität. Die Informationsrevolution vervielfachte Konnektivität. Die Agentische Revolution vervielfacht *Ausführungskapazität*.\n\n## Die Neue Metrik der Unternehmensskalierung\nTraditionell bedeutete die Skalierung einer Organisation proportionales Personalwachstum. Dieses lineare Modell führt zu linearer Reibung: Management-Overhead, Kommunikationslatenz und operative Komplexität.\n\nIn der Agentischen Wirtschaft ist Skalierung vom Personal entkoppelt. Ein Kernteam von Spezialisten kann eine digitale Belegschaft von Tausenden orchestrieren.\n\n## Die Synsetio-Methodik\nWir ermöglichen Unternehmen den Übergang von der Werkzeugnutzung zum Agenteneinsatz:\n1.  **Autonomie:** Agenten, die selbstständig planen und ausführen, nicht nur auf Eingaben reagieren.\n2.  **Interoperabilität:** Agenten, die sich mit anderen Agenten koordinieren und automatisierte Wertschöpfungsketten schaffen.\n3.  **Souveränität:** Intelligenz, die Sie besitzen und auf Infrastruktur betreiben, die Sie kontrollieren.\n\nDie strategische Frage ist nicht mehr \"Wie kann KI bei dieser Aufgabe helfen?\" sondern \"Wie können Agenten diese gesamte Funktion verwalten?\""
         },
         "sovereign-ai": {
           "title": "Souveräne KI für Unternehmen",
           "description": "Warum der Besitz Ihrer Intelligenzinfrastruktur die einzige langfristig tragfähige Strategie ist.",
-          "content": "# Souveräne KI: Der Strategische Imperativ\n\nIn einer Welt, in der Intelligenz das wichtigste Gut ist, ist das Mieten Ihres Gehirns eine Verbindlichkeit.\n\n## Die Risiken der Abhängigkeit\nSich ausschließlich auf geschlossene, öffentliche Modelle für die Kernlogik des Unternehmens zu verlassen, birgt existenzielle Risiken:\n*   **Datenleck:** Ihre proprietären Daten trainieren das Modell eines anderen.\n*   **Modelldrift:** Ihre Abläufe brechen zusammen, weil sich eine API über Nacht geändert hat.\n*   **Regulatorische Exponierung:** Mangelnde Erklärbarkeit und Kontrolle.\n\n## Die Souveräne Alternative\nSynsetio entwirft Systeme, bei denen Sie die Gewichte, die Daten und die Ausführungsumgebung besitzen. Dies ist \"Französische Souveränität\", angewandt auf digitale Intelligenz – und stellt sicher, dass Ihr Wettbewerbsvorteil strikt Ihrer bleibt."
+          "content": "# Souveräne KI: Der Strategische Imperativ\n\nIn einer Wirtschaft, in der Intelligenz das wichtigste Gut ist, ist die Abhängigkeit von externen KI-Anbietern eine strategische Verbindlichkeit.\n\n## Die Risiken der Abhängigkeit\nSich ausschließlich auf öffentliche, proprietäre Modelle für die Kerngeschäftslogik zu verlassen, birgt existenzielle Risiken:\n*   **Datenexposition:** Proprietäre Daten trainieren externe Modelle.\n*   **Modelldrift:** Betriebsunterbrechungen durch unangekündigte API-Änderungen.\n*   **Regulatorische Exposition:** Unzureichende Erklärbarkeit und Kontrolle für Compliance-Anforderungen.\n\n## Die Souveräne Alternative\nSynsetio entwickelt Systeme, bei denen Sie die Gewichte, die Daten und die Ausführungsumgebung besitzen. Das ist digitale Souveränität angewandt auf Unternehmensintelligenz—sicherstellend, dass Ihr Wettbewerbsvorteil ausschließlich Ihrer bleibt."
         },
         "maikers-protocol": {
           "title": "Das Maikers-Protokoll",
-          "description": "Das Rückgrat verifizierbarer, On-Chain-Agentenidentität verstehen.",
-          "content": "# Das Maikers-Protokoll: Identität für Maschinen\n\nWenn ein KI-Agent einen Vertrag unterzeichnet oder eine Zahlung ausführt, wer ist verantwortlich?\n\n## Verifizierbare Identität\nDas Maikers-Protokoll weist KI-Agenten eindeutige On-Chain-Identitäten (NFTs) zu. Dies ermöglicht ihnen:\n*   Im Laufe der Zeit Reputation aufzubauen.\n*   Vermögenswerte und Wallets zu besitzen.\n*   Rechtlich bindende Transaktionen auszuführen.\n\n## Überbrückung von Web2 und Web3\nWir nutzen dieses Protokoll, um Unternehmensagenten eine \"juristische Persönlichkeit\" auf der Blockchain zu geben, was eine neue Klasse des automatisierten B2B-Handels ermöglicht."
+          "description": "Die Grundlagen der verifizierbaren On-Chain-Agentenidentität verstehen.",
+          "content": "# Das Maikers-Protokoll: Identität für Autonome Systeme\n\nWenn ein KI-Agent einen Vertrag ausführt oder eine Transaktion verarbeitet, wer trägt die Verantwortung?\n\n## Verifizierbare Identität\nDas Maikers-Protokoll weist KI-Agenten eindeutige On-Chain-Identitäten zu. Dies ermöglicht:\n*   Reputationsaufbau über Zeit.\n*   Besitz von Vermögenswerten und Wallets.\n*   Ausführung rechtlich bindender Transaktionen.\n\n## Enterprise und Web3 Verbinden\nWir nutzen dieses Protokoll, um Unternehmensagenten eine verifizierbare rechtliche Identität auf der Blockchain zu geben und ermöglichen so eine neue Kategorie des automatisierten B2B-Handels."
         },
         "human-capital": {
-          "title": "Neudefinition des Humankapitals",
-          "description": "Wenn Agenten die Ausführung übernehmen, kehren Menschen zu reiner Strategie und Kreation zurück.",
-          "content": "# Neudefinition des Humankapitals\n\nWenn die Grenzkosten von Intelligenz gegen Null gehen, geht der Wert von *Absicht* gegen Unendlich.\n\n## Die Rolle des Architekten\nIn einem mit Synsetio ausgestatteten Unternehmen wandeln sich Mitarbeiter von \"Betreibern\" zu \"Architekten\". Ihre Rolle ist es, die Systeme zu entwerfen, die Parameter festzulegen und die Ergebnisse zu definieren. Die Agenten erledigen den Rest.\n\nDies ist nicht das Ende der Arbeit; es ist die Erhebung der Arbeit zu ihrer höchsten Form: reine Kreation und Strategie."
+          "title": "Humankapital Neu Definieren",
+          "description": "Wenn Agenten die Ausführung übernehmen, kehrt das Personal zu reiner Strategie und Innovation zurück.",
+          "content": "# Humankapital Neu Definieren\n\nWenn die Grenzkosten von Intelligenz gegen Null gehen, geht der Wert strategischer *Absicht* gegen Unendlich.\n\n## Die Architektenrolle\nIn einem mit Synsetio ausgestatteten Unternehmen wandeln sich Mitarbeiter von Betreibern zu Architekten. Ihre Rolle wird das Entwerfen von Systemen, das Definieren von Parametern und das Festlegen von Ergebnissen. Agenten führen den Rest aus.\n\nDas ist nicht die Verdrängung von Arbeit; es ist die Erhebung von Arbeit zu ihrer höchsten Form: reine Strategie und Innovation."
         }
       }
     },
     "footer": {
-      "description": "Synsetio: Ihr Autonomer Wachstumsmotor. Paris • Global.",
+      "description": "Synsetio: Enterprise-Autonome Infrastruktur. Paris • Global.",
       "sections": {
-        "product": "Produkt",
+        "product": "Lösungen",
         "resources": "Ressourcen",
         "company": "Unternehmen",
         "legal": "Rechtliches"
       },
       "newsletter": {
         "title": "Bleiben Sie informiert",
-        "placeholder": "Ihre E-Mail",
+        "placeholder": "Geschäftliche E-Mail",
         "button": "Abonnieren"
       }
     }
   },
   "Navigation": {
     "about": "Über uns",
-    "features": "Funktionen",
+    "features": "Lösungen",
     "vision": "Vision",
     "blog": "Einblicke",
     "contact": "Kontakt",

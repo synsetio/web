@@ -1,120 +1,120 @@
 {
   "HomePage": {
     "hero": {
-      "title1": "Scale Faster With",
+      "title1": "Scale Operations With",
       "title2": "Autonomous Agents",
-      "description": "Decouple growth from headcount. Equip your enterprise with a sovereign AI workforce that executes tasks, generates revenue, and scales your operations 24/7.",
-      "cta": "Get Started"
+      "description": "Decouple growth from headcount. Deploy a sovereign AI workforce that executes critical workflows, accelerates revenue, and scales your operations around the clock.",
+      "cta": "Request a Demo"
     },
     "mission": {
-      "title": "Business Acceleration",
-      "p1": "The global economy is shifting. Competitive advantage now belongs to those who can do more with less by orchestrating digital intelligence.",
-      "p2": "Synsetio provides the workforce for this transition. We don't just automate tasks; we deploy sovereign digital agents that work alongside your team—respecting your data and your way of doing business.",
-      "p3": "We believe the future of business isn't just about adopting AI tools, but about integrating intelligent agents into your operations to create systems that learn, adapt, and help you grow effortlessly."
+      "title": "Operational Excellence",
+      "p1": "The enterprise landscape is transforming. Competitive advantage now belongs to organizations that orchestrate digital intelligence at scale while maintaining full data sovereignty.",
+      "p2": "Synsetio delivers the infrastructure for this transformation. We deploy sovereign AI agents that integrate seamlessly with your existing systems—respecting your compliance requirements, your data policies, and your operational standards.",
+      "p3": "We architect solutions that go beyond automation: intelligent systems that learn from your processes, adapt to your workflows, and drive measurable business outcomes."
     },
     "features": {
-      "title": "Your Growth Infrastructure",
+      "title": "Enterprise AI Infrastructure",
       "items": {
         "item1": {
-          "title": "Autonomous Workforce",
-          "description": "Deploy agents that work for you 24/7. They handle the execution, so you can focus on strategy and growth."
+          "title": "Autonomous Operations",
+          "description": "Deploy intelligent agents that execute complex workflows continuously. They manage the operational workload while your team focuses on strategic initiatives."
         },
         "item2": {
-          "title": "Secure & Verified",
-          "description": "Built on blockchain technology to ensure every action is secure, verifiable, and trusted—essential for automating critical business functions."
+          "title": "Verified & Auditable",
+          "description": "Built on blockchain technology ensuring complete traceability. Every action is cryptographically verified, auditable, and compliant with enterprise governance requirements."
         },
         "item3": {
-          "title": "Unified Operations",
-          "description": "Connect your tools and data into a cohesive system where agents collaborate to solve complex problems faster than any human team."
+          "title": "Unified Intelligence",
+          "description": "Integrate disparate systems into a cohesive intelligence layer where agents collaborate to resolve multi-dimensional business challenges with unprecedented efficiency."
         }
       },
-      "conclusion": "We build the systems where your vision meets execution."
+      "conclusion": "We engineer the systems where strategic vision meets operational execution."
     },
     "services": {
-      "title": "How We Help You Grow",
+      "title": "Enterprise Solutions",
       "offerings": {
         "offering1": {
-          "title": "Custom Agent Teams",
-          "description": "Design and deployment of specialized agent teams tailored to your specific business workflows."
+          "title": "Custom Agent Architecture",
+          "description": "Enterprise-grade design and deployment of specialized agent systems tailored to your mission-critical workflows."
         },
         "offering2": {
-          "title": "Private AI Hosting",
-          "description": "Secure, private infrastructure for your AI models. Your data stays yours, always."
+          "title": "Sovereign AI Infrastructure",
+          "description": "Secure, private infrastructure for your AI models with full data residency control. Your intellectual property remains exclusively yours."
         },
         "offering3": {
-          "title": "Automated Revenue",
-          "description": "Self-driving systems for lead generation and outreach that fill your pipeline while you sleep."
+          "title": "Revenue Operations Automation",
+          "description": "Autonomous systems for pipeline generation, lead qualification, and engagement sequences operating continuously without manual intervention."
         },
         "offering4": {
-          "title": "Smart Contracts",
-          "description": "Seamless integration with blockchain for secure, automated transactions and agreements."
+          "title": "Blockchain Integration",
+          "description": "Seamless integration with distributed ledger technology for secure, automated transactions, settlements, and contractual execution."
         }
       }
     },
     "callToAction": {
-      "title": "Ready to Grow?",
-      "p1": "The gap between AI-native businesses and traditional ones is widening.",
-      "p2": "Partner with Synsetio to build your autonomous workforce today.",
+      "title": "Ready to Transform?",
+      "p1": "The competitive gap between AI-native enterprises and traditional organizations is accelerating.",
+      "p2": "Partner with Synsetio to architect your autonomous operational infrastructure.",
       "form": {
-        "title": "Start a Conversation",
-        "name": "Name",
-        "email": "Email",
-        "message": "Message",
-        "submit": "Send Message",
-        "submitting": "Sending...",
-        "success": "Message sent successfully!",
-        "error": "Failed to send message. Please try again."
+        "title": "Schedule a Consultation",
+        "name": "Full Name",
+        "email": "Business Email",
+        "message": "How can we help?",
+        "submit": "Submit Inquiry",
+        "submitting": "Submitting...",
+        "success": "Thank you. Our team will respond within 24 hours.",
+        "error": "Submission failed. Please try again or contact us directly."
       }
     },
     "blog": {
       "posts": {
         "agentic-revolution": {
           "title": "The Agentic Revolution",
-          "description": "Why the next Fortune 500 companies will be measured by their agent count, not their headcount.",
-          "content": "# The Agentic Revolution: Scaling Beyond Human Limits\n\nThe industrial revolution multiplied muscle. The information revolution multiplied connectivity. The Agentic Revolution is multiplying *execution*.\n\n## The New Metric of Scale\nTraditionally, scaling a company meant hiring more people. This linear model brings linear friction: management overhead, communication latency, and cultural dilution. \n\nIn the Agentic Economy, scale is decoupled from headcount. A team of five can orchestrate a digital workforce of five thousand.\n\n## Synsetio's Approach\nWe help companies transition from \"using tools\" to \"deploying agents\".\n1.  **Autonomy:** Agents that plan and execute, rather than just waiting for prompts.\n2.  **Interoperability:** Agents that talk to other agents, creating value chains.\n3.  **Sovereignty:** Intelligence that you own, running on infrastructure you control.\n\nThe question is no longer \"How can AI help me write this email?\" but \"How can an agent manage this entire department?\""
+          "description": "Why leading enterprises will be measured by their agent capacity, not their headcount.",
+          "content": "# The Agentic Revolution: Scaling Beyond Human Limits\n\nThe industrial revolution multiplied physical capacity. The information revolution multiplied connectivity. The Agentic Revolution is multiplying *execution capacity*.\n\n## The New Metric of Enterprise Scale\nTraditionally, scaling an organization meant proportional headcount growth. This linear model introduces linear friction: management overhead, communication latency, and operational complexity.\n\nIn the Agentic Economy, scale is decoupled from personnel. A core team of specialists can orchestrate a digital workforce of thousands.\n\n## The Synsetio Methodology\nWe enable enterprises to transition from tool utilization to agent deployment:\n1.  **Autonomy:** Agents that plan and execute independently, not merely responding to prompts.\n2.  **Interoperability:** Agents that coordinate with other agents, creating automated value chains.\n3.  **Sovereignty:** Intelligence you own, operating on infrastructure you control.\n\nThe strategic question is no longer \"How can AI assist with this task?\" but \"How can agents manage this entire function?\""
         },
         "sovereign-ai": {
           "title": "Sovereign AI for Enterprise",
           "description": "Why owning your intelligence infrastructure is the only viable long-term strategy.",
-          "content": "# Sovereign AI: The Strategic Imperative\n\nIn a world where intelligence is the primary commodity, renting your brain is a liability.\n\n## The Risks of Dependency\nRelying solely on closed-source, public models for core business logic introduces existential risks:\n*   **Data Leakage:** Your proprietary data training someone else's model.\n*   **Model Drift:** Your operations breaking because an API changed overnight.\n*   **Regulatory Exposure:** Lack of explainability and control.\n\n## The Sovereign Alternative\nSynsetio architects systems where you own the weights, the data, and the execution environment. This is \"French Sovereignty\" applied to digital intelligence—ensuring that your competitive advantage remains strictly yours."
+          "content": "# Sovereign AI: The Strategic Imperative\n\nIn an economy where intelligence is the primary asset, dependency on external AI providers is a strategic liability.\n\n## The Risks of Dependency\nRelying exclusively on public, closed-source models for core business logic introduces existential risks:\n*   **Data Exposure:** Proprietary data training external models.\n*   **Model Drift:** Operations disrupted by unannounced API changes.\n*   **Regulatory Exposure:** Insufficient explainability and control for compliance requirements.\n\n## The Sovereign Alternative\nSynsetio architects systems where you own the weights, the data, and the execution environment. This is digital sovereignty applied to enterprise intelligence—ensuring your competitive advantage remains exclusively yours."
         },
         "maikers-protocol": {
           "title": "The Maikers Protocol",
-          "description": "Understanding the backbone of verifiable, on-chain agent identity.",
-          "content": "# The Maikers Protocol: Identity for Machines\n\nIf an AI agent signs a contract or executes a payment, who is responsible?\n\n## Verifiable Identity\nThe Maikers Protocol assigns unique, on-chain identities (NFTs) to AI agents. This allows them to:\n*   Build reputation over time.\n*   Own assets and wallets.\n*   Execute legally binding transactions.\n\n## Bridging Web2 and Web3\nWe use this protocol to give enterprise agents a \"legal personality\" on the blockchain, enabling a new class of automated B2B commerce."
+          "description": "Understanding the foundation of verifiable, on-chain agent identity.",
+          "content": "# The Maikers Protocol: Identity for Autonomous Systems\n\nWhen an AI agent executes a contract or processes a transaction, who bears responsibility?\n\n## Verifiable Identity\nThe Maikers Protocol assigns unique, on-chain identities to AI agents. This enables:\n*   Reputation accumulation over time.\n*   Asset and wallet ownership.\n*   Execution of legally binding transactions.\n\n## Bridging Enterprise and Web3\nWe leverage this protocol to provide enterprise agents with verifiable legal identity on blockchain, enabling a new category of automated B2B commerce."
         },
         "human-capital": {
           "title": "Redefining Human Capital",
-          "description": "When agents handle execution, humans return to pure strategy and creation.",
-          "content": "# Redefining Human Capital\n\nWhen the marginal cost of intelligence approaches zero, the value of *intent* approaches infinity.\n\n## The Role of the Architect\nIn a Synsetio-equipped enterprise, employees shift from \"operators\" to \"architects\". Their role is to design the systems, set the parameters, and define the outcomes. The agents handle the rest.\n\nThis is not the end of work; it is the elevation of work to its highest form: pure creation and strategy."
+          "description": "When agents handle execution, personnel return to pure strategy and innovation.",
+          "content": "# Redefining Human Capital\n\nAs the marginal cost of intelligence approaches zero, the value of strategic *intent* approaches infinity.\n\n## The Architect Role\nIn a Synsetio-equipped enterprise, employees transition from operators to architects. Their role becomes designing systems, defining parameters, and establishing outcomes. Agents execute the rest.\n\nThis is not the displacement of work; it is the elevation of work to its highest form: pure strategy and innovation."
         }
       }
     },
     "footer": {
-      "description": "Synsetio: Your Autonomous Growth Engine. Paris • Global.",
+      "description": "Synsetio: Enterprise Autonomous Infrastructure. Paris • Global.",
       "sections": {
-        "product": "Product",
+        "product": "Solutions",
         "resources": "Resources",
         "company": "Company",
         "legal": "Legal"
       },
       "newsletter": {
-        "title": "Stay updated",
-        "placeholder": "Your email",
+        "title": "Stay informed",
+        "placeholder": "Business email",
         "button": "Subscribe"
       }
     }
   },
   "Navigation": {
     "about": "About",
-    "features": "Features",
+    "features": "Solutions",
     "vision": "Vision",
     "blog": "Insights",
-    "contact": "Contact Us",
+    "contact": "Contact",
     "home": "Home"
   },
   "CookieConsent": {
-    "message": "We use cookies to improve your experience. See our",
+    "message": "We use cookies to enhance your experience. View our",
     "linkText": "Cookie Policy",
     "accept": "Accept",
     "decline": "Decline"
