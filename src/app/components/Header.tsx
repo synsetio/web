@@ -2,11 +2,22 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useTranslations, useLocale } from "next-intl";
 import MagneticButton from "./react-bits/MagneticButton";
 import { SynsetioLogo } from "./icons";
+
+const LOCALES = [
+  { code: "en", label: "English", flag: "🇬🇧" },
+  { code: "fr", label: "Français", flag: "🇫🇷" },
+  { code: "es", label: "Español", flag: "🇪🇸" },
+  { code: "de", label: "Deutsch", flag: "🇩🇪" },
+  { code: "pt", label: "Português", flag: "🇧🇷" },
+  { code: "zh", label: "中文", flag: "🇨🇳" },
+  { code: "ja", label: "日本語", flag: "🇯🇵" },
+  { code: "ar", label: "العربية", flag: "🇸🇦" },
+] as const;
 
 const NavItem = ({
   href,
@@ -168,6 +179,10 @@ export default function Header() {
 function LocaleSwitcher() {
   const locale = useLocale();
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  const currentLocale = LOCALES.find((l) => l.code === locale) || LOCALES[0];
 
   const switchLocale = (newLocale: string) => {
     const segments = pathname.split("/");
@@ -175,20 +190,68 @@ function LocaleSwitcher() {
     return segments.join("/");
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
-    <div className="flex items-center gap-1 text-sm">
-      <Link
-        href={switchLocale("en")}
-        className={`px-2 py-1 rounded ${locale === "en" ? "bg-black text-white" : "text-neutral-500 hover:text-black"}`}
+    <div className="relative" ref={dropdownRef}>
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-neutral-700 hover:text-black transition-colors rounded-lg hover:bg-neutral-100"
       >
-        EN
-      </Link>
-      <Link
-        href={switchLocale("fr")}
-        className={`px-2 py-1 rounded ${locale === "fr" ? "bg-black text-white" : "text-neutral-500 hover:text-black"}`}
-      >
-        FR
-      </Link>
+        <span>{currentLocale.flag}</span>
+        <span className="hidden sm:inline">
+          {currentLocale.code.toUpperCase()}
+        </span>
+        <svg
+          className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+      </button>
+
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          className="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-neutral-100 overflow-hidden z-50"
+        >
+          {LOCALES.map((l) => (
+            <Link
+              key={l.code}
+              href={switchLocale(l.code)}
+              onClick={() => setIsOpen(false)}
+              className={`flex items-center gap-3 px-4 py-3 text-sm transition-colors ${
+                locale === l.code
+                  ? "bg-black text-white"
+                  : "text-neutral-700 hover:bg-neutral-50"
+              }`}
+            >
+              <span>{l.flag}</span>
+              <span>{l.label}</span>
+            </Link>
+          ))}
+        </motion.div>
+      )}
     </div>
   );
 }

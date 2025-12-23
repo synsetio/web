@@ -1,0 +1,71 @@
+{
+  "HomePage": {
+    "hero": {
+      "title1": "Diseñado para la",
+      "title2": "Economía Agéntica",
+      "description": "Synsetio equipa a empresas visionarias con infraestructura de IA soberana. Transformamos organizaciones en potencias autónomas capaces de competir en la próxima era del comercio global.",
+      "cta": "Equipa Tu Empresa"
+    },
+    "mission": {
+      "title": "Autonomía Estratégica",
+      "p1": "La economía global está pasando de ser centrada en humanos a ser impulsada por agentes. En esta nueva realidad, la ventaja competitiva pertenece a quienes pueden orquestar inteligencia sintética a escala.",
+      "p2": "Nacida de la excelencia de la ingeniería francesa e impulsada por ambición internacional, Synsetio proporciona la columna vertebral arquitectónica para esta transición. No solo automatizamos tareas; desplegamos fuerzas de trabajo digitales soberanas que respetan tus datos, tus valores y tu independencia estratégica.",
+      "p3": "Creemos que el futuro de los negocios no se trata solo de adoptar IA, sino de integrarla en el ADN mismo de tus operaciones—creando sistemas que aprenden, se adaptan y ejecutan con precisión."
+    },
+    "features": {
+      "title": "El Stack Agéntico",
+      "items": {
+        "item1": {
+          "title": "Agentes Soberanos",
+          "description": "Despliega agentes autónomos que operan dentro de tus parámetros, siendo dueños de sus resultados y generando valor 24/7 sin supervisión constante."
+        },
+        "item2": {
+          "title": "Inteligencia Verificada",
+          "description": "Aprovechando blockchain para garantizar que cada acción de agente sea verificable, segura y atribuible—esencial para la confianza en un mundo automatizado."
+        },
+        "item3": {
+          "title": "Orquestación Colectiva",
+          "description": "Conecta instancias de IA aisladas en una mente colectiva cohesiva que resuelve desafíos empresariales complejos y multidimensionales más rápido que cualquier equipo aislado."
+        }
+      },
+      "conclusion": "Construimos la infraestructura donde la intención humana se encuentra con la ejecución de las máquinas."
+    },
+    "services": {
+      "title": "Capacidades de Despliegue",
+      "offerings": {
+        "offering1": {
+          "title": "Arquitectura de Agentes Empresariales",
+          "description": "Diseño y despliegue de enjambres agénticos personalizados adaptados a flujos de trabajo empresariales de alto valor."
+        },
+        "offering2": {
+          "title": "Hosting LLM Soberano",
+          "description": "Infraestructura segura y privada para ejecutar modelos afinados que nunca filtran datos a proveedores públicos."
+        },
+        "offering3": {
+          "title": "Operaciones de Ingresos Automatizadas",
+          "description": "Sistemas autónomos para generación de leads, cualificación y contacto inicial que operan 24/7."
+        },
+        "offering4": {
+          "title": "Integración Blockchain",
+          "description": "Conectando agentes de IA a capas de liquidez, identidad y liquidación on-chain para comercio autónomo."
+        }
+      }
+    },
+    "callToAction": {
+      "title": "¿Listo para Competir?",
+      "p1": "La brecha entre empresas nativas de agentes y firmas tradicionales se amplía cada día.",
+      "p2": "Asóciate con Synsetio para asegurar tu posición en el nuevo orden económico."
+    },
+    "footer": {
+      "description": "Synsetio: Arquitectura de la Economía Agéntica Soberana. París • Global."
+    }
+  },
+  "Navigation": {
+    "about": "Acerca de",
+    "features": "Características",
+    "vision": "Visión",
+    "blog": "Insights",
+    "contact": "Contacto",
+    "home": "Inicio"
+  }
+}

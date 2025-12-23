@@ -1,0 +1,71 @@
+{
+  "HomePage": {
+    "hero": {
+      "title1": "Entwickelt für die",
+      "title2": "Agentische Wirtschaft",
+      "description": "Synsetio stattet zukunftsorientierte Unternehmen mit souveräner KI-Infrastruktur aus. Wir verwandeln Organisationen in autonome Kraftzentren, die in der nächsten Ära des globalen Handels konkurrieren können.",
+      "cta": "Rüsten Sie Ihr Unternehmen"
+    },
+    "mission": {
+      "title": "Strategische Autonomie",
+      "p1": "Die globale Wirtschaft verschiebt sich von menschenzentriert zu agentengesteuert. In dieser neuen Realität gehört der Wettbewerbsvorteil denjenigen, die synthetische Intelligenz im großen Maßstab orchestrieren können.",
+      "p2": "Geboren aus französischer Ingenieursexzellenz und getrieben von internationalem Ehrgeiz, liefert Synsetio das architektonische Rückgrat für diesen Übergang. Wir automatisieren nicht nur Aufgaben; wir setzen souveräne digitale Arbeitskräfte ein, die Ihre Daten, Ihre Werte und Ihre strategische Unabhängigkeit respektieren.",
+      "p3": "Wir glauben, dass die Zukunft des Geschäfts nicht nur in der Einführung von KI liegt, sondern in ihrer Integration in die DNA Ihrer Operationen—Systeme schaffend, die lernen, sich anpassen und präzise ausführen."
+    },
+    "features": {
+      "title": "Der Agentische Stack",
+      "items": {
+        "item1": {
+          "title": "Souveräne Agenten",
+          "description": "Setzen Sie autonome Agenten ein, die innerhalb Ihrer Parameter arbeiten, ihre Ergebnisse besitzen und 24/7 Wert schaffen ohne ständige Überwachung."
+        },
+        "item2": {
+          "title": "Verifizierte Intelligenz",
+          "description": "Nutzung von Blockchain, um sicherzustellen, dass jede Agentenaktion verifizierbar, sicher und zuordenbar ist—wesentlich für Vertrauen in einer automatisierten Welt."
+        },
+        "item3": {
+          "title": "Kollektive Orchestrierung",
+          "description": "Verbinden Sie isolierte KI-Instanzen zu einem kohäsiven Schwarmbewusstsein, das komplexe, mehrdimensionale Geschäftsherausforderungen schneller löst als jedes isolierte Team."
+        }
+      },
+      "conclusion": "Wir bauen die Infrastruktur, wo menschliche Absicht auf maschinelle Ausführung trifft."
+    },
+    "services": {
+      "title": "Bereitstellungsfähigkeiten",
+      "offerings": {
+        "offering1": {
+          "title": "Enterprise Agent Architektur",
+          "description": "Design und Bereitstellung von maßgeschneiderten agentischen Schwärmen für spezifische hochwertige Geschäftsabläufe."
+        },
+        "offering2": {
+          "title": "Souveränes LLM-Hosting",
+          "description": "Sichere, private Infrastruktur für den Betrieb feinabgestimmter Modelle, die niemals Daten an öffentliche Anbieter weitergeben."
+        },
+        "offering3": {
+          "title": "Automatisierte Umsatzoperationen",
+          "description": "Selbstfahrende Systeme für Lead-Generierung, Qualifizierung und erste Kontaktaufnahme, die 24/7 arbeiten."
+        },
+        "offering4": {
+          "title": "Blockchain-Integration",
+          "description": "Verbindung von KI-Agenten mit On-Chain-Liquiditäts-, Identitäts- und Abwicklungsschichten für autonomen Handel."
+        }
+      }
+    },
+    "callToAction": {
+      "title": "Bereit zu konkurrieren?",
+      "p1": "Die Kluft zwischen agenten-nativen Unternehmen und traditionellen Firmen wächst jeden Tag.",
+      "p2": "Partnern Sie mit Synsetio, um Ihre Position in der neuen Wirtschaftsordnung zu sichern."
+    },
+    "footer": {
+      "description": "Synsetio: Architektur der souveränen agentischen Wirtschaft. Paris • Global."
+    }
+  },
+  "Navigation": {
+    "about": "Über uns",
+    "features": "Funktionen",
+    "vision": "Vision",
+    "blog": "Einblicke",
+    "contact": "Kontakt",
+    "home": "Startseite"
+  }
+}
