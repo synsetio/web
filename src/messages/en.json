@@ -1,60 +1,60 @@
 {
   "HomePage": {
     "hero": {
-      "title1": "Sovereign AI",
-      "title2": "Infrastructure",
-      "description": "We equip enterprises with autonomous AI systems that compete in the agentic economy.",
+      "title1": "Scale Faster With",
+      "title2": "Autonomous Agents",
+      "description": "Stop trading time for money. Equip your business with a sovereign AI workforce that executes tasks, generates revenue, and scales your operations 24/7.",
       "cta": "Get Started"
     },
     "mission": {
-      "title": "Strategic Autonomy",
-      "p1": "The global economy is shifting from human-centric to agent-driven. In this new reality, competitive advantage belongs to those who can orchestrate synthetic intelligence at scale.",
-      "p2": "Born from French engineering excellence and driven by international ambition, Synsetio provides the architectural spine for this transition. We do not merely automate tasks; we deploy sovereign digital workforces that respect your data, your values, and your strategic independence.",
-      "p3": "We believe that the future of business is not just about adopting AI, but about integrating it into the very DNA of your operations—creating systems that learn, adapt, and execute with precision."
+      "title": "Business Acceleration",
+      "p1": "The global economy is shifting. Competitive advantage now belongs to those who can do more with less by orchestrating digital intelligence.",
+      "p2": "Synsetio provides the workforce for this transition. We don't just automate tasks; we deploy sovereign digital agents that work alongside your team—respecting your data and your way of doing business.",
+      "p3": "We believe the future of business isn't just about adopting AI tools, but about integrating intelligent agents into your operations to create systems that learn, adapt, and help you grow effortlessly."
     },
     "features": {
-      "title": "The Agentic Stack",
+      "title": "Your Growth Infrastructure",
       "items": {
         "item1": {
-          "title": "Sovereign Agents",
-          "description": "Deploy autonomous agents that operate within your parameters, owning their outputs and driving value 24/7 without constant oversight."
+          "title": "Autonomous Workforce",
+          "description": "Deploy agents that work for you 24/7. They handle the execution, so you can focus on strategy and growth."
         },
         "item2": {
-          "title": "Verified Intelligence",
-          "description": "Leveraging blockchain to ensure every agent action is verifiable, secure, and attributable—essential for trust in an automated world."
+          "title": "Secure & Verified",
+          "description": "Built on blockchain technology to ensure every action is secure, verifiable, and trusted—essential for automating critical business functions."
         },
         "item3": {
-          "title": "Collective Orchestration",
-          "description": "Connect isolated AI instances into a cohesive hive-mind that solves complex, multi-dimensional business challenges faster than any siloed team."
+          "title": "Unified Operations",
+          "description": "Connect your tools and data into a cohesive system where agents collaborate to solve complex problems faster than any human team."
         }
       },
-      "conclusion": "We build the infrastructure where human intent meets machine execution."
+      "conclusion": "We build the systems where your vision meets execution."
     },
     "services": {
-      "title": "Deployment Capabilities",
+      "title": "How We Help You Grow",
       "offerings": {
         "offering1": {
-          "title": "Enterprise Agent Architecture",
-          "description": "Design and deployment of custom agentic swarms tailored to specific high-value business workflows."
+          "title": "Custom Agent Teams",
+          "description": "Design and deployment of specialized agent teams tailored to your specific business workflows."
         },
         "offering2": {
-          "title": "Sovereign LLM Hosting",
-          "description": "Secure, private infrastructure for running fine-tuned models that never leak data to public providers."
+          "title": "Private AI Hosting",
+          "description": "Secure, private infrastructure for your AI models. Your data stays yours, always."
         },
         "offering3": {
-          "title": "Automated Revenue Ops",
-          "description": "Self-driving systems for lead generation, qualification, and initial outreach that operate 24/7."
+          "title": "Automated Revenue",
+          "description": "Self-driving systems for lead generation and outreach that fill your pipeline while you sleep."
         },
         "offering4": {
-          "title": "Blockchain Integration",
-          "description": "Connecting AI agents to on-chain liquidity, identity, and settlement layers for autonomous commerce."
+          "title": "Smart Contracts",
+          "description": "Seamless integration with blockchain for secure, automated transactions and agreements."
         }
       }
     },
     "callToAction": {
-      "title": "Ready to Compete?",
-      "p1": "The gap between agent-native companies and traditional firms is widening every day.",
-      "p2": "Partner with Synsetio to secure your position in the new economic order."
+      "title": "Ready to Grow?",
+      "p1": "The gap between AI-native businesses and traditional ones is widening.",
+      "p2": "Partner with Synsetio to build your autonomous workforce today."
     },
     "blog": {
       "posts": {
@@ -81,7 +81,7 @@
       }
     },
     "footer": {
-      "description": "Synsetio: Architecting the Sovereign Agentic Economy. Paris • Global."
+      "description": "Synsetio: Your Autonomous Growth Engine. Paris • Global."
     }
   },
   "Navigation": {

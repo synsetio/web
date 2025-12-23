@@ -22,23 +22,20 @@ const BASE_URL = "https://synsetio.com";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Synsetio | Sovereign AI Infrastructure for Enterprise",
+    default: "Synsetio | Autonomous AI Workforce for Business",
     template: "%s | Synsetio",
   },
   description:
-    "Synsetio builds sovereign AI infrastructure for enterprises. Deploy autonomous agents, secure LLM hosting, and blockchain-verified intelligence. French engineering, global scale.",
+    "Scale your business with an autonomous AI workforce. Synsetio equips you with sovereign agents that automate operations, sales, and support 24/7.",
   keywords: [
+    "autonomous AI workforce",
+    "business automation",
+    "AI agents for business",
     "sovereign AI",
-    "enterprise AI infrastructure",
-    "autonomous agents",
-    "agentic economy",
-    "AI agents",
-    "LLM hosting",
-    "blockchain AI",
-    "AI automation",
-    "enterprise automation",
-    "French AI company",
-    "Paris AI startup",
+    "automated revenue",
+    "SME AI adoption",
+    "AI scaling",
+    "digital workforce",
   ],
   authors: [{ name: "Synsetio", url: BASE_URL }],
   creator: "Synsetio",
@@ -51,16 +48,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: BASE_URL,
-    title: "Synsetio | Sovereign AI Infrastructure",
+    title: "Synsetio | Autonomous AI Workforce",
     description:
-      "Deploy autonomous AI agents with sovereign infrastructure. Enterprise-grade, blockchain-verified, globally scalable.",
+      "Scale your business with an autonomous AI workforce. 24/7 operations, verifiable execution, and growth without headcount.",
     siteName: "Synsetio",
     images: [
       {
         url: `${BASE_URL}/og-image.png`,
         width: 1200,
         height: 630,
-        alt: "Synsetio - Sovereign AI Infrastructure",
+        alt: "Synsetio - Autonomous AI Workforce",
       },
     ],
     locale: "en_US",
@@ -78,8 +75,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@synsetio",
     creator: "@synsetio",
-    title: "Synsetio | Sovereign AI Infrastructure",
-    description: "Deploy autonomous AI agents with sovereign infrastructure.",
+    title: "Synsetio | Autonomous AI Workforce",
+    description:
+      "Scale your business with an autonomous AI workforce. 24/7 operations, verifiable execution.",
     images: [`${BASE_URL}/og-image.png`],
   },
   robots: {
@@ -126,7 +124,7 @@ function JsonLd() {
     url: BASE_URL,
     logo: `${BASE_URL}/logo.png`,
     description:
-      "Synsetio builds sovereign AI infrastructure for enterprises. We deploy autonomous agents, secure LLM hosting, and blockchain-verified intelligence systems.",
+      "Synsetio equips businesses with autonomous AI agents. We deploy sovereign digital workforces that automate operations and drive growth.",
     foundingDate: "2024",
     founders: [{ "@type": "Person", name: "Synsetio Team" }],
     address: {
@@ -147,7 +145,7 @@ function JsonLd() {
     "@type": "WebSite",
     name: "Synsetio",
     url: BASE_URL,
-    description: "Sovereign AI Infrastructure for Enterprise",
+    description: "Autonomous AI Workforce for Business",
     potentialAction: {
       "@type": "SearchAction",
       target: `${BASE_URL}/blog?q={search_term_string}`,
@@ -165,22 +163,22 @@ function JsonLd() {
     },
     areaServed: "Worldwide",
     description:
-      "Enterprise AI infrastructure including autonomous agents, sovereign LLM hosting, and blockchain integration.",
+      "Autonomous AI workforce solutions including custom agents, private hosting, and automated revenue operations.",
     offers: [
       {
         "@type": "Offer",
-        name: "Enterprise Agent Architecture",
-        description: "Custom agentic swarms for high-value business workflows",
+        name: "Custom Agent Teams",
+        description: "Specialized AI agents for specific business workflows",
       },
       {
         "@type": "Offer",
-        name: "Sovereign LLM Hosting",
-        description: "Private infrastructure for fine-tuned AI models",
+        name: "Private AI Hosting",
+        description: "Secure infrastructure for your AI models",
       },
       {
         "@type": "Offer",
-        name: "Blockchain Integration",
-        description: "On-chain identity and settlement for AI agents",
+        name: "Automated Revenue Ops",
+        description: "Self-driving systems for lead generation and outreach",
       },
     ],
   };
