@@ -51,14 +51,31 @@ export default function Footer() {
 
   const footerSections = [
     {
-      title: "Company",
+      title: t("sections.product"),
       links: [
-        { label: "Our Mission", href: `/${locale}#mission` },
+        { label: "Features", href: `/${locale}#features` },
         { label: "Services", href: `/${locale}#services` },
+        { label: "Pricing", href: "#" }, // Placeholder
       ],
     },
     {
-      title: "Legal",
+      title: t("sections.resources"),
+      links: [
+        { label: "Blog", href: `/${locale}/blog` },
+        { label: "Documentation", href: "#" }, // Placeholder
+        { label: "Community", href: "#" }, // Placeholder
+      ],
+    },
+    {
+      title: t("sections.company"),
+      links: [
+        { label: "About Us", href: `/${locale}#mission` },
+        { label: "Careers", href: "#" }, // Placeholder
+        { label: "Contact", href: `/${locale}#contact` },
+      ],
+    },
+    {
+      title: t("sections.legal"),
       links: [
         { label: "Privacy Policy", href: `/${locale}/privacy-policy` },
         { label: "Terms of Service", href: `/${locale}/terms-of-service` },
@@ -68,10 +85,10 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-white border-t border-neutral-100 py-16">
+    <footer className="bg-white border-t border-neutral-100 pt-20 pb-12">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-12 mb-16">
-          <div className="col-span-1 md:col-span-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-20">
+          <div className="lg:col-span-2">
             <Link href={`/${locale}`} className="flex items-center mb-6 group">
               <SynsetioLogo
                 width={40}
@@ -85,25 +102,42 @@ export default function Footer() {
             <p className="text-neutral-500 text-lg leading-relaxed max-w-sm mb-8">
               {t("description")}
             </p>
-            <div className="flex flex-wrap gap-2">
-              {LOCALES.map((l) => (
-                <Link
-                  key={l.code}
-                  href={switchLocale(l.code)}
-                  className={`px-3 py-1.5 text-sm rounded-full transition-colors ${
-                    locale === l.code
-                      ? "bg-black text-white"
-                      : "bg-neutral-100 text-neutral-600 hover:bg-neutral-200"
-                  }`}
+
+            {/* Newsletter Placeholder */}
+            <div className="mb-8">
+              <h5 className="font-bold text-black mb-3 text-sm uppercase tracking-wider">
+                {t("newsletter.title")}
+              </h5>
+              <div className="flex gap-2 max-w-sm">
+                <input
+                  type="email"
+                  placeholder={t("newsletter.placeholder")}
+                  className="flex-1 bg-neutral-50 border border-neutral-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-black transition-colors"
+                />
+                <button className="bg-black text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-neutral-800 transition-colors">
+                  {t("newsletter.button")}
+                </button>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              {SOCIAL_LINKS.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-neutral-50 p-2 rounded-full text-neutral-600 hover:bg-black hover:text-white transition-all duration-300"
+                  aria-label={social.name}
                 >
-                  {l.flag} {l.code.toUpperCase()}
-                </Link>
+                  {social.icon}
+                </a>
               ))}
             </div>
           </div>
 
           {footerSections.map((section) => (
-            <div key={section.title}>
+            <div key={section.title} className="lg:col-span-1">
               <h4 className="text-sm font-bold uppercase tracking-wider mb-6 text-black">
                 {section.title}
               </h4>
@@ -112,7 +146,7 @@ export default function Footer() {
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-neutral-500 hover:text-black transition-colors"
+                      className="text-neutral-500 hover:text-black transition-colors block"
                     >
                       {link.label}
                     </Link>
@@ -123,21 +157,28 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="pt-8 border-t border-neutral-100 flex flex-col md:flex-row justify-between items-center text-sm text-neutral-400">
-          <p>&copy; {currentYear} Synsetio. All rights reserved.</p>
-          <div className="mt-4 md:mt-0 flex items-center space-x-4">
-            {SOCIAL_LINKS.map((social) => (
-              <a
-                key={social.name}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neutral-400 hover:text-black transition-colors"
-                aria-label={social.name}
-              >
-                {social.icon}
-              </a>
-            ))}
+        <div className="pt-8 border-t border-neutral-100">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <p className="text-neutral-400 text-sm order-2 md:order-1">
+              &copy; {currentYear} Synsetio. All rights reserved.
+            </p>
+
+            <div className="flex flex-wrap justify-center gap-2 order-1 md:order-2">
+              {LOCALES.map((l) => (
+                <Link
+                  key={l.code}
+                  href={switchLocale(l.code)}
+                  className={`px-3 py-1.5 text-sm rounded-full transition-all duration-300 border ${
+                    locale === l.code
+                      ? "bg-black text-white border-black"
+                      : "bg-white text-neutral-600 border-neutral-200 hover:border-black hover:text-black"
+                  }`}
+                >
+                  <span className="mr-2">{l.flag}</span>
+                  {l.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>

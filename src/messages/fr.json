@@ -81,7 +81,18 @@
       }
     },
     "footer": {
-      "description": "Synsetio : Votre Moteur de Croissance Autonome. Paris • Monde."
+      "description": "Synsetio : Votre Moteur de Croissance Autonome. Paris • Monde.",
+      "sections": {
+        "product": "Produit",
+        "resources": "Ressources",
+        "company": "Entreprise",
+        "legal": "Légal"
+      },
+      "newsletter": {
+        "title": "Restez informé",
+        "placeholder": "Votre email",
+        "button": "S'inscrire"
+      }
     }
   },
   "Navigation": {

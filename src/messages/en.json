@@ -81,7 +81,18 @@
       }
     },
     "footer": {
-      "description": "Synsetio: Your Autonomous Growth Engine. Paris • Global."
+      "description": "Synsetio: Your Autonomous Growth Engine. Paris • Global.",
+      "sections": {
+        "product": "Product",
+        "resources": "Resources",
+        "company": "Company",
+        "legal": "Legal"
+      },
+      "newsletter": {
+        "title": "Stay updated",
+        "placeholder": "Your email",
+        "button": "Subscribe"
+      }
     }
   },
   "Navigation": {
