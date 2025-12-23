@@ -1,6 +1,6 @@
 export const content = {
-title: "Cookie Policy",
-content: `
+  title: "Cookie Policy",
+  content: `
 
 # Cookie Policy
 

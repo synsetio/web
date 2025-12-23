@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
-import mailchimp, { MessagesSendRequest } from "@mailchimp/mailchimp_transactional";
+import mailchimp, {
+  MessagesSendRequest,
+} from "@mailchimp/mailchimp_transactional";
 
 export async function POST(request: Request) {
   const body = await request.json();
@@ -37,13 +39,13 @@ export async function POST(request: Request) {
     }
     return NextResponse.json(
       { message: "Message sent successfully" },
-      { status: 200 }
+      { status: 200 },
     );
   } catch (error) {
     console.error("Error sending email:", error);
     return NextResponse.json(
       { message: "Failed to send message" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

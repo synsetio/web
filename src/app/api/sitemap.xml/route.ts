@@ -1,7 +1,7 @@
-import { NextResponse } from 'next/server';
-import { content } from '../../data/home-page';
+import { NextResponse } from "next/server";
+import { content } from "../../data/home-page";
 
-const BASE_URL = 'https://synsetio.com'; // Replace with your actual domain
+const BASE_URL = "https://synsetio.com"; // Replace with your actual domain
 
 function generateSiteMap() {
   const { resources } = content.features;
@@ -46,14 +46,14 @@ function generateSiteMap() {
        .map((resource) => {
          return `
        <url>
-           <loc>${BASE_URL}/blog/${encodeURIComponent(resource.title.toLowerCase().replace(/ /g, '-'))}</loc>
+           <loc>${BASE_URL}/blog/${encodeURIComponent(resource.title.toLowerCase().replace(/ /g, "-"))}</loc>
            <lastmod>${new Date().toISOString()}</lastmod>
            <changefreq>monthly</changefreq>
            <priority>0.7</priority>
        </url>
      `;
        })
-       .join('')}
+       .join("")}
    </urlset>
  `;
 }
@@ -64,8 +64,8 @@ export async function GET() {
   return new NextResponse(body, {
     status: 200,
     headers: {
-      'Cache-control': 'public, s-maxage=86400, stale-while-revalidate',
-      'Content-Type': 'application/xml',
+      "Cache-control": "public, s-maxage=86400, stale-while-revalidate",
+      "Content-Type": "application/xml",
     },
   });
 }
