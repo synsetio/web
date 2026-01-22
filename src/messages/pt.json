@@ -78,11 +78,6 @@
           "description": "Por que possuir sua infraestrutura de inteligência é a única estratégia viável a longo prazo.",
           "content": "# IA Soberana: O Imperativo Estratégico\n\nEm uma economia onde a inteligência é o principal ativo, a dependência de provedores externos de IA é um passivo estratégico.\n\n## Os Riscos da Dependência\nConfiar exclusivamente em modelos públicos de código fechado para a lógica de negócios central introduz riscos existenciais:\n*   **Exposição de Dados:** Dados proprietários treinando modelos externos.\n*   **Desvio de Modelo:** Operações interrompidas por mudanças de API não anunciadas.\n*   **Exposição Regulatória:** Explicabilidade e controle insuficientes para requisitos de conformidade.\n\n## A Alternativa Soberana\nA Synsetio arquiteta sistemas onde você possui os pesos, os dados e o ambiente de execução. Isso é soberania digital aplicada à inteligência empresarial—garantindo que sua vantagem competitiva permaneça exclusivamente sua."
         },
-        "maikers-protocol": {
-          "title": "O Protocolo Maikers",
-          "description": "Entendendo os fundamentos da identidade de agente verificável e on-chain.",
-          "content": "# O Protocolo Maikers: Identidade para Sistemas Autônomos\n\nQuando um agente de IA executa um contrato ou processa uma transação, quem assume a responsabilidade?\n\n## Identidade Verificável\nO Protocolo Maikers atribui identidades únicas e on-chain a agentes de IA. Isso permite:\n*   Acumulação de reputação ao longo do tempo.\n*   Propriedade de ativos e carteiras.\n*   Execução de transações legalmente vinculativas.\n\n## Conectando Empresa e Web3\nAproveitamos esse protocolo para fornecer aos agentes empresariais identidade legal verificável em blockchain, habilitando uma nova categoria de comércio B2B automatizado."
-        },
         "human-capital": {
           "title": "Redefinindo o Capital Humano",
           "description": "Quando agentes lidam com a execução, o pessoal retorna à estratégia e inovação puras.",

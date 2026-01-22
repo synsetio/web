@@ -78,11 +78,6 @@
           "description": "Warum der Besitz Ihrer Intelligenzinfrastruktur die einzige langfristig tragfähige Strategie ist.",
           "content": "# Souveräne KI: Der Strategische Imperativ\n\nIn einer Wirtschaft, in der Intelligenz das wichtigste Gut ist, ist die Abhängigkeit von externen KI-Anbietern eine strategische Verbindlichkeit.\n\n## Die Risiken der Abhängigkeit\nSich ausschließlich auf öffentliche, proprietäre Modelle für die Kerngeschäftslogik zu verlassen, birgt existenzielle Risiken:\n*   **Datenexposition:** Proprietäre Daten trainieren externe Modelle.\n*   **Modelldrift:** Betriebsunterbrechungen durch unangekündigte API-Änderungen.\n*   **Regulatorische Exposition:** Unzureichende Erklärbarkeit und Kontrolle für Compliance-Anforderungen.\n\n## Die Souveräne Alternative\nSynsetio entwickelt Systeme, bei denen Sie die Gewichte, die Daten und die Ausführungsumgebung besitzen. Das ist digitale Souveränität angewandt auf Unternehmensintelligenz—sicherstellend, dass Ihr Wettbewerbsvorteil ausschließlich Ihrer bleibt."
         },
-        "maikers-protocol": {
-          "title": "Das Maikers-Protokoll",
-          "description": "Die Grundlagen der verifizierbaren On-Chain-Agentenidentität verstehen.",
-          "content": "# Das Maikers-Protokoll: Identität für Autonome Systeme\n\nWenn ein KI-Agent einen Vertrag ausführt oder eine Transaktion verarbeitet, wer trägt die Verantwortung?\n\n## Verifizierbare Identität\nDas Maikers-Protokoll weist KI-Agenten eindeutige On-Chain-Identitäten zu. Dies ermöglicht:\n*   Reputationsaufbau über Zeit.\n*   Besitz von Vermögenswerten und Wallets.\n*   Ausführung rechtlich bindender Transaktionen.\n\n## Enterprise und Web3 Verbinden\nWir nutzen dieses Protokoll, um Unternehmensagenten eine verifizierbare rechtliche Identität auf der Blockchain zu geben und ermöglichen so eine neue Kategorie des automatisierten B2B-Handels."
-        },
         "human-capital": {
           "title": "Humankapital Neu Definieren",
           "description": "Wenn Agenten die Ausführung übernehmen, kehrt das Personal zu reiner Strategie und Innovation zurück.",

@@ -78,11 +78,6 @@
           "description": "Por qué poseer su infraestructura de inteligencia es la única estrategia viable a largo plazo.",
           "content": "# IA Soberana: El Imperativo Estratégico\n\nEn una economía donde la inteligencia es el activo principal, la dependencia de proveedores externos de IA es un pasivo estratégico.\n\n## Los Riesgos de la Dependencia\nConfiar exclusivamente en modelos públicos de código cerrado para la lógica comercial central introduce riesgos existenciales:\n*   **Exposición de Datos:** Datos propietarios entrenando modelos externos.\n*   **Deriva del Modelo:** Operaciones interrumpidas por cambios de API no anunciados.\n*   **Exposición Regulatoria:** Explicabilidad y control insuficientes para requisitos de cumplimiento.\n\n## La Alternativa Soberana\nSynsetio arquitecta sistemas donde usted posee los pesos, los datos y el entorno de ejecución. Esto es soberanía digital aplicada a la inteligencia empresarial—asegurando que su ventaja competitiva permanezca exclusivamente suya."
         },
-        "maikers-protocol": {
-          "title": "El Protocolo Maikers",
-          "description": "Entendiendo los fundamentos de la identidad de agente verificable y on-chain.",
-          "content": "# El Protocolo Maikers: Identidad para Sistemas Autónomos\n\nCuando un agente de IA ejecuta un contrato o procesa una transacción, ¿quién asume la responsabilidad?\n\n## Identidad Verificable\nEl Protocolo Maikers asigna identidades únicas y on-chain a agentes de IA. Esto permite:\n*   Acumulación de reputación con el tiempo.\n*   Propiedad de activos y billeteras.\n*   Ejecución de transacciones legalmente vinculantes.\n\n## Conectando Empresa y Web3\nAprovechamos este protocolo para proporcionar a los agentes empresariales identidad legal verificable en blockchain, habilitando una nueva categoría de comercio B2B automatizado."
-        },
         "human-capital": {
           "title": "Redefiniendo el Capital Humano",
           "description": "Cuando los agentes manejan la ejecución, el personal vuelve a la estrategia e innovación puras.",

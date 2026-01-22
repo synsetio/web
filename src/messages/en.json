@@ -78,11 +78,6 @@
           "description": "Why owning your intelligence infrastructure is the only viable long-term strategy.",
           "content": "# Sovereign AI: The Strategic Imperative\n\nIn an economy where intelligence is the primary asset, dependency on external AI providers is a strategic liability.\n\n## The Risks of Dependency\nRelying exclusively on public, closed-source models for core business logic introduces existential risks:\n*   **Data Exposure:** Proprietary data training external models.\n*   **Model Drift:** Operations disrupted by unannounced API changes.\n*   **Regulatory Exposure:** Insufficient explainability and control for compliance requirements.\n\n## The Sovereign Alternative\nSynsetio architects systems where you own the weights, the data, and the execution environment. This is digital sovereignty applied to enterprise intelligence—ensuring your competitive advantage remains exclusively yours."
         },
-        "maikers-protocol": {
-          "title": "The Maikers Protocol",
-          "description": "Understanding the foundation of verifiable, on-chain agent identity.",
-          "content": "# The Maikers Protocol: Identity for Autonomous Systems\n\nWhen an AI agent executes a contract or processes a transaction, who bears responsibility?\n\n## Verifiable Identity\nThe Maikers Protocol assigns unique, on-chain identities to AI agents. This enables:\n*   Reputation accumulation over time.\n*   Asset and wallet ownership.\n*   Execution of legally binding transactions.\n\n## Bridging Enterprise and Web3\nWe leverage this protocol to provide enterprise agents with verifiable legal identity on blockchain, enabling a new category of automated B2B commerce."
-        },
         "human-capital": {
           "title": "Redefining Human Capital",
           "description": "When agents handle execution, personnel return to pure strategy and innovation.",

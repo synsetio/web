@@ -78,11 +78,6 @@
           "description": "Pourquoi posséder votre infrastructure d'intelligence est la seule stratégie viable à long terme.",
           "content": "# L'IA souveraine : un impératif stratégique\n\nDans une économie où l'intelligence est l'actif principal, la dépendance aux fournisseurs d'IA externes constitue un passif stratégique.\n\n## Les risques de la dépendance\nS'appuyer exclusivement sur des modèles propriétaires externes pour sa logique métier centrale introduit des risques existentiels :\n* **Exposition des données :** vos données propriétaires entraînent des modèles que vous ne contrôlez pas.\n* **Dérive des modèles :** vos opérations perturbées par des changements d'API non annoncés.\n* **Exposition réglementaire :** explicabilité et contrôle insuffisants pour les exigences de conformité.\n\n## L'alternative souveraine\nSynsetio conçoit des systèmes où vous possédez les poids, les données et l'environnement d'exécution. C'est la souveraineté numérique appliquée à l'intelligence d'entreprise—garantissant que votre avantage concurrentiel reste exclusivement le vôtre."
         },
-        "maikers-protocol": {
-          "title": "Le protocole Maikers",
-          "description": "Comprendre les fondements de l'identité d'agent vérifiable et on-chain.",
-          "content": "# Le protocole Maikers : une identité pour les systèmes autonomes\n\nQuand un agent IA exécute un contrat ou traite une transaction, qui porte la responsabilité ?\n\n## Identité vérifiable\nLe protocole Maikers attribue des identités uniques et on-chain aux agents IA. Cela permet :\n* L'accumulation de réputation dans le temps.\n* La détention d'actifs et de portefeuilles.\n* L'exécution de transactions juridiquement contraignantes.\n\n## Relier entreprise et Web3\nNous exploitons ce protocole pour doter les agents d'entreprise d'une identité légale vérifiable sur la blockchain, ouvrant la voie à une nouvelle catégorie de commerce B2B automatisé."
-        },
         "human-capital": {
           "title": "Redéfinir le capital humain",
           "description": "Quand les agents gèrent l'exécution, les équipes se recentrent sur la stratégie et l'innovation.",

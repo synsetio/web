@@ -13,11 +13,6 @@ export const content = {
           "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
       },
       {
-        id: "maikers-protocol",
-        imagePath:
-          "https://images.unsplash.com/photo-1644143379190-08a5f055de1d?w=800&q=80",
-      },
-      {
         id: "human-capital",
         imagePath:
           "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
