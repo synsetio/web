@@ -20,16 +20,20 @@ export async function POST(req: Request) {
 
   // Add Services
   contextString += "SERVICES:\n";
-  Object.values(services.offerings).forEach((offering: any) => {
-    contextString += `- ${offering.title}: ${offering.description}\n`;
-  });
+  Object.values(services.offerings).forEach(
+    (offering: { title: string; description: string }) => {
+      contextString += `- ${offering.title}: ${offering.description}\n`;
+    },
+  );
   contextString += "\n";
 
   // Add Blog Posts/Articles
   contextString += "ARTICLES:\n";
-  Object.values(blogPosts).forEach((post: any) => {
-    contextString += `TITLE: ${post.title}\nDESCRIPTION: ${post.description}\nCONTENT:\n${post.content}\n\n`;
-  });
+  Object.values(blogPosts).forEach(
+    (post: { title: string; description: string; content: string }) => {
+      contextString += `TITLE: ${post.title}\nDESCRIPTION: ${post.description}\nCONTENT:\n${post.content}\n\n`;
+    },
+  );
 
   const systemPrompt = `You are SIO, the advanced AI assistant for Synsetio.
 Your role is to assist visitors with information about Synsetio's autonomous AI workforce solutions.
@@ -50,7 +54,7 @@ INSTRUCTIONS:
 - Encourage users to "Request a Demo" or "Schedule a Consultation" if they show high interest.
 `;
 
-  const result = streamText({
+  const result = await streamText({
     model: openai("gpt-4o"),
     system: systemPrompt,
     messages: messages as CoreMessage[],

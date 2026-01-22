@@ -3,7 +3,7 @@
 import { useChat } from "ai/react";
 import { useState, useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { MessageCircle, X, Send, Sparkles, User, Cpu } from "lucide-react";
+import { X, Send, Sparkles, Cpu } from "lucide-react";
 
 export default function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,9 +21,6 @@ export default function ChatWidget() {
     isLoading,
   } = useChat({
     api: "/api/chat",
-    onFinish: (message, options) => {
-      // We'll handle saving in useEffect to capture both user and ai messages
-    },
   });
 
   // Load history on mount
