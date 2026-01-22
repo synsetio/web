@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "../globals.css";
 import SmoothScroll from "../components/SmoothScroll";
 import NoiseOverlay from "../components/NoiseOverlay";
+import ChatWidget from "../../components/Chat/ChatWidget";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
@@ -226,6 +227,7 @@ export default async function LocaleLayout({
           <SmoothScroll>
             <NoiseOverlay />
             {children}
+            <ChatWidget />
           </SmoothScroll>
         </NextIntlClientProvider>
       </body>
