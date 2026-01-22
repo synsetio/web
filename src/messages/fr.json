@@ -1,102 +1,102 @@
 {
   "HomePage": {
     "hero": {
-      "title1": "Passez à l'Échelle avec",
-      "title2": "des Agents Autonomes",
-      "description": "Décorrélez la croissance des effectifs. Déployez une force de travail IA souveraine qui exécute vos workflows critiques, accélère les revenus et fait évoluer vos opérations en continu.",
-      "cta": "Demander une Démo"
+      "title1": "Industrialisez vos opérations",
+      "title2": "grâce aux agents autonomes",
+      "description": "Dissociez croissance et effectifs. Déployez une force de travail IA souveraine qui exécute vos workflows critiques, accélère vos revenus et opère sans interruption.",
+      "cta": "Demander une démo"
     },
     "mission": {
-      "title": "Excellence Opérationnelle",
-      "p1": "Le paysage de l'entreprise se transforme. L'avantage concurrentiel appartient désormais aux organisations qui orchestrent l'intelligence numérique à grande échelle tout en maintenant une souveraineté totale sur leurs données.",
-      "p2": "Synsetio fournit l'infrastructure pour cette transformation. Nous déployons des agents IA souverains qui s'intègrent parfaitement à vos systèmes existants—en respectant vos exigences de conformité, vos politiques de données et vos standards opérationnels.",
-      "p3": "Nous architecturons des solutions qui vont au-delà de l'automatisation : des systèmes intelligents qui apprennent de vos processus, s'adaptent à vos workflows et génèrent des résultats métiers mesurables."
+      "title": "Excellence opérationnelle",
+      "p1": "Le paysage de l'entreprise se transforme. L'avantage concurrentiel appartient désormais aux organisations qui orchestrent l'intelligence numérique à grande échelle tout en conservant la maîtrise totale de leurs données.",
+      "p2": "Synsetio fournit l'infrastructure de cette transformation. Nous déployons des agents IA souverains qui s'intègrent naturellement à vos systèmes existants—dans le respect de vos exigences de conformité, de vos politiques de données et de vos standards opérationnels.",
+      "p3": "Nous concevons des solutions qui dépassent la simple automatisation : des systèmes intelligents qui apprennent de vos processus, s'adaptent à vos workflows et génèrent des résultats métiers mesurables."
     },
     "features": {
-      "title": "Infrastructure IA Entreprise",
+      "title": "Infrastructure IA entreprise",
       "items": {
         "item1": {
-          "title": "Opérations Autonomes",
-          "description": "Déployez des agents intelligents qui exécutent des workflows complexes en continu. Ils gèrent la charge opérationnelle pendant que votre équipe se concentre sur les initiatives stratégiques."
+          "title": "Opérations autonomes",
+          "description": "Déployez des agents intelligents qui exécutent des workflows complexes en continu. Ils absorbent la charge opérationnelle pendant que votre équipe se concentre sur les initiatives stratégiques."
         },
         "item2": {
-          "title": "Vérifié & Auditable",
-          "description": "Construit sur la technologie blockchain garantissant une traçabilité complète. Chaque action est cryptographiquement vérifiée, auditable et conforme aux exigences de gouvernance d'entreprise."
+          "title": "Vérifié et auditable",
+          "description": "Construit sur la technologie blockchain pour une traçabilité complète. Chaque action est cryptographiquement vérifiée, auditable et conforme aux exigences de gouvernance d'entreprise."
         },
         "item3": {
-          "title": "Intelligence Unifiée",
-          "description": "Intégrez des systèmes disparates dans une couche d'intelligence cohésive où les agents collaborent pour résoudre des défis métiers multidimensionnels avec une efficacité sans précédent."
+          "title": "Intelligence unifiée",
+          "description": "Intégrez des systèmes hétérogènes dans une couche d'intelligence cohérente où les agents collaborent pour résoudre des défis métiers multidimensionnels avec une efficacité inégalée."
         }
       },
-      "conclusion": "Nous concevons les systèmes où la vision stratégique rencontre l'exécution opérationnelle."
+      "conclusion": "Nous concevons les systèmes où vision stratégique et exécution opérationnelle se rejoignent."
     },
     "services": {
-      "title": "Solutions Entreprise",
+      "title": "Solutions entreprise",
       "offerings": {
         "offering1": {
-          "title": "Architecture d'Agents sur Mesure",
-          "description": "Conception et déploiement de grade entreprise de systèmes d'agents spécialisés adaptés à vos workflows critiques."
+          "title": "Architecture d'agents sur mesure",
+          "description": "Conception et déploiement de systèmes d'agents spécialisés, adaptés à vos workflows critiques."
         },
         "offering2": {
-          "title": "Infrastructure IA Souveraine",
-          "description": "Infrastructure sécurisée et privée pour vos modèles IA avec contrôle total de la résidence des données. Votre propriété intellectuelle reste exclusivement la vôtre."
+          "title": "Infrastructure IA souveraine",
+          "description": "Infrastructure sécurisée et privée pour vos modèles IA avec maîtrise totale de la résidence des données. Votre propriété intellectuelle reste exclusivement la vôtre."
         },
         "offering3": {
-          "title": "Automatisation des Opérations Commerciales",
-          "description": "Systèmes autonomes pour la génération de pipeline, la qualification des leads et les séquences d'engagement opérant en continu sans intervention manuelle."
+          "title": "Automatisation des opérations commerciales",
+          "description": "Systèmes autonomes pour la génération de pipeline, la qualification des leads et les séquences d'engagement, opérant en continu sans intervention manuelle."
         },
         "offering4": {
-          "title": "Intégration Blockchain",
-          "description": "Intégration transparente avec la technologie de registre distribué pour des transactions, règlements et exécutions contractuelles sécurisés et automatisés."
+          "title": "Intégration blockchain",
+          "description": "Intégration native avec les technologies de registre distribué pour des transactions, règlements et exécutions contractuelles sécurisés et automatisés."
         }
       }
     },
     "callToAction": {
-      "title": "Prêt à Transformer ?",
+      "title": "Prêt à transformer vos opérations ?",
       "p1": "L'écart concurrentiel entre les entreprises natives de l'IA et les organisations traditionnelles s'accélère.",
-      "p2": "Associez-vous à Synsetio pour architecturer votre infrastructure opérationnelle autonome.",
+      "p2": "Associez-vous à Synsetio pour concevoir votre infrastructure opérationnelle autonome.",
       "form": {
-        "title": "Planifier une Consultation",
-        "name": "Nom Complet",
-        "email": "Email Professionnel",
+        "title": "Planifier un échange",
+        "name": "Nom complet",
+        "email": "Email professionnel",
         "message": "Comment pouvons-nous vous aider ?",
-        "submit": "Soumettre la Demande",
+        "submit": "Envoyer",
         "submitting": "Envoi en cours...",
         "success": "Merci. Notre équipe vous répondra sous 24 heures.",
-        "error": "Échec de l'envoi. Veuillez réessayer ou nous contacter directement."
+        "error": "L'envoi a échoué. Veuillez réessayer ou nous contacter directement."
       }
     },
     "blog": {
       "posts": {
         "agentic-revolution": {
-          "title": "La Révolution Agentique",
-          "description": "Pourquoi les entreprises leaders seront mesurées par leur capacité agentique, et non par leurs effectifs.",
-          "content": "# La Révolution Agentique : Dépasser les Limites Humaines\n\nLa révolution industrielle a multiplié la capacité physique. La révolution de l'information a multiplié la connectivité. La Révolution Agentique multiplie la *capacité d'exécution*.\n\n## Le Nouveau Métrique de l'Échelle Entreprise\nTraditionnellement, faire croître une organisation signifiait une croissance proportionnelle des effectifs. Ce modèle linéaire introduit une friction linéaire : surcharge de gestion, latence de communication et complexité opérationnelle.\n\nDans l'Économie Agentique, l'échelle est découplée du personnel. Une équipe centrale de spécialistes peut orchestrer une force de travail numérique de milliers d'agents.\n\n## La Méthodologie Synsetio\nNous permettons aux entreprises de passer de l'utilisation d'outils au déploiement d'agents :\n1. **Autonomie :** Des agents qui planifient et exécutent de manière indépendante, pas simplement en réponse à des instructions.\n2. **Interopérabilité :** Des agents qui se coordonnent avec d'autres agents, créant des chaînes de valeur automatisées.\n3. **Souveraineté :** Une intelligence que vous possédez, opérant sur une infrastructure que vous contrôlez.\n\nLa question stratégique n'est plus \"Comment l'IA peut-elle assister cette tâche ?\" mais \"Comment les agents peuvent-ils gérer cette fonction entière ?\""
+          "title": "La révolution agentique",
+          "description": "Pourquoi les entreprises leaders seront mesurées à leur capacité agentique, et non à leurs effectifs.",
+          "content": "# La révolution agentique : dépasser les limites humaines\n\nLa révolution industrielle a multiplié la capacité physique. La révolution de l'information a multiplié la connectivité. La révolution agentique multiplie la *capacité d'exécution*.\n\n## La nouvelle métrique de l'échelle entreprise\nTraditionnellement, faire croître une organisation signifiait une croissance proportionnelle des effectifs. Ce modèle linéaire introduit une friction linéaire : surcharge managériale, latence de communication et complexité opérationnelle.\n\nDans l'économie agentique, l'échelle se dissocie des effectifs. Une équipe centrale de spécialistes peut orchestrer une force de travail numérique de plusieurs milliers d'agents.\n\n## La méthodologie Synsetio\nNous accompagnons les entreprises dans leur transition de l'utilisation d'outils au déploiement d'agents :\n1. **Autonomie :** des agents qui planifient et exécutent de manière indépendante, pas simplement en réponse à des instructions.\n2. **Interopérabilité :** des agents qui se coordonnent avec d'autres agents, créant des chaînes de valeur automatisées.\n3. **Souveraineté :** une intelligence que vous possédez, opérant sur une infrastructure que vous contrôlez.\n\nLa question stratégique n'est plus « Comment l'IA peut-elle assister cette tâche ? » mais « Comment les agents peuvent-ils gérer cette fonction entière ? »"
         },
         "sovereign-ai": {
-          "title": "IA Souveraine pour l'Entreprise",
+          "title": "L'IA souveraine en entreprise",
           "description": "Pourquoi posséder votre infrastructure d'intelligence est la seule stratégie viable à long terme.",
-          "content": "# IA Souveraine : L'Impératif Stratégique\n\nDans une économie où l'intelligence est l'actif principal, la dépendance aux fournisseurs d'IA externes est un passif stratégique.\n\n## Les Risques de la Dépendance\nS'appuyer exclusivement sur des modèles publics à source fermée pour la logique métier centrale introduit des risques existentiels :\n* **Exposition des Données :** Données propriétaires entraînant des modèles externes.\n* **Dérive du Modèle :** Opérations perturbées par des changements d'API non annoncés.\n* **Exposition Réglementaire :** Explicabilité et contrôle insuffisants pour les exigences de conformité.\n\n## L'Alternative Souveraine\nSynsetio architecte des systèmes où vous possédez les poids, les données et l'environnement d'exécution. C'est la souveraineté numérique appliquée à l'intelligence d'entreprise—garantissant que votre avantage concurrentiel reste exclusivement le vôtre."
+          "content": "# L'IA souveraine : un impératif stratégique\n\nDans une économie où l'intelligence est l'actif principal, la dépendance aux fournisseurs d'IA externes constitue un passif stratégique.\n\n## Les risques de la dépendance\nS'appuyer exclusivement sur des modèles propriétaires externes pour sa logique métier centrale introduit des risques existentiels :\n* **Exposition des données :** vos données propriétaires entraînent des modèles que vous ne contrôlez pas.\n* **Dérive des modèles :** vos opérations perturbées par des changements d'API non annoncés.\n* **Exposition réglementaire :** explicabilité et contrôle insuffisants pour les exigences de conformité.\n\n## L'alternative souveraine\nSynsetio conçoit des systèmes où vous possédez les poids, les données et l'environnement d'exécution. C'est la souveraineté numérique appliquée à l'intelligence d'entreprise—garantissant que votre avantage concurrentiel reste exclusivement le vôtre."
         },
         "maikers-protocol": {
-          "title": "Le Protocole Maikers",
+          "title": "Le protocole Maikers",
           "description": "Comprendre les fondements de l'identité d'agent vérifiable et on-chain.",
-          "content": "# Le Protocole Maikers : Identité pour Systèmes Autonomes\n\nQuand un agent IA exécute un contrat ou traite une transaction, qui porte la responsabilité ?\n\n## Identité Vérifiable\nLe Protocole Maikers attribue des identités uniques et on-chain aux agents IA. Cela permet :\n* L'accumulation de réputation au fil du temps.\n* La propriété d'actifs et de portefeuilles.\n* L'exécution de transactions juridiquement contraignantes.\n\n## Relier Entreprise et Web3\nNous exploitons ce protocole pour fournir aux agents d'entreprise une identité légale vérifiable sur la blockchain, permettant une nouvelle catégorie de commerce B2B automatisé."
+          "content": "# Le protocole Maikers : une identité pour les systèmes autonomes\n\nQuand un agent IA exécute un contrat ou traite une transaction, qui porte la responsabilité ?\n\n## Identité vérifiable\nLe protocole Maikers attribue des identités uniques et on-chain aux agents IA. Cela permet :\n* L'accumulation de réputation dans le temps.\n* La détention d'actifs et de portefeuilles.\n* L'exécution de transactions juridiquement contraignantes.\n\n## Relier entreprise et Web3\nNous exploitons ce protocole pour doter les agents d'entreprise d'une identité légale vérifiable sur la blockchain, ouvrant la voie à une nouvelle catégorie de commerce B2B automatisé."
         },
         "human-capital": {
-          "title": "Redéfinir le Capital Humain",
-          "description": "Quand les agents gèrent l'exécution, le personnel revient à la pure stratégie et à l'innovation.",
-          "content": "# Redéfinir le Capital Humain\n\nAlors que le coût marginal de l'intelligence approche de zéro, la valeur de l'*intention* stratégique approche de l'infini.\n\n## Le Rôle d'Architecte\nDans une entreprise équipée par Synsetio, les employés passent d'opérateurs à architectes. Leur rôle devient la conception de systèmes, la définition de paramètres et l'établissement de résultats. Les agents exécutent le reste.\n\nCe n'est pas le déplacement du travail ; c'est l'élévation du travail à sa forme la plus haute : pure stratégie et innovation."
+          "title": "Redéfinir le capital humain",
+          "description": "Quand les agents gèrent l'exécution, les équipes se recentrent sur la stratégie et l'innovation.",
+          "content": "# Redéfinir le capital humain\n\nAlors que le coût marginal de l'intelligence approche de zéro, la valeur de l'*intention* stratégique tend vers l'infini.\n\n## Le rôle d'architecte\nDans une entreprise équipée par Synsetio, les collaborateurs passent d'opérateurs à architectes. Leur rôle devient la conception de systèmes, la définition de paramètres et l'établissement d'objectifs. Les agents exécutent le reste.\n\nIl ne s'agit pas de remplacer le travail, mais de l'élever à sa forme la plus haute : stratégie pure et innovation."
         }
       }
     },
     "footer": {
-      "description": "Synsetio : Infrastructure Autonome Entreprise. Paris • Monde.",
+      "description": "Synsetio : infrastructure autonome pour l'entreprise. Paris • International.",
       "sections": {
         "product": "Solutions",
         "resources": "Ressources",
         "company": "Entreprise",
-        "legal": "Juridique"
+        "legal": "Mentions légales"
       },
       "newsletter": {
         "title": "Restez informé",
@@ -106,7 +106,7 @@
     }
   },
   "Navigation": {
-    "about": "À Propos",
+    "about": "À propos",
     "features": "Solutions",
     "vision": "Vision",
     "blog": "Perspectives",
@@ -115,60 +115,60 @@
   },
   "CookieConsent": {
     "message": "Nous utilisons des cookies pour améliorer votre expérience. Consultez notre",
-    "linkText": "Politique de Cookies",
+    "linkText": "politique de cookies",
     "accept": "Accepter",
     "decline": "Refuser"
   },
   "Careers": {
-    "title": "Façonnez l'Avenir",
-    "subtitle": "Architecturez l'infrastructure autonome qui redéfinit les opérations d'entreprise à l'échelle mondiale.",
-    "valuesTitle": "Nos Principes",
+    "title": "Façonnez l'avenir",
+    "subtitle": "Concevez l'infrastructure autonome qui redéfinit les opérations d'entreprise à l'échelle mondiale.",
+    "valuesTitle": "Nos principes",
     "values": {
       "sovereignty": {
-        "title": "Souveraineté Numérique",
-        "description": "L'infrastructure d'intelligence doit rester sous contrôle de l'entreprise."
+        "title": "Souveraineté numérique",
+        "description": "L'infrastructure d'intelligence doit rester sous le contrôle de l'entreprise."
       },
       "execution": {
-        "title": "Production d'Abord",
-        "description": "Nous déployons des systèmes qui opèrent à grande échelle, pas des démonstrations."
+        "title": "Production d'abord",
+        "description": "Nous déployons des systèmes qui opèrent à grande échelle, pas des démonstrateurs."
       },
       "transparency": {
-        "title": "Transparence Opérationnelle",
+        "title": "Transparence opérationnelle",
         "description": "Communication claire au-delà de toutes les frontières organisationnelles."
       }
     },
-    "positionsTitle": "Opportunités Actuelles",
-    "viewDetails": "Voir le Poste",
+    "positionsTitle": "Opportunités actuelles",
+    "viewDetails": "Voir le poste",
     "noRole": {
       "title": "Poste non listé ?",
       "description": "Nous recherchons continuellement des spécialistes d'exception. Soumettez vos références et décrivez votre contribution potentielle.",
-      "cta": "Soumettre une Demande"
+      "cta": "Soumettre une candidature spontanée"
     },
     "position": {
-      "allPositions": "Tous les Postes",
-      "applyFor": "Soumettre une Candidature",
+      "allPositions": "Tous les postes",
+      "applyFor": "Postuler",
       "sections": {
-        "responsibilities": "Responsabilités Clés",
-        "requirements": "Qualifications Requises",
-        "niceToHave": "Qualifications Préférées",
-        "benefits": "Rémunération & Avantages"
+        "responsibilities": "Responsabilités clés",
+        "requirements": "Qualifications requises",
+        "niceToHave": "Qualifications souhaitées",
+        "benefits": "Rémunération et avantages"
       },
-      "readyToApply": "Prêt à contribuer ?",
-      "readyDescription": "Soumettez vos références accompagnées d'une déclaration d'intérêt pour ce poste.",
-      "applyNow": "Soumettre une Candidature"
+      "readyToApply": "Prêt à nous rejoindre ?",
+      "readyDescription": "Soumettez vos références accompagnées d'une lettre de motivation pour ce poste.",
+      "applyNow": "Postuler"
     },
     "modal": {
       "applyFor": "Candidature :",
-      "fullName": "Nom Complet",
-      "email": "Email Professionnel",
-      "resume": "Curriculum Vitae",
-      "uploadPrompt": "Joindre PDF, DOC ou DOCX",
-      "coverLetter": "Déclaration d'Intérêt",
-      "coverPlaceholder": "Décrivez votre expérience pertinente et votre intérêt pour ce poste...",
-      "submitting": "Traitement...",
-      "submit": "Soumettre la Candidature",
-      "success": "Candidature reçue. Notre équipe répondra sous 48 heures.",
-      "error": "Échec de l'envoi. Veuillez réessayer ou nous contacter directement."
+      "fullName": "Nom complet",
+      "email": "Email professionnel",
+      "resume": "CV",
+      "uploadPrompt": "PDF, DOC ou DOCX",
+      "coverLetter": "Lettre de motivation",
+      "coverPlaceholder": "Décrivez votre expérience et votre intérêt pour ce poste...",
+      "submitting": "Envoi en cours...",
+      "submit": "Envoyer ma candidature",
+      "success": "Candidature reçue. Notre équipe vous répondra sous 48 heures.",
+      "error": "L'envoi a échoué. Veuillez réessayer ou nous contacter directement."
     }
   }
 }
